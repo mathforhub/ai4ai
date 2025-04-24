@@ -1,0 +1,684 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>2025-04-25-1</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(50, 48, 44, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-default_background {
+	color: rgba(50, 48, 44, 1);
+}
+.highlight-gray_background {
+	background: rgba(248, 248, 247, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(248, 243, 252, 1);
+}
+.highlight-pink_background {
+	background: rgba(252, 241, 246, 1);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(248, 248, 247, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(248, 243, 252, 1);
+}
+.block-color-pink_background {
+	background: rgba(252, 241, 246, 1);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: undefined; }
+.select-value-color-pink { background-color: rgba(225, 136, 179, 0.27); }
+.select-value-color-purple { background-color: rgba(168, 129, 197, 0.27); }
+.select-value-color-green { background-color: rgba(123, 183, 129, 0.27); }
+.select-value-color-gray { background-color: rgba(84, 72, 49, 0.15); }
+.select-value-color-transparentGray { background-color: undefined; }
+.select-value-color-translucentGray { background-color: undefined; }
+.select-value-color-orange { background-color: rgba(224, 124, 57, 0.27); }
+.select-value-color-brown { background-color: rgba(210, 162, 141, 0.35); }
+.select-value-color-red { background-color: rgba(244, 171, 159, 0.4); }
+.select-value-color-yellow { background-color: rgba(236, 191, 66, 0.39); }
+.select-value-color-blue { background-color: rgba(93, 165, 206, 0.27); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="1dfb42d6-c689-800e-860a-f54eb1626bbd" class="page sans"><header><h1 class="page-title">2025-04-25-1</h1><p class="page-description"></p></header><div class="page-body"><h1 id="1dfb42d6-c689-8050-a0d4-da325edfc1c9" class="">副总统万斯关于美印贸易关系与经济的讲话实录</h1><ul id="1dfb42d6-c689-8047-8ab2-c8ce1400fa89" class="bulleted-list"><li style="list-style-type:disc"><time>@2025年4月23日 12:35</time></li></ul><ul id="1dfb42d6-c689-8052-a90a-f1ea35d9bad6" class="bulleted-list"><li style="list-style-type:disc">作者：<a href="https://singjupost.com/author/singju/">Pangambam S</a></li></ul><ul id="1dfb42d6-c689-80c4-8c5f-e783d565bb98" class="bulleted-list"><li style="list-style-type:disc"><a href="https://singjupost.com/politics/">政治</a></li></ul><figure id="1dfb42d6-c689-80b3-8207-c2086e014e9d" class="image"><a href="https://singjupost.com/wp-content/uploads/2025/04/VP-Vance-Remarks-on-US-India-Trade-Relations-and-Economy-1.jpg"><img style="width:700px" src="https://singjupost.com/wp-content/uploads/2025/04/VP-Vance-Remarks-on-US-India-Trade-Relations-and-Economy-1.jpg"/></a></figure><ul id="1dfb42d6-c689-80ee-bd2e-c5137f0a4fe3" class="bulleted-list"><li style="list-style-type:disc"><strong><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsingjupost.com%2Ftranscript-of-vp-vance-remarks-on-us-india-trade-relations-and-economy%2F&amp;t=Transcript%20of%20VP%20Vance%20Remarks%20on%20US-India%20Trade%20Relations%20and%20Economy">分享</a></strong></li></ul><ul id="1dfb42d6-c689-802a-bda1-e9eb41850845" class="bulleted-list"><li style="list-style-type:disc"><strong><a href="https://x.com/intent/tweet?text=Transcript%20of%20VP%20Vance%20Remarks%20on%20US-India%20Trade%20Relations%20and%20Economy&amp;url=https%3A%2F%2Fsingjupost.com%2Ftranscript-of-vp-vance-remarks-on-us-india-trade-relations-and-economy%2F&amp;via=singjupost">推特</a></strong></li></ul><ul id="1dfb42d6-c689-806f-8851-e45619af9c50" class="bulleted-list"><li style="list-style-type:disc"><strong>Pinterest</strong></li></ul><ul id="1dfb42d6-c689-80b0-8fcf-fdb35f859ab8" class="bulleted-list"><li style="list-style-type:disc"><strong><a href="https://www.notion.somailto:?subject=Transcript%20of%20VP%20Vance%20Remarks%20on%20US-India%20Trade%20Relations%20and%20Economy&amp;body=https%3A%2F%2Fsingjupost.com%2Ftranscript-of-vp-vance-remarks-on-us-india-trade-relations-and-economy%2F">邮件</a></strong></li></ul><p id="1dfb42d6-c689-8093-9d8f-e878b4fd8ba0" class="">以下是副总统 JD·万斯于 2025 年 4 月 22 日星期二就美印贸易关系与经济发表讲话的完整记录。</p><p id="1dfb42d6-c689-8031-99d8-e5b576ce26f5" class=""><strong>点击此处收听音频版：</strong></p><h2 id="1dfb42d6-c689-80f7-b505-dd1b7f86ec24" class="">开场致辞</h2><p id="1dfb42d6-c689-80fd-9a32-d907d21bb624" class="">副总统 JD·万斯：很高兴见到大家。大家最近怎么样？很好，很好。能够来到斋浦尔，我感到无比荣幸。我非常高兴能在阿南塔中心的印美论坛上发表演讲，也很高兴你们都能来到这里。感谢在座的各位商界领袖、决策者，当然还有学生们的到来。同时也要感谢我们美国大使馆的优秀团队，感谢你们为我们的国家所做的一切。</p><p id="1dfb42d6-c689-8071-8dc1-df3f5e2ff480" class="">在美国，我们为两国之间——印度和美国之间——深厚的联系感到自豪。正如你们大多数人可能知道的那样，莫迪总理是特朗普总统第二任期内最早被欢迎进入椭圆形办公室的访客之一。和特朗普总统一样，莫迪总理因其对人民和国家的坚定信念而激发了非凡的忠诚。</p><p id="1dfb42d6-c689-8033-a079-c856db3ebd0d" class="">现在，我们非常感激莫迪总理的热情款待，以及他和这个国家的每一个人在我们这次首次访问中给予我们的欢迎。对我来说，这是我第一次来到印度，也是我妻子父母的出生地，她当然就在前排。你在那儿，Usha。谢谢你。事实证明，她在印度有点像名人。我认为她比她的丈夫更受欢迎。</p><h2 id="1dfb42d6-c689-80df-a434-ccf21a3e8bd1" class="">对印度的第一印象</h2><p id="1dfb42d6-c689-80e7-bbe8-cab9fb9007bd" class="">我在这里待的时间不长，但我已经有幸参观了阿克萨达姆神庙。我发音对了吗，亲爱的？我说得还可以吗？好吧。事实上，今天早上我和家人一起去的。昨晚，莫迪总理在他美丽的家中欢迎了我、乌莎和我们的三个年幼的孩子。</p><p id="1dfb42d6-c689-803e-a847-fcac15bbae72" class="">我对印度古老建筑的美丽、印度丰富的历史和传统感到惊叹，同时也被印度对未来的高度关注所折服。我认为，这种对历史和传统的珍视以及对未来的专注，正是2025年这个国家充满活力的重要原因。</p><p id="1dfb42d6-c689-8024-b07c-ed443ff65d39" class="">在我访问过的其他国家，有时会感觉到一种平淡、雷同，似乎大家都想和世界上的其他人一样。但这里不同。印度充满活力，蕴含着无限可能，有新的家园等待建设，有新的天际线即将崛起，有无数生活将因此变得更加美好。这里还有作为印度人的自豪感，对未来充满期待和激动。</p><h2 id="1dfb42d6-c689-8067-bf1d-fca8199d89f3" class="">对未来的不同愿景</h2><p id="1dfb42d6-c689-8022-ba47-f217f414a98f" class="">现在，这与西方许多国家形成了鲜明对比，在那里，我们的一些领导阶层似乎被自我怀疑甚至对未来的恐惧所困扰。对他们来说，人类总是离灾难只有一个错误决定的距离。他们告诉我们，世界很快就会终结，因为我们燃烧了太多燃料，制造了太多东西，或者生了太多孩子。因此，他们往往不是投资未来，而是选择逃避未来。</p><p id="1dfb42d6-c689-8006-bb33-e8d019f769ad" class="">他们中的一些人通过法律，强制本国减少能源使用。他们关闭核能和其他能源发电设施。即使这些领导人的选择导致对外国对手的依赖加深。与此同时，他们对朋友们，比如印度这样的国家，传递的信息却是：你们不被允许发展。</p><p id="1dfb42d6-c689-80f2-b394-ed6c22880bee" class="">特朗普总统拒绝这些失败的理念。他希望美国发展，也希望印度发展。他希望与全球各地的伙伴一起建设未来。当我看到他的听众，或者在过去几天里访问这个令人难以置信的国家时，我看到的是一个不会被束缚住的民族。</p><p id="1dfb42d6-c689-806b-b3c6-df308d7e0121" class="">现在，我认为，我们所有人肩负的最深远的责任，不是对我们自己，而是对下一代，要确保我们留给他们一个比我们的父母和祖父母留给我们的社会更美好的社会。这正是美国希望与你们共同创造的世界。我们希望建设一个光明的新世界，一个不断创新的世界，一个帮助人们组建家庭、让建设、投资和共同贸易变得更容易、共同追求共同目标的世界。</p><h2 id="1dfb42d6-c689-8063-bdf3-d05adf2cc735" class="">合作伙伴关系的新方法</h2><p id="1dfb42d6-c689-80cb-9847-d6e294fce51e" class="">我相信我们的两国有许多可以互相提供的东西。这也是为什么我们以合作伙伴的身份来到这里，希望加强我们的关系。我们并不是来要求你们以某种特定的方式行事。过去，华盛顿对莫迪总理常常带着说教，甚至有些居高临下的态度。</p><p id="1dfb42d6-c689-803d-a8d5-fc1daa151a66" class="">以往的政府一方面把印度视为廉价劳动力的来源，另一方面又批评总理的政府——可以说是世界民主国家中最受欢迎的政府。正如我昨晚对莫迪总理说的，他的支持率让我都感到羡慕。</p><p id="1dfb42d6-c689-801c-bb12-d4933a9d067a" class="">但这不仅仅是对印度。这种态度也影响了我们与世界其他国家的经济关系。所以我们把无数的工作岗位转移到海外，连同我们的制造能力——从家具、电器，甚至到战争武器。我们用软实力换取了硬实力，因为有人告诉我们，随着经济一体化，也会通过同质化带来和平。</p><p id="1dfb42d6-c689-80cd-89f1-de8223ce197d" class="">随着时间的推移，我们都以为大家会逐渐接受同样那种平淡、世俗、普世的价值观。毕竟，无论你住在哪里，世界都是平的。这就是当时的论点，也是他们告诉我们的内容。而当这个论点被证明是错误的，或者至少是不完整的，西方的领导人就不惜一切代价要把世界“压平”。</p><p id="1dfb42d6-c689-80d7-a628-ec21bb98856f" class="">但世界上有很多人，我认为你们国家也包括在内，他们并不想被“压平”。许多人为自己的出身、生活方式、所从事的工作以及他们父母曾经从事的工作感到自豪。这一点在我自己的国家——美利坚合众国——同样如此。</p><h2 id="1dfb42d6-c689-80e1-b716-c16a63f2571c" class="">个人背景与美国制造业</h2><p id="1dfb42d6-c689-80e3-a73a-e7f930d3a45e" class="">现在，有些人可能了解我的个人背景。其实我本来没打算谈自己的背景，直到昨晚的晚宴上，我的孩子们大体上还算乖巧。我们给他们的表现打了个 A-。总理说，我有一个请求，我希望你能谈一谈你的背景。所以我想做一下介绍。</p><p id="1dfb42d6-c689-80e0-8fa9-e24f90c4f51b" class=""><strong><a href="https://singjupost.com/full-transcript-trump-rallies-in-battleground-north-carolina/">相关阅读： 完整文字实录：特朗普在关键州北卡罗来纳的集会</a></strong></p><p id="1dfb42d6-c689-808d-b5aa-c8205f694863" class="">对于那些对我一无所知的人，我想谈谈我的情况。我来自——而且我承认有偏见——全美最伟大的州，俄亥俄州，这里长期以来都是美国的制造业重镇。我的家乡具体来说叫米德尔敦。这个城市绝不是一个大城市，不像 J-4 那样，但它也是一个规模不错的小镇，是一个人们世世代代以制造业为荣的地方。</p><p id="1dfb42d6-c689-8063-bdcc-cfd4dfce47c8" class="">这里住着许多像我家一样的家庭，有些人称我们为“山地佬”，是那些从西弗吉尼亚、田纳西和肯塔基周边山丘和山区来到米德尔敦等城市的美国人，他们为了制造业工作而来，这些工作曾为全美家庭带来广泛的繁荣。他们来到米德尔敦，追寻我们家乡所说的“美国梦”。</p><p id="1dfb42d6-c689-803d-ad62-ef647b0cf9d1" class="">在米德尔敦，我的父母抚养了我，我的祖父母也抚养了我。他们教会我们努力工作，教会我努力学习，还教会我热爱上帝和我的祖国，并且永远善待自己人。我从小叫他“Papaw”的外公，就是这种精神的典范。直到晚年，他都在当地的钢铁厂做钢铁工人，我知道印度也有很多这样的工厂。Papaw 的工作给了他不错的工资、稳定的工时和丰厚的养老金。这一切不仅让他能养活自己和外婆，还能和他们一起抚养自己的女儿和外孙们。</p><p id="1dfb42d6-c689-8074-9b82-dd91231c19b4" class="">到我出生的时候，家里的钱已经非常紧张了，但他依然努力工作，为我们所有人创造更好的生活。我知道 Papaw 和 Mamaw 都很感激他们的国家所带来的生活方式。他们那一代人见证了美国伟大中产阶级的形成。通过打造以生产为核心、以建设者为核心、以劳动价值为核心的经济体，我们国家的领导人改变了国家，也让成千上万个像米德尔敦一样的小中产阶级城镇成为可能。</p><p id="1dfb42d6-c689-8050-adfc-cd356b2c7169" class="">政府支持了其劳动力。我们为生产性产业的扎根创造了激励措施，并与国际合作伙伴达成了有利的协议，将美国制造的商品销往海外。但当美国安于其创造的世界历史性繁荣时，我们的领导人开始把这种繁荣及其成因视为理所当然。他们忘记了建设、支持生产性产业、达成公平协议以及支持我们的工人和他们家庭的重要性。随着时间的推移，我们看到了后果。在我家乡，工厂关闭，工作岗位流失。</p><h2 id="1dfb42d6-c689-80f2-b26a-e85647e2a318" class="">美国中产阶级的传统</h2><p id="1dfb42d6-c689-80a4-877f-d6f68e97516a" class="">随着美国中部城镇的活力消失，这些地方不再是我们国家经济的命脉。美国在转型的过程中，那些工人阶级、美国的基层民众，被视为落后，只因为他们坚持着祖辈珍视的价值观。现在，米德尔顿的故事也是我的故事，但在美国这并不罕见。在过去二十年左右的时间里，有数千万美国人已经意识到我们国家正在发生的变化。但我相信，他们在为时未晚之前就已经觉醒了。</p><p id="1dfb42d6-c689-805c-aaa1-fc3b93eb13ae" class="">现在，就像你们一样，我们希望珍惜我们的历史、文化和宗教。我们希望与朋友们做生意，达成良好的协议。我们希望将对自身遗产的自豪认同作为未来愿景的基础，而不是自我厌恶和恐惧。我为一位长期理解这一切的总统工作。无论是与那些试图抹去美国历史的人作斗争，还是支持在海外达成更公平的贸易协议，多年来他在这些问题上的立场始终如一。</p><p id="1dfb42d6-c689-80d6-a408-c5e3abc35224" class="">因此，在特朗普政府的领导下，美国现在拥有一个从过去错误中吸取了教训的政府。这也是为什么特朗普总统如此关心保护制造业经济——这是美国繁荣的命脉，并确保美国工人拥有良好就业机会的原因。正如我们在本月早些时候所看到的那样，他会不遗余力地保护和扩大所有美国人的这些机会。</p><h2 id="1dfb42d6-c689-8011-a6ff-ec2714814393" class="">美国对贸易伙伴关系的愿景</h2><p id="1dfb42d6-c689-8047-9ebe-d0dafbdb491a" class="">所以今天，我带着一个简单的信息来到这里。我们的政府寻求以公平和共同国家利益为基础的贸易伙伴。我们希望与那些尊重本国工人、不通过压低工资来提升出口、而是尊重劳动价值的外国伙伴建立关系。我们希望与致力于与美国共同建设事物的伙伴合作，而不是仅仅成为他国商品转运通道的国家。最后，我们希望与那些认识到我们所处历史时刻、认识到团结起来共同创造真正新事物、建立一个平衡、开放、稳定且公平的全球贸易体系的人和国家合作。</p><p id="1dfb42d6-c689-8048-b179-f6c74d58b31e" class="">现在，我想说清楚。美国的伙伴不需要与美国完全一样，我们的政府也不必事事都以同样的方式行事，但我们应该有一些共同的目标。我相信，在印度，我们在经济和国家安全方面都拥有这些共同目标。这就是我们如此激动的原因，这也是我今天如此高兴来到这里的原因。在印度，美国有一个朋友，我们希望加强我们伟大国家之间已经存在的深厚纽带。</p><p id="1dfb42d6-c689-8063-a79e-ddb60c54ed54" class="">现在，批评者指责我的总统，特朗普总统，发起贸易战，试图带回过去的工作岗位，但事实远非如此。他寻求重新平衡全球贸易，使美国能够与像印度这样的朋友一起，为我们所有人共同建设一个值得拥有的未来。当特朗普总统和莫迪总理在二月份宣布，我们两国的双边贸易目标是在本十年末前翻一番以上，达到五千亿美元时，我知道他们俩都是认真的。我对我们两国为实现这一目标所做的一切感到鼓舞。</p><h2 id="1dfb42d6-c689-808f-90a0-c0b1bb277d07" class="">美印贸易协定的进展</h2><p id="1dfb42d6-c689-802b-9c8b-ffc300f8343b" class="">正如你们许多人所知，我们两国政府都在努力制定一项以共同优先事项为基础的贸易协议，比如创造新的就业机会、构建稳固的供应链，以及实现工人的繁荣。在我们昨天的会谈中，莫迪总理和我在所有这些方面都取得了非常好的进展。我们尤其高兴地正式宣布，美印两国已经正式敲定了贸易谈判的参考条款。我认为这是一个至关重要的步骤。谢谢。我相信这是实现特朗普总统和莫迪总理愿景的重要一步，因为它为我们两国之间达成最终协议制定了路线图。</p><p id="1dfb42d6-c689-80e7-9fdc-f537e255d681" class=""><strong><a href="https://singjupost.com/transcript-of-ukraine-taiwan-and-the-true-cause-of-war-john-mearsheimer/">相关阅读： 乌克兰、台湾与战争真正原因——约翰·米尔斯海默访谈实录</a></strong></p><p id="1dfb42d6-c689-8044-883c-e0d135ab7a79" class="">我相信美国和印度可以共同实现许多目标。说到这里，今天我想谈谈几个合作领域，以及印度和美国如何携手合作。首先，也许最重要的是保护我们的国家。其次，是共同建设伟大的事业。最后，是共同创新我们两国未来所需的前沿技术。</p><h2 id="1dfb42d6-c689-805f-b7a3-e9c75a61fe2a" class="">防务合作</h2><p id="1dfb42d6-c689-80bc-982c-f060ff4ba2b9" class="">现在，在防务方面，我们两国已经拥有非常密切的关系，是世界上最紧密的关系之一。美国与印度进行的军事演习比与地球上任何其他国家都多。特朗普总统和莫迪总理在二月份宣布的美印协议，将为我们两国之间更加紧密的合作奠定基础。从标枪导弹到斯特赖克战斗车辆，我们两国将共同生产许多我们需要用来威慑外国侵略者的弹药和装备，这不是因为我们寻求战争，而是因为我们追求和平，并且我们相信通往和平的最佳途径是通过共同的实力。</p><p id="1dfb42d6-c689-80c2-9426-eaefb5440077" class="">启动联合自主系统产业联盟将使美国和印度能够开发最先进的海上系统，以取得胜利。今年印度主办的四方领导人峰会也恰逢其时。我们在实现自由、开放、和平与繁荣的印太地区方面利益高度一致。我们都知道，这一地区必须免受任何试图主导它的敌对势力的威胁。</p><p id="1dfb42d6-c689-8019-a6ce-d31ec62f4383" class="">在过去十年里，我们两国关系的不断发展促使美国将印度指定为主要防务伙伴，这是该类别中的第一个。这一指定意味着印度现在与阿联酋一样，拥有与美国最亲密盟友和朋友同等水平的防务和技术基础设施及合作关系。</p><p id="1dfb42d6-c689-809c-8df5-ce8534be46c5" class="">但我们实际上认为，印度通过与美国持续的防务合作关系能够获得更多利益，让我稍微阐述一下这一点。当然，我们希望有更多的合作。我们希望能够更加紧密地协作。我们也希望贵国能够购买更多我们的军事装备，我们当然相信这些装备是同类中最好的。比如说，甚至第五代 F-35 战机，都能让印度空军以前所未有的方式保卫领空、保护人民。就在过去几天里，我还见到了许多来自印度空军的优秀人员。</p><h2 id="1dfb42d6-c689-8012-afa7-ea7d45baa0f3" class="">能源伙伴关系</h2><p id="1dfb42d6-c689-8015-b8eb-e81c8fbad6ad" class="">印度和美国一样，想要建设发展，这意味着我们必须生产更多的能源。这将带来更多的能源生产和更多的能源消耗，这也是我认为我们两国通过加强能源联系能够获得巨大收益的诸多原因之一。正如特朗普总统常说的那样，美国已经再次开始“钻探，继续钻探”。我们认为这不仅会让美国人受益，也会让印度受益。</p><p id="1dfb42d6-c689-80d8-b6f2-d8cdf1f1a110" class="">我认为，美国过去的政府出于对未来的担忧，束缚了我们的手脚，限制了美国在石油和天然气生产方面的投资。现任政府认识到，廉价、可靠的能源是制造业的重要组成部分，也是我们两国实现经济独立的关键因素。</p><p id="1dfb42d6-c689-80f0-8d00-dd123724ecbe" class="">当然，美国拥有丰富的自然资源和非凡的能源生产能力，甚至多到我们希望能够将其出售给像印度这样的朋友。我们相信，你们国家将从美国能源出口和出口扩展中受益。你们能够建设更多、制造更多、发展更多，但能源成本却会大大降低。</p><p id="1dfb42d6-c689-80b8-9c1f-f923760853c5" class="">我们也希望帮助印度开发其丰富的自然资源，包括其近海天然气储备和关键矿产供应。我们有能力，也有意愿提供帮助。此外，我们认为能源共同生产将有助于在其他海外市场击败不公平的竞争对手。</p><p id="1dfb42d6-c689-8021-8d8e-f9ade438e091" class="">但我们相信，印度可以在加强两国能源关系方面走得更远。我有一个建议，也许可以考虑取消一些美国进入印度市场的非关税壁垒。当然，我已经和莫迪总理谈过这个问题，而且你看，特朗普总统和我都知道莫迪总理是个强硬的谈判者。他谈判很有分量，这也是我们尊重他的原因之一。我们并不责怪莫迪总理为印度产业争取利益，但我们确实责怪过去的美国领导人没有为我们的工人做同样的事情。我们相信，我们可以修正这一点，实现美印双方的互利共赢。</p><p id="1dfb42d6-c689-80a9-a4ca-f55712f99e60" class="">让我举个例子。我们认为美国乙醇是用世界上最优质的玉米制成的，可以在加强我们的合作伙伴关系中发挥巨大作用。而我</p><p id="1dfb42d6-c689-80d7-beb7-c13c95c0508f" class="">我知道我们的农民会很高兴支持印度的能源安全目标。我们欢迎莫迪政府在预算中宣布修订印度民用核责任法，目前该法律阻止美国生产商向印度出口小型模块化反应堆以及建设更大型的美式设计反应堆。我们有很多可以共同创造、共同完成的事情。我们相信，美国能源能够助力印度实现核电生产目标，这一点非常重要，同时也能助力其人工智能雄心。因为正如美国深知，我也知道印度深知，没有能源安全和能源主导，就没有人工智能的未来。</p><h2 id="1dfb42d6-c689-80ca-b871-eeafee829ad7" class="">超越国防与能源的技术合作</h2><p id="1dfb42d6-c689-8037-bb9c-c650f0f8b5c0" class="">这也引出了我关于合作的最后一点。我相信，我们两国之间的技术合作将远远超越国防和能源领域。特朗普总统和莫迪总理发起的美印信任倡议，将成为未来伙伴关系的基石。它将建立在美国企业已在印度宣布的数十亿美元投资计划之上。</p><p id="1dfb42d6-c689-804a-9495-c89bc4347433" class="">在未来的几年里，我们将看到数据中心、制药、海底电缆以及无数其他关键产品因美印经济伙伴关系而被开发和建设。我再说一遍，我认为我们的两国通过相互投资能够获得巨大的利益，美国投资印度，当然，印度也投资美利坚合众国。</p><p id="1dfb42d6-c689-80c6-9340-f73b28b0ca12" class=""><strong><a href="https://singjupost.com/transcript-jd-vance-pete-hegseth-and-tulsi-gabbard-hold-press-briefing-at-u-s-mexico-border/">相关阅读： 文字实录：JD·万斯、皮特·赫格塞斯和图尔西·加巴德在美墨边境举行新闻发布会</a></strong></p><p id="1dfb42d6-c689-80d0-9640-facf5daa13e7" class="">我知道美国人民对此前景感到兴奋，特朗普总统和我都期待着建立更紧密的关系。美国人希望进一步进入印度市场。这里是做生意的绝佳之地，我们希望为我们的人民提供更多进入这个国家的机会。我们相信，印度人也会因与美国的更大规模贸易而受益。这绝对是一个双赢的合作伙伴关系，并且在未来很长一段时间内都会如此。</p><p id="1dfb42d6-c689-80e8-a82f-d620bd4da3cb" class="">正如我所知，这里的听众比大多数人都更清楚，无论是美国人还是印度人，都不是唯一希望扩大制造能力的国家。竞争远不止于廉价消费品，还延伸到军火、能源、基础设施以及各种前沿技术。我相信，如果我们的国家未能跟上步伐，不仅对印太地区，而且对整个世界来说，后果都将非常严重。</p><p id="1dfb42d6-c689-80ec-9293-f31868ece100" class="">正如我刚才所说，这也是印度和美国彼此能够带来巨大价值的地方。我们拥有世界领先的人工智能硬件，而你们拥有全球最令人兴奋的初创科技基础设施之一。通过合作，我们都能获得巨大的收益。这也是为什么特朗普总统和我都欢迎印度在许多外交组织中的领导地位，当然也包括“四方安全对话”。我们相信，一个更强大的印度不仅意味着更大的经济繁荣，也意味着整个印太地区更大的稳定，这当然是我们在座所有人的共同目标，也是我们两国的共同目标。</p><h2 id="1dfb42d6-c689-805b-928b-d82c1f67dad0" class="">关于印度和莫迪总理的个人感想</h2><p id="1dfb42d6-c689-801e-82c3-fd12cf9862bd" class="">现在，我想用最后一个故事，或者说几个故事来结束。你们知道，我的儿子 Ewan 今年七岁，他是我们的长子。昨天，我们在总理官邸共进晚餐，饭菜非常美味，总理对我们的三个孩子也非常友善。晚餐后，Ewan 走过来对我说：“爸爸，你知道吗，我觉得我也许可以住在印度。”但我想，今天在大皇宫 J-4 的阳光下待了大约 90 分钟后，他又建议我们也许应该搬去英国。所以，这里有好的一面，也有不好的一面。</p><p id="1dfb42d6-c689-802d-aca9-c2b25700bc13" class="">但我想谈谈莫迪总理，因为我认为他是一个特别的人。我第一次见到莫迪总理是在二月份的人工智能行动峰会上，我们就人工智能和其他政策进行了许多重要的讨论，为未来做准备。总理还设法发现我的儿子 Vivek 其实是在这次旅行中过五岁生日。这是在几个月前的巴黎。</p><p id="1dfb42d6-c689-8084-8ab1-de97e3f9fc2a" class="">想一想这件事。在一次重大的国际政策会议期间，他特意抽时间来到我下榻的地方，祝我们的二儿子 Vivek 生日快乐，还特意带来了一份礼物。Usha 和我都真心被他的亲切所感动。自从我们来到印度后，他的热情更是让我们印象深刻。</p><p id="1dfb42d6-c689-80c1-9474-ce584e46a5f6" class="">现在，这很有意思。你们中的一些人可能知道，当你是个政治家时，你的孩子几乎和你一样经常出现在聚光灯下。孩子们最棒的一点就是他们非常诚实。他们对每个人都非常坦率，不管你是否愿意。我们的七岁、五岁孩子，还有我们三岁的女儿 Mirabel，很有意思。他们真正喜欢、真正建立起亲密关系的世界领导人只有两位。第一位当然是特朗普总统，他身上有一种特别的能量。但莫迪总理也是一样。我们的孩子就是喜欢他。我认为，因为孩子们是很好的、很有力的人品判断者，所以我也很喜欢莫迪总理。</p><p id="1dfb42d6-c689-8012-ad5c-c6079049993f" class="">我认为这是我们关系未来的坚实基础。我当时就能感受到，当莫迪总理几个月前来访时我也能感受到。今天我相信，他是一位认真负责的领导人，对印度未来的繁荣与安全进行了深思熟虑，不仅仅是为了他在任期间，而是着眼于下一个世纪。</p><h2 id="1dfb42d6-c689-8009-946e-dc25918ec172" class="">美印关系的未来</h2><p id="1dfb42d6-c689-80ff-90be-e65b45d76649" class="">最后我想强调一个简单而重要的观点。我们现在已经正式进入21世纪的四分之一，已经过去25年，还剩75年。我真的相信，21世纪的未来将取决于美印伙伴关系的强度。我相信，谢谢大家，我相信如果印度和美国能够成功合作，我们将迎来一个繁荣与和平的21世纪。但我也相信，如果我们未能成功合作，21世纪对全人类来说可能会是一个非常黑暗的时代。</p><p id="1dfb42d6-c689-80cc-af5b-eb0081ce3b6e" class="">所以我想说，正如大多数观察者所看到的那样，对我来说很清楚，特朗普总统当然打算重新平衡美国与世界其他国家的经济关系。这将从根本上在美国国内引发深刻的变化，当然也会影响到其他国家。但我相信，这种再平衡将为美国工人带来巨大益处，也将为印度人民带来巨大益处。因为我们的伙伴关系对世界的未来至关重要，我相信特朗普总统的努力，当然还有整个印度和莫迪总理的共同参与，将使21世纪成为人类历史上最美好的世纪。让我们一起努力。愿上帝保佑你们，感谢你们邀请我。</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>

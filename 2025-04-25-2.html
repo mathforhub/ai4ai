@@ -1,0 +1,685 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>2025-04-25-2</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(50, 48, 44, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-default_background {
+	color: rgba(50, 48, 44, 1);
+}
+.highlight-gray_background {
+	background: rgba(248, 248, 247, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(248, 243, 252, 1);
+}
+.highlight-pink_background {
+	background: rgba(252, 241, 246, 1);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(248, 248, 247, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(248, 243, 252, 1);
+}
+.block-color-pink_background {
+	background: rgba(252, 241, 246, 1);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: undefined; }
+.select-value-color-pink { background-color: rgba(225, 136, 179, 0.27); }
+.select-value-color-purple { background-color: rgba(168, 129, 197, 0.27); }
+.select-value-color-green { background-color: rgba(123, 183, 129, 0.27); }
+.select-value-color-gray { background-color: rgba(84, 72, 49, 0.15); }
+.select-value-color-transparentGray { background-color: undefined; }
+.select-value-color-translucentGray { background-color: undefined; }
+.select-value-color-orange { background-color: rgba(224, 124, 57, 0.27); }
+.select-value-color-brown { background-color: rgba(210, 162, 141, 0.35); }
+.select-value-color-red { background-color: rgba(244, 171, 159, 0.4); }
+.select-value-color-yellow { background-color: rgba(236, 191, 66, 0.39); }
+.select-value-color-blue { background-color: rgba(93, 165, 206, 0.27); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="1dfb42d6-c689-802d-a91e-ec817eceddd4" class="page sans"><header><h1 class="page-title">2025-04-25-2</h1><p class="page-description"></p></header><div class="page-body"><h1 id="1dfb42d6-c689-802b-a7d7-d5593ad89d17" class=""><a href="https://archive.ph/XHMHk">特朗普崇拜如何在华盛顿扎根</a></h1><p id="1dfb42d6-c689-80da-b0cc-c45339e3e9c1" class="">How Trump Worship Took Hold in Washington</p><p id="1dfb42d6-c689-80ac-97df-f40c803c24dd" class="">
+</p><p id="1dfb42d6-c689-80a6-99ba-d03f6b58f57d" class=""><em>The President is at the center of a brazenly transactional ecosystem that rewards flattery and lockstep loyalty.</em></p><p id="1dfb42d6-c689-80af-b329-de99bbdc52f9" class=""><strong>By </strong><strong><a href="https://archive.ph/o/XHMHk/https://www.newyorker.com/contributors/antonia-hitchens">Antonia Hitchens</a></strong></p><p id="1dfb42d6-c689-8076-81b9-c1ecf2abcb4f" class=""><strong><time>@2025年4月21日 18:00</time></strong></p><p id="1dfb42d6-c689-8054-911a-e7a7004e0c22" class=""><a href="https://archive.ph/XHMHk">特朗普崇拜如何在华盛顿扎根 | The New Yorker --- How Trump Worship Took Hold in Washington | The New Yorker (archive.ph)</a></p><p id="1dfb42d6-c689-806a-a493-c152ce00ac89" class="">田纳西州共和党众议员安迪·奥格尔斯最近开始在国会山的办公室拍摄视频。奥格尔斯是自由核心小组成员，现为第二任期，他经常在伊曼纽尔·洛伊茨创作的《华盛顿横渡特拉华河》复制画前录制自己。“你们看到的是百年一遇的历史时刻，”他在名为《特朗普 2028 理由》的视频中说道，提出总统应竞选第三任期。在另一段视频中，他走过自己的办公室，字幕介绍他为“弹劾法官/国会议员”。奥格尔斯最近提交了针对几位阻止特朗普行政命令的法官的弹劾条款。“政治打手和他们的裁决都该进我的碎纸机，”他在宣传视频的帖子中写道。视频结尾，他把一份司法裁决塞进真正的碎纸机里。背景音乐是特拉维斯·斯科特的《Sicko Mode》。</p><p id="1dfb42d6-c689-805d-a67e-f3e9eb8e6456" class="">奥格尔斯年初时正受到国会道德办公室和联邦调查局的调查。他们正在调查他是否违反了联邦竞选财务法，原因是他虚报了一笔三十二万美元的自贷，奥格尔斯坚称这只是“一次诚实的错误”。（他还被指控在 GoFundMe 上为“死产婴儿的安葬花园”筹集了近两万五千美元——捐赠者称该项目从未实现。）在就职日前，特朗普首次对格陵兰表现出兴趣时，奥格尔斯提出了“让格陵兰再次伟大法案”，授权总统尝试从丹麦收购格陵兰。（奥格尔斯说，美国是“主导性的掠食者”。）十天后，就在特朗普宣誓就职后，奥格尔斯宣布他将推动允许总统连任三届的提案，通过修改宪法第二十二修正案。“如果那个制造了灾难性‘新政’的人能连任超过两届，那么创造了‘交易的艺术’的人也应该享有同样的待遇，”他说。 接下来的一周，他在福克斯商业频道的节目中呼应了特朗普的说法，称多元、公平与包容（D.E.I.）可能导致了一起致命的飞机坠毁事故，地点在波托马克河上。联邦检察官第二天就撤销了对奥格尔斯的调查。</p><p id="1dfb42d6-c689-807b-887e-f7329fa37bb7" class="">在华盛顿，厚颜无耻的交易与卑躬屈膝的顺从并不罕见。“羞耻是懦夫的事，”已故说客爱德华·冯·克洛伯格曾这样说过。（他称自己的客户——其中包括萨达姆·侯赛因——为“被诅咒的人”。）在特朗普的华盛顿，这一准则从未如此明确：如果你想出人头地，或者想避免麻烦，就要像总统自夸那样夸赞他。“您是世界的领袖，”希腊东正教大主教埃尔皮多福罗斯在白宫东厅最近的一次庆典上说。“您让我想起了伟大的罗马皇帝君士坦丁大帝。”人群欢呼。埃尔皮多福罗斯向特朗普赠送了一枚金十字架——他提到，这正是引领君士坦丁取得胜利的象征。“哇，”特朗普一边捧着十字架一边说，“我没想到会发生这种事，但我很乐意接受。”</p><p id="1dfb42d6-c689-80d5-9502-c9e0d8c62b99" class="">谄媚的举动来自各个方面。不久前的一次内阁会议上，特朗普的内阁成员轮流发言：“您的远见是美国历史上的一个转折点和拐点”（Brooke Rollins，农业部）；“您以压倒性的多数当选——美国人<em>希望</em>您成为总统”（Pam Bondi，司法部长）；“您现在所做的是对我们国家的巨大贡献，最终也是对世界的贡献”（Marco Rubio，国务卿）。Jeff Bezos，其商业帝国很容易受到白宫青睐或冷落的影响，宣布他所拥有的《华盛顿<em>邮报 </em>》将不再欢迎超出某些界限的观点专栏。他进一步示好，通过授权特朗普的真人秀节目《学徒》，使其重播能够在亚马逊平台上播放。 （亚马逊还为获得两部即将上映的关于特朗普妻子梅拉尼娅的纪录片项目的版权支付了四千万美元。）曾经称特朗普为“卑鄙的懦夫”、“彻底不道德”、“疯子”和“病态的说谎者”的参议员特德·克鲁兹，如今却争相称赞总统，以及他的主要竞选资助人和亲密顾问埃隆·马斯克；克鲁兹最近在推特上发布了一张自己与一辆红色特斯拉停在白宫草坪上的合影。他写道：“这可能是我见过的最酷的事情。”</p><p id="1dfb42d6-c689-806c-be9f-f389735d2a56" class="">这样的例子还有很多。当特朗普抱怨科罗拉多州议会大厦里挂着一幅不讨人喜欢的肖像画——“真的是最糟糕的，”他说——该州由共和党主导的立法机构迅速将其撤下。在明尼苏达州，州参议院的共和党人提出了一项法案，将“特朗普狂热综合症”——被定义为“原本正常的人因对唐纳德·J·特朗普总统的政策和总统任期产生的急性偏执症发作”——列为一种精神疾病。律师事务所为特朗普提供无偿服务，以期他能撤销针对他们的行政命令；在一份备忘录中，华盛顿特区的美国检察官称他的员工为“特朗普总统的律师”。联邦通信委员会主席布伦丹·卡尔佩戴着一个金色的特朗普头像胸针。</p><p id="1dfb42d6-c689-80dc-972d-ed8e8645255c" class="">四月初，特朗普实施了一项关税政策，导致全球市场暴跌。当标普500指数的损失接近六万亿美元时，他还在洋洋得意地谈论许多希望与他谈判的国家。“这些国家都在给我们打电话，拍我马屁，”他在全国共和党国会委员会上说，“‘求求您，先生，达成协议吧。我什么都愿意做，先生。’”他还急于提醒任何反对他那项“又大又漂亮的法案”的国会议员，这项法案包括减税、削减开支和加强移民执法，让他们“别再作秀了”，直接投票支持。“闭上眼睛，直接投票吧，”他说。</p><p id="1dfb42d6-c689-80e3-b42e-d40ec8162449" class="">如今，他们几乎总是这样做。“从来没有任何人能像他那样控制一个党派的基本盘，”来自孟菲斯的资深民主党国会议员史蒂夫·科恩对我说。“我甚至认为富兰克林·罗斯福都没有那么大的权力。”一位接近政府的人士表示：“特朗普的交易方式往往是通过公开攻击实现的。”来自南卡罗来纳州的自由核心小组成员拉尔夫·诺曼对我说：“现在这是一场血腥的运动，比我以往见过的都要激烈。”或者，正如一位接近特朗普的人所说：“共和党人有权威问题。唐纳德·特朗普正在教他们如何尊重秩序。”</p><p id="1dfb42d6-c689-8078-8181-e906e84577f8" class="">“不得有异议，”特朗普最近在 Truth Social 上发文。他是在众议院共和党人就一项临时拨款法案投票前发表这番言论的。缺乏异议并不是开国元勋为审议机构设想的情形。詹姆斯·麦迪逊和托马斯·杰斐逊曾认为国会会是联邦政府中最强大的部门。麦迪逊在《联邦党人文集》第 48 篇中写道：“立法部门无处不在地扩展其活动范围，并将所有权力卷入其猛烈的漩涡之中。”1960 年，时任参议院多数党领袖的林登·约翰逊，最初对成为约翰·F·肯尼迪的竞选搭档一事犹豫不决，因为他觉得这会比他已有的职位更低一级。</p><p id="1dfb42d6-c689-80f7-9c6e-d441e30322b6" class="">然而，现在似乎国会——两院都由共和党控制——几乎只存在于奉承住在国家广场另一端的那个人，并批准他的法令。特朗普就职一周后，佛罗里达州共和党众议员安娜·保利娜·卢纳提出立法，要求内政部长“安排在拉什莫尔山国家纪念碑上雕刻唐纳德·J·特朗普总统的雕像。”她在推特上写道：“让我们开始雕刻吧。”新晋众议员布兰登·吉尔提出的第三项法案——2025 年黄金时代法案——要求所有百元钞票上都印有特朗普的肖像。（这违反了 1866 年的一项法律，该法律禁止财政部在货币上印制在世者的肖像。）纽约州共和党人克劳迪娅·特尼提出一项法案，将特朗普的生日 6 月 14 日定为联邦假日。“正如乔治·华盛顿的生日被定为联邦假日一样，特朗普总统的生日也应该被庆祝，以表彰他作为美国黄金时代的奠基人，”她发帖称。北卡罗来纳州的阿迪森·麦克道尔希望为华盛顿的杜勒斯机场更名：特朗普国际机场。 上个月，来自加利福尼亚的共和党人达雷尔·伊萨宣布，他正在提名特朗普获得诺贝尔和平奖。“没有人比他更值得这个奖项，”伊萨说。</p><p id="1dfb42d6-c689-8036-8618-f6381cd24d27" class="">三月下旬，我旁听了众议院自然资源委员会的一场听证会，十几位成员正在讨论由玛乔丽·泰勒·格林提出的2025年《美洲湾法案》。她的法案要求在政府庞大的官僚体系中全面采用特朗普为墨西哥湾起的新名字。民主党首席成员贾里德·霍夫曼靠近麦克风说道：“我们政府的行政部门现在正发生着疯狂、破坏性、无能、腐败的事情，而作为政府独立分支、我们开国元勋为制衡总统滥用权力、制衡腐败和无能而设立的第一条款分支，完全没有发挥作用。”</p><figure id="1dfb42d6-c689-801d-8838-cad3e4001c35" class="image"><a href="https://ddyksibgxral6g.archive.ph/XHMHk/d56c2f933d6c93f6f166850fd14d39731cd40015.webp"><img style="width:448px" src="https://ddyksibgxral6g.archive.ph/XHMHk/d56c2f933d6c93f6f166850fd14d39731cd40015.webp"/></a></figure><p id="1dfb42d6-c689-80ba-a983-cc06a13c6811" class=""><em>“让我再重复一遍您的订单，并且发音正确。”</em></p><p id="1dfb42d6-c689-8034-ba36-de42a5659e9f" class=""><strong>罗伯特·莱顿的漫画</strong></p><p id="1dfb42d6-c689-809f-8db5-ce49a7e72533" class=""><strong>Copy link to cartoon</strong></p><p id="1dfb42d6-c689-80da-86e1-f7c00a1e267e" class=""><strong>链接已复制</strong></p><p id="1dfb42d6-c689-80bf-a8e7-ddf39e8a28eb" class=""><strong>Shop</strong></p><p id="1dfb42d6-c689-804d-98d8-ff6715d44acf" class=""><strong>打开漫画画廊</strong></p><p id="1dfb42d6-c689-8088-b472-ed3f383d0f52" class="">当一名工作人员在格林身后摆放了一张“美洲湾”地图时，我注意到有一名男子悄悄走进了听证会会场——他就是布莱恩·格伦，格林的男友，也是支持特朗普的电视主播。格伦最初在 Right Side Broadcasting Network 工作，该网络自 2015 年起以“如实展示特朗普竞选集会规模”的频道自居。（他现在是另一个右翼媒体 Real America’s Voice 的白宫记者。）格林朝他微笑，然后介绍了一批她请来的专家证人，准备发言说明将墨西哥湾更名如何有助于加强国家安全。</p><p id="1dfb42d6-c689-805c-8c5a-f46bb133aaff" class="">来自《纽约客》的视频<a href="https://archive.ph/o/XHMHk/https://www.newyorker.com/video/watch/denial%23intcid=_cne-interlude-newyorker_56a96d73-909f-4b45-bdd9-22f0cc662309_text2vec1">否认</a></p><p id="1dfb42d6-c689-8012-a05f-c647d069bb3b" class="">赫夫曼的情绪似乎变得更加低落。“这是这个委员会里前所未有的新花样，简直是最高级别的阿谀奉承，”他说。（听证会结束后不久，赫夫曼提议修正案，将地球更名为“特朗普星球”。他说，这相当于“滑向冰球将要去的地方”。）委员会会议室的讨论转向了一项授权购买追踪设备用于追踪生活在五大湖的鱼类的法案，以及另一项将灰狼从联邦濒危物种名单中移除的法案。成群结队的参观学生偶尔进进出出。</p><p id="1dfb42d6-c689-8004-8e1e-ca4f5149166a" class="">后来，我在白宫遇到了格伦。他正站在那里，等着从“卵石滩”直播——那是一条通往西翼的长车道，各大电视网在那里搭建了绿色小棚，主播和官员们就在里面进行直播。格伦皮肤黝黑，脸有些浮肿。（他在最近一段关于国防部长皮特·赫格塞斯饮酒习惯的电视节目中谈到了自己的浮肿。“这是过敏，”格伦说，“还有睾酮。这就是我脸肿的原因。我不是酒鬼。”）他把自己看作是总统和国会之间的自封联络人，帮助国会更高效地执行总统的指示。“我的一部分工作就是向国会施压，”他告诉我，“我们必须把总统的信息推销给他们。我希望有一只信鸽能直接从特朗普的办公桌飞到众议长约翰逊那里。就像银行的传递槽，你把东西放进去，这边进去那边出来。”</p><p id="1dfb42d6-c689-807f-930d-e38efd61ff2f" class="">最近，总统的指示是阻止法院破坏他的议程。在他任期的前三个月，地方法官已经发布了十七项全国范围的禁令，阻止了包括终止出生公民权、削减教育部资金以及禁止跨性别人群服役等行政命令。伊萨提出了《禁止越权裁决法案》，该法案将禁止地方法官发布此类普遍禁令。“这正成为一个日益严重的问题，”他对我说。3月20日，华盛顿特区的一名地方法官詹姆斯·博斯伯格下令政府停止将委内瑞拉移民遣送至萨尔瓦多的驱逐航班。特朗普发帖称：“这位法官，就像我不得不面对的许多腐败法官一样，应该被弹劾！”很快，众议院议员们开始争相采取行动。“所有选项都在桌面上，”众议院议长迈克·约翰逊说。 邦迪，这位总检察长，指责博斯伯格“干涉我们的政府”。越来越多的共和党人现在称法官为“叛乱分子”。奥格尔斯在他的办公室外张贴了一张“通缉令”，上面展示了多位法官的照片，并在社交媒体上发布了“弹劾马拉松更新”。这些更新被马斯克转发，马斯克已向奥格尔斯的连任竞选捐赠了最高金额。</p><p id="1dfb42d6-c689-8086-b9e5-e362c5f387eb" class="">我最近拜访了伊萨在雷本大楼的办公室，那是众议院议员的三个据点之一。伊萨是众议院最富有的议员，净资产接近五亿美元。他在汽车防盗报警器行业发家，最终制造出一种带有他本人声音的警报系统。“请远离汽车，”它会大声喊道。（年轻时的伊萨本可以更好地听从自己的警告；他十九岁时，和哥哥因涉嫌盗窃汽车被起诉。检察官最终撤销了案件。）国会正值休会期，议员们在各自选区工作。走廊里空荡荡的，回声阵阵。伊萨的副幕僚长乔纳森·威尔考克斯在议员办公室迎接我，并带我进入会客室。威尔考克斯穿着休闲星期五的装束——牛仔裤和马甲。一本名为《拯救美国》的纪念册放在咖啡桌上，那是特朗普写的，里面全是特朗普的照片。我注意到一些工作人员的电脑屏幕上有“金卡”梗图。（今年二月，政府宣布计划用“金卡”取代现有的移民签证，这种卡可以用五百万美元购买。） 它们看起来像美国运通信用卡，只是上面印着特朗普的头像。</p><p id="1dfb42d6-c689-800b-afa9-eb37db0208f7" class="">对于许多国会议员来说，在家乡度过的一周变得出乎意料地充满争议。多家新闻媒体报道称，即使在深红选区，选民们也在因马斯克通过其政府高效部对联邦官僚机构的洗劫，以及特朗普对此的鼓励，怒斥他们的代表。在伊萨位于圣地亚哥附近的选区举行了一场市政厅会议，数十名愤怒的市民对着舞台上的一把空椅子发言。当我询问这件事时，威尔考克斯叹了口气，环顾着安静的办公室说：“你注意到电话响个不停吗？”他说，“我们的选民很爱我们。”他接着说：“我们已经忙得不可开交，努力成为一个完全有效的立法机构。”</p><p id="1dfb42d6-c689-80f2-827a-f57e3850a65a" class="">两周前，《No Rogue Rulings》法案提交到了规则委员会，该委员会负责决定哪些法案可以提交到众议院全体会议。（来自爱荷华州的参议员查克·格拉斯利在参议院提出了配套立法。）马萨诸塞州的吉姆·麦戈文，作为民主党排名最高的成员，开启了讨论。“当学生们因为写了一篇特朗普不同意的专栏文章而被蒙面移民和海关执法局特工从街头绑架时，我们的共和党同事在做什么？”他问道。“他们正试图通过削弱独立司法机构的独立性来破坏宪法。”麦戈文继续说道：“如果这种事情发生在其他国家，我们的国务院一定会予以谴责。这个政权正朝着威权主义迈进，试图践踏法院，破坏法治。”伊萨则有着完全不同的看法；他认为国父们“并没有预见到会有这么多的制衡机制。”</p><p id="1dfb42d6-c689-80cc-8b84-e5986b26fe14" class="">伊萨并不是第一个关注全国性禁令问题的国会议员，他指出，特朗普也不会是唯一一个从禁令中受益的总统。“我们不是为某一位总统制定法律，”伊萨对我说，“我们是为所有时代制定法律。”但很难忽视当前的时机和背景：总统在网上发帖称，“激进左翼法官发布的非法全国性禁令很可能导致我们国家的毁灭！”（下个月，作为特朗普政府紧急上诉的一部分，最高法院将就下级法院是否做得过头举行口头辩论。）</p><p id="1dfb42d6-c689-8065-a88b-ca80d518b0c5" class="">密歇根大学法学教授、该州民主党州长格雷琴·惠特默的前首席法律顾问尼古拉斯·巴格利反对全国性禁令，因为这会让地区法院作出的决定超越涉案各方。然而，他告诉我：“当现在法治正遭受如此严重的攻击时，国会却把注意力集中在地区法院的权力上，这有些荒谬。”与此同时，特朗普阵营中的许多人长期以来一直主张总统应更少受到法律的阻碍。副总统 J.D.万斯最近甚至质疑政府是否还有必要“费心遵循正当程序”。一位曾在特朗普第一任政府任职、并有望在新一届政府加入国务院的人士告诉我：“特朗普不再听从法院？那正是我的梦想。”4 月 9 日，“禁止越权裁决”法案在众议院通过，只有一名共和党人反对。</p><p id="1dfb42d6-c689-80a0-a42b-ff74858d5e82" class="">几十年来，华盛顿特区的一些酒吧和餐厅一直是某种政治总部。十九世纪末到二十世纪初，Ebbitt House 为历届总统政府的成员提供饮品。肯尼迪政府时期，“新前沿人”常常在 Sans Souci 享用牛排。理查德·尼克松喜欢 Trader Vic’s；而 Bombay Club 则更属于克林顿时代。特朗普第一个任期时，主要的聚会场所是特朗普酒店的 BLT Prime，你可能会在那里遇到鲁迪·朱利安尼，以及 Harry’s Bar，骄傲男孩成员有时会在那里聚集。（这两家现在都已关闭。）</p><p id="1dfb42d6-c689-8013-8c84-d03cde1ba045" class="">最近一个晚上，我去了 Butterworth’s，这是一家国会山餐厅，被称为新一代、更年轻群体的事实上的 MAGA 俱乐部。一个穿着绣有美国国旗毛衣的男人走进来，向一桌女士打招呼。“我不是骗子，”他说，同时做出尼克松的双手胜利手势。前布赖特巴特编辑拉希姆·卡萨姆是 Butterworth’s 的投资人之一。他正与在特朗普总统人事办公室工作的索拉布·沙尔马聊天，并给等饮品的顾客送去薯条。</p><p id="1dfb42d6-c689-8087-a651-ea0fce27fbfb" class="">在就职日之后，卡什·帕特尔出现了在巴特沃斯，他一直以攻击特朗普的敌人为职业，并因此被任命为联邦调查局负责人，柯蒂斯·亚尔文，这位边缘的反民主作家，也出现在那里。我上一次来这里是在保守派政治行动大会期间，这是一个右翼活动家的大会，现已彻底变成了一场特朗普的颂歌。当我走进去时，特朗普的前首席战略师、现任“战情室”播客主持人史蒂夫·班农正在和粉丝合影。“让开，”一名工作人员对我喊道，好让身穿标志性巴伯夹克的班农能穿过人群。</p><p id="1dfb42d6-c689-8064-b2df-d32d96f94f89" class="">在过去的几年里，Butterworth’s 也许曾是一个为仍然自视为反对建制派的运动提供庇护的安全港湾。但这种前提已经过时了。“说实话，我接待过的民主党国会议员比 Curtis Yarvin 出现的次数还多，”Kassam 说。现在人群混杂在一起，几乎不再担心。曾有多位客户加入新政府的策略师 Andrew Beck 告诉我：“每个人都在接受这场民粹主义革命。为了维持你的地位，你必须接受直到最近还被认为是‘极右翼’的立场。”</p><p id="1dfb42d6-c689-806a-95df-e7b4e1fd0081" class="">不久前，当我和贝克一起喝咖啡时，他似乎仍对自己在华盛顿以外工作多年后，如今却在首都定期开会感到有些困惑。贝克身材高大，似乎把政治明确地视为一项男性化的事业；他会俯身靠近桌子，说诸如“这关乎男人建设文明”这样的话。晚上，他有时会去位于华盛顿西北部高档社区的派对，这些派对在一位曾支持卡马拉·哈里斯、但现在发现自己需要在华盛顿维持新友谊的科技亿万富翁家中举行。“这是城里最热门的门票，”贝克说。一天晚上，贝克邀请了他的朋友、比特币布道者兼投资人、加密货币播客主持人特雷斯·梅耶，参加在那所房子里举办的一场 <em>maga</em> 沙龙。国务院的工作人员也在场，大家一边喝鸡尾酒、吃蟹饼，一边简短地聊起了一项尚在制定中的计划：将被指控为特伦·德·阿拉瓜帮成员的人驱逐到萨尔瓦多。这个想法是付钱给萨尔瓦多，让他们把被驱逐者关押在一所臭名昭著的残酷监狱里，但谈判陷入了僵局。 通过他的加密货币关系，梅耶能够帮助重新开启工作人员与萨尔瓦多总统纳伊布·布克尔政府成员之间的对话。“我完全没想到这会引发一场宪法危机，”贝克说。（特朗普政府最近承认，他们错误地将一名居住在马里兰州的男子驱逐到萨尔瓦多监狱，但尚未遵守包括最高法院在内的法院命令，试图将他带回。）不过，对贝克来说，这与他后来在头条新闻中看到的内容无关。“这关乎在你兄弟们眼中成为精神领袖，”他告诉我。“这关乎你在群聊中获得的那种认同感。”</p><p id="1dfb42d6-c689-804f-a24c-ff39a2881204" class="">熟悉互联网的民间习惯已经成为一种宝贵的资本。“以前的黄金标准是发表一篇 <em>《华尔街日报》</em> 的社论，”一位华盛顿的政治顾问告诉我。“现在最重要的是埃隆的一条推文。这才是每个人最想要的。”他接着说：“现在是 X 和播客。传统基金会、美国企业研究所、卡托研究所——他们的影响力小多了。Catturd 的推特账号要重要得多。”（Catturd——一位因关节炎无法继续弹吉他而转向社交媒体的佛罗里达人——帮助传播了各种 MAGA 阴谋论：联邦调查局在海湖庄园栽赃、乌克兰战争是“心理战”。特朗普曾多次转发他的推文。）在最近一期“乔·罗根体验”节目中，前国务院官员、网络“深层政府”批判者迈克·本茨痛斥美国国际开发署近三个小时。据报道，马斯克收听并非常喜欢这期节目，随后大幅削减了该机构。</p><p id="1dfb42d6-c689-809f-8589-e49fc69f8253" class="">前几天，我在市中心一个被高端联合办公空间和公司报销餐厅包围的区域见到了那位顾问。当我告诉他我要去国会山时，他说：“国会无关紧要。”但他确实看到其他行业以某种方式屈服，这似乎与国会的顺从态度一致。Meta 为因 1 月 6 日事件后将特朗普从 Facebook 和 Instagram 上封禁而与他达成和解，支付了两千五百万美元；康卡斯特则试图剥离 MSNBC，而特朗普经常痛斥该频道。顾问说，他们要么“正在更接近自己一直以来的真实信仰，要么就是在屈膝投降。”</p><p id="1dfb42d6-c689-80cc-8968-c38a42c54f95" class="">4月2日，被政府称为“解放日”，特朗普动用国家紧急权力，对近九十个国家实施了大规模关税。他的内阁成员与身穿安全帽和反光背心的支持者们一起聚集在玫瑰园——这是一种刻意的表演，暗示大量制造业岗位将回流美国本土。特朗普举起一张巨大的图表，上面列出了各国名称及相应的关税。</p><p id="1dfb42d6-c689-8009-966b-fa2ae2a2551b" class="">字印得很小。“我认为大多数情况下你们都能看到，”特朗普说。“无论是视力好还是视力差的人。”他继续说道。“他们向我们收费，我们也向他们收费，”他说。“怎么会有人不高兴呢？”不久之后，股市暴跌。特朗普前往佛罗里达，在那里他正在举办为期三天的高尔夫锦标赛。起初，几乎所有 MAGA 运动中的人，甚至与 MAGA 相关的金融家，都沉默了。“几乎所有人都讨厌这个，他们只是太害怕那个疯狂的国王了，”夏威夷的民主党参议员布赖恩·沙茨评论道。在 Truth Social 上，特朗普坚称一场“经济革命”正在进行。</p><p id="1dfb42d6-c689-804b-af07-fcc9352f8c38" class="">随着数万亿美元的股东价值蒸发，一小群捍卫者开始动员起来，平息任何抗议。Real America’s Voice 的 Brian Glenn 正在发布“#TrustTrump”。那些勇于表达对关税政策态度暧昧的人被称为“panicans”，这是“panic”和“Americans”的合成词。（特朗普认为他们“软弱而愚蠢”。）MAGA 活动家兼播客主持人 Jack Posobiec 成为主要的执行者。“碾压 panicans，摧毁 panicans，驱逐 panicans，把 panican 一脚踢到水泥地上，把 panican 扔进垃圾桶，放逐肮脏的 panicans，”他在推特上对他 310 万粉丝写道。Posobiec 早年曾在上海的美国商会实习，后来担任海军情报官员。他是特朗普第一次总统竞选的狂热支持者，当时他开始宣扬民主党名流在披萨店地下室与儿童举行性派对的说法。 波索比克的兄弟凯文和他一起主持播客，他告诉我：“杰克第一次帮助特朗普上台，但那时候人们认为他是一个推动纳粹政策的俄罗斯代理人。”现在，他在特朗普世界中已经成为主流，几乎像一位慈祥的长辈。政府曾带他参加官方出访——和克里斯蒂·诺姆、国土安全部长一起前往加拿大边境，和斯科特·贝森特、财政部长一起前往乌克兰。“我们的工作就是成为运动领袖——当然就是唐纳德·特朗普——所做事情和我们观众之间的桥梁，”波索比克告诉我。</p><p id="1dfb42d6-c689-8086-954e-fc1f24664b60" class="">现在，任何对特朗普所作所为的反对意见，无论多么微不足道，都会成为惩罚的理由。三月底，白宫在推特上发布了一张由人工智能生成的表情包，内容是一名芬太尼贩子在被 ICE 逮捕时哭泣。Mike Solana，这位风险投资人兼 <em>Pirate Wires</em> 主编，一直公开支持特朗普，他质疑这张图片是否“无意中让一位曾被驱逐出境的重犯、真正的芬太尼贩子变得令人同情”。Posobiec 察觉到不服从，回应道：“注意这些反对信号的人。”（“这他妈的是什么约瑟夫·斯大林 KGB 的鬼把戏，”Solana 回复道。）</p><p id="1dfb42d6-c689-804c-8295-dbd970464460" class="">波索比克告诉我，他多年来一直在“列名单”，记录那些对特朗普表现出不够忠诚的人。他对新来者尤其警惕。“当有人加入你的运动，说他们相信和你一样的东西，说他们想要和你一样的东西时，这正是我们必须非常警惕渗透主义的时候，”他对我说。“仅仅因为他们现在发表了支持特朗普的言论——我们要小心。”你要么一开始就加入，要么就会成为怀疑的对象。“移民和贸易是新右翼最大的两个议题，”他说。“其他一切都是附属的，否则我们就只是杰布·布什。”他接着说：“忠诚是最重要的政治美德……在但丁的《地狱》中，地狱最底层是留给背叛者的。”他说，他的工作就是支持总统。</p><figure id="1dfb42d6-c689-80b3-b304-c362cc90a2fb" class="image"><a href="https://ddyksibgxral6g.archive.ph/XHMHk/a3640e8a618edceded76426c8bd54565a056ac72.webp"><img style="width:448px" src="https://ddyksibgxral6g.archive.ph/XHMHk/a3640e8a618edceded76426c8bd54565a056ac72.webp"/></a></figure><p id="1dfb42d6-c689-8013-b899-e79f316765d2" class=""><em>“看起来洪水已经得到控制了。”</em></p><p id="1dfb42d6-c689-8019-af44-c9d2e5132aab" class=""><strong>大卫·博查特的漫画</strong></p><p id="1dfb42d6-c689-8070-8de1-daa0159ced7a" class=""><strong>Copy link to cartoon</strong></p><p id="1dfb42d6-c689-808d-b0d3-c42d971f7152" class=""><strong>链接已复制</strong></p><p id="1dfb42d6-c689-804b-a092-c96de79a2bf5" class=""><strong>Shop</strong></p><p id="1dfb42d6-c689-80fe-be84-ec9dd3699819" class=""><strong>打开漫画画廊</strong></p><p id="1dfb42d6-c689-800c-a828-cd636c502fd7" class="">一些忠诚分子采取了更加积极的做法。劳拉·卢默是一位三十一岁的极右翼煽动者和挑衅者，她长期以来一直以清除围绕特朗普的潜在叛徒为己任。卢默曾两次竞选国会（均未成功），现在实际上在进行一种激进的网络服从监督。她曾与特朗普一同前往他与卡马拉·哈里斯的首次总统辩论现场，在那里特朗普宣称俄亥俄州的移民“在吃狗”。她说：“没有特朗普，我们什么都不是。”特朗普称她为“伟大的爱国者”，有时还会向她征求建议。三周前，她飞往华盛顿，在椭圆形办公室与他会面，建议他解雇那些她认为不忠诚的国家安全委员会成员，主要原因是这些人和非 MAGA 人士有松散的联系。第二天，这些首批目标就被清除了。“人们没有做好适当的审查，”卢默对我说，“这些共和党人中有很多人严重缺乏执行指令的能力。”</p><p id="1dfb42d6-c689-800c-b52c-cd4d3fbb8dcb" class="">在“解放日”以及随之而来的灾难性经济动荡之后，波索比克提醒我，这一切都是计划的一部分。“这<em>本来</em>就是要引发全球震动，”他说。“所有该不高兴的人都不高兴了。”对于科技寡头、商界领袖、普通共和党人来说，关税是终极忠诚考验。他专注于确保基本盘始终保持忠诚。</p><p id="1dfb42d6-c689-805a-9b98-c6c45e7555cf" class="">波索比克与白宫新闻团中一大批新的 MAGA（让美国再次伟大）狂热分子共存。今年一月，特朗普的新闻秘书卡罗琳·莱维特向全国任何播客主持人或“内容创作者”开放了简报室的申请。（Zero Hedge，一个声称要“解放被压迫知识”的博客，最近被加入了轮换名单；一位前撰稿人曾表示，该网站的意识形态指引是“弗拉基米尔·普京=有史以来最伟大的治国领袖”。）新的提问方向也被提出：特朗普如何看待自己支持率如此之高的原因？政府能否保持如此值得称道的高速运转？最近，LindellTV（由选举阴谋论者兼枕头大亨迈克·林德尔创办的流媒体频道）的一名记者谈到特朗普时说：“他看起来比以往任何时候都更健康——比八年前还健康，我相信在座的每个人都会同意。他是不是和鲍比·肯尼迪一起锻炼，吃的麦当劳也少了？”</p><p id="1dfb42d6-c689-8030-9170-d45d15eab4a9" class="">“很多保守派媒体进来就是为了给特朗普开一场胜利派对，”班农“战情室”的白宫记者娜塔莉·温特斯告诉我。“他们把获得采访机会和极力吹捧、做铁杆粉丝联系在一起。然后你会看到那些曾经反对特朗普的媒体现在也在对他阿谀奉承。”</p><p id="1dfb42d6-c689-8099-aae8-e8b67389c7ff" class="">奥巴马时期的前道德律师诺姆·艾森曾参与特朗普第一次弹劾案，他对我说：“这就是朝鲜式的阿谀奉承。”艾森明白这种冲动的来源。他说，许多共和党人“生活在红色社区里，在那里，一旦被认为背叛了特朗普，就会遭到一连串的针对。他们为自己或家人的生命安全感到害怕。这导致了一种虚假的奉承、假装的崇拜和真正的恐惧的氛围。”而且，不只是共和党人有理由感到害怕。三月的一个星期五下午，特朗普在司法部发表了一小时的演讲，发泄自己在刑事审判中遭受的“巨大虐待”。他吹嘘自己剥夺了拜登时代官员的安全许可，并承诺继续揭露他的政治敌人，还点名批评了艾森。“他们是可怕的人，是人渣，你们必须知道这一点。”特朗普说。（马斯克曾在网上称艾森为“罪犯”。）</p><p id="1dfb42d6-c689-80f2-ae6b-c903be16eed4" class="">在最近一次椭圆形办公室签署行政命令的会议上，特朗普推出了“保持淋浴喷头可接受的水压”——“我喜欢洗个舒服的澡来照顾我漂亮的头发，”他说。“水流出来就是滴滴答答，太荒唐了”——然后他指示司法部调查一名否认2020年大选被窃取的官员。在特朗普宣布取消哥伦比亚大学近五亿美元的拨款后，他说该校允许“非法抗议”，该大学同意了一系列要求，包括雇佣一支有权逮捕学生的新内部安保队伍。又有五家律师事务所达成协议，提供无偿服务以避免特朗普的惩罚。所有这一切在顾问贝克看来都完全说得通。“这是恢复性司法，”他说。“如果你真的掌权了，你最好让人有点害怕。特朗普代表着一个回到家的父亲形象，而家里住着各种各样的人，有些是寄生虫、骗子和滥用王国的无赖。” 《圣经》上说，“义人掌权，城邑就欢喜。”或者，正如“War Room”的温特斯所说：“报复之所以在竞选活动中如此受欢迎，是有原因的。我们的运作方式就是以监禁为准。”</p><p id="1dfb42d6-c689-8080-9c16-cf050bba8867" class="">艾森将华盛顿形容为“一座战时首都”，在那里进行着“专制的推进与宪法的反击”之间的斗争。他说：“寡头、寻求利益者和谄媚者无处不在。我们要么正处于民主终结的开端，要么正处于重生的起点。这种分裂画面有一种超现实的感觉。”</p><p id="1dfb42d6-c689-80f4-b062-e19421be7424" class="">“解放日”后的那个星期一，我回到了白宫。在东厅，一支铜管乐队演奏着《I Love L.A.》；特朗普正在接待道奇队，庆祝他们去年赢得世界大赛。当我等待派对开始时，我读到一篇关于为纪念特朗普生日而可能举行军事阅兵的文章。总统刚从佛罗里达回来，在那里他在海湖庄园举办了一场烛光晚宴。（最便宜的门票是一百万美元。）在空军一号上，他告诉记者，高尔夫打得“非常好，因为我赢了。赢是件好事。你们听说我赢了，对吧？你们听说我赢了？”随着对关税的担忧持续上升，特朗普在 Truth Social 上转发了一个名为 AmericanPapaBear 的账号的帖子：“特朗普在下国际象棋，而其他人都在下跳棋。”世界本应静观其变，尊重他计划中神圣而晦涩的几何学，但国会、华尔街、企业高管，甚至马斯克都在公开疏远他。</p><p id="1dfb42d6-c689-805d-95f0-deadd24b83dc" class="">我发现格伦站在吊灯下。“这个活动也许能消除一些负面情绪，”他说。“特朗普能做很多很棒的事情，但没人让他谈论这些。”在特朗普上一个任期时，道奇队的经理曾表示他会拒绝白宫的邀请。很难不把这次访问看作时代变迁的标志。尽管如此，连格伦也承认关税政策的推出让局势出现了一些裂痕。“如果这种情况持续到九月，基本盘就要崩溃了，”他说。他会不会上电视批评特朗普？“一年后再问我吧，”他说。“我很担心中期选举。”共和党人基本上都在努力装作一切都好。“其实他们私下里都快疯了，”他说。特朗普到场了。“你们向美国展示了，这不仅仅是个人的荣耀，”他对道奇队说。“这是团队的拼搏。”他即兴谈到他们为了赢得系列赛依靠了多少投手。“他们有很棒的投手，但最后还是用光了，”他说。“这就是体育。”他抱怨没人谈论他如何降低了鸡蛋的价格。格伦抓住我的胳膊说：“看，这就是我会问他的问题的完美例子。”</p><p id="1dfb42d6-c689-804a-8a4d-fc6e6eaa2f5e" class="">前一天，我去参加了在英国大使馆为莎士比亚剧团举办的早午餐。在花园里，孩子们和大使的牧羊犬玩接物游戏，狗在盛开的樱花树下的斜坡草地上来回奔跑。“我们喜欢来这里，因为这里远离所有的疯狂，”一位白宫高级职员对我说。这算是一种中立空间。一位英国高级外交官说：“黄金时代的 MAGA 人士其实很喜欢这一切。这让他们的地位作为新华盛顿权力阶层得到了认可。Kash Patel 会来这里谈论英超联赛。我们有一个人对政府大发牢骚——我当时和一桌共和党人在一起，他们只是温和地翻了个白眼，然后我们都专注于喝汤。”</p><p id="1dfb42d6-c689-80b1-9ffb-ccb150270d06" class="">彼得·曼德尔森，这位新任英国大使，并不总是一个中立的操盘手。2018年，特朗普在第一任期内威胁与中国发动贸易战时，曼德尔森曾写道他是“一个恶霸和重商主义者”。去年年底，曼德尔森的任命宣布时，特朗普的竞选联合经理克里斯·拉西维塔称他为“绝对的白痴”。但就在特朗普就职前，曼德尔森为福克斯新闻撰文称，特朗普肯定会成为“有史以来最具影响力的总统之一”，并称他早先的评论“幼稚且错误”。（前任英国大使金·达罗克在2019年辞职，此前小报泄露了他称特朗普“散发着不安全感”的电报。）</p><p id="1dfb42d6-c689-80f2-a45d-d226a9dbef4a" class="">在里面，宾客们一边享用班尼迪克蛋，曼德尔森一边发表了一番含蓄而强调的话。“人们说莎士比亚的悲剧、喜剧和历史剧捕捉了遥远过去的时代——权力斗争、家族纷争、有争议的顾问，”他说，“他写的是那些拥有极强个人品牌的伟大领袖。”曼德尔森接着说：“我有很多东西要向莎士比亚学习，包括《亨利四世（上）》中的一句话：‘勇气中最可贵的是谨慎。’”全场哄堂大笑。“我正在努力。我在学习。我正在打破一生的习惯。我知道我的工作是保持低调，而不是高调。”他介绍了剧院的艺术总监。导演说，莎士比亚的主题涵盖了“欺骗、背叛、虚伪、王权、人类的暴政”。他以《李尔王》中的一句话作结：“我们必须顺应这悲伤时刻的重压。说出我们所感，而非我们应说之言。”♦</p><p id="1dfb42d6-c689-80db-8d29-c004d61e8cc6" class=""><em>Published in the print edition of the </em><em><a href="https://archive.ph/o/XHMHk/https://www.newyorker.com/magazine/2025/04/28">April 28, 2025</a></em><em>, issue, with the headline “Follow the Leader.”</em></p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
