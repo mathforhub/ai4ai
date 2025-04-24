@@ -331,42 +331,42 @@
                 // 内置的样本数据，当无法访问外部JSON文件时使用
                 return {
                     articles: [
-                    {
-      "id": 1,
-      "date": "2025-04-24",
-      "title": "贝森特讲话",
-      "summary": "美国财政部长斯科特·贝森特在国际金融协会全球展望论坛上的讲话记录",
-      "link": "2025-04-24-1.html"
-    },
-    {
-      "id": 2,
-      "date": "2025-04-24",
-      "title": "特朗普2025计划内幕",
-      "summary": "纽约客在总统选举之前调查写就的关于特朗普2025计划内幕",
-      "link": "2025-04-24-2.html"
-    },
-    {
-      "id": 3,
-      "date": "2025-04-24",
-      "title": "亨利·蒂尔曼访谈实录：中国的钍革命——六万年的廉价能源",
-      "summary": "格伦·迪森教授与 Aiyana 咨询与研究公司首席执行官亨利·蒂尔曼就中国的钍革命——六万年的廉价能源的播客实录"，
-     "link": "2025-04-24-3.html"
-    },
-    {
-      "id": 4,
-      "date": "2025-04-23",
-      "title": "杰米·戴蒙敦促美国与中国接触的记录",
-      "summary": "杰米·戴蒙敦促美国与中国接触的记录",
-      "link": "2025-04-23-1.html"
-    },
-    {
-      "id": 5,
-      "date": "2025-04-23",
-      "title": "美国经济展望的杰罗姆·鲍威尔讲话记录 ",
-      "summary": "美国经济展望的杰罗姆·鲍威尔讲话记录 。",
-      "link": "2025-04-23-2.html"
-    }        
- ],
+                        {
+                            "id": 1,
+                            "date": getCurrentDateString(),
+                             "title": "贝森特讲话",
+        	             "summary": "美国财政部长斯科特·贝森特在国际金融协会全球展望论坛上的讲话记录",
+                            "link": getCurrentDateString() + "-1.html"
+                        },
+                        {
+                            "id": 2,
+                            "date": getCurrentDateString(),
+                            "title": "特朗普2025计划内幕",
+                            "summary": "纽约客在总统选举之前调查写就的关于特朗普2025计划内幕",
+                            "link": getCurrentDateString() + "-2.html"
+                        },
+                        {
+                            "id": 3,
+                            "date": getCurrentDateString(),
+                            "title": "亨利·蒂尔曼访谈实录：中国的钍革命——六万年的廉价能源",
+                            "summary": "格伦·迪森教授与 Aiyana 咨询与研究公司首席执行官亨利·蒂尔曼就中国的钍革命——六万年的廉价能源的播客实录"，
+                            "link": getCurrentDateString() + "-3.html"
+                        },
+                        {
+                            "id": 4,
+                            "date": getYesterdayDateString(),
+                            "title": "杰米·戴蒙敦促美国与中国接触的记录",
+       	            "summary": "杰米·戴蒙敦促美国与中国接触的记录",
+                            "link": getYesterdayDateString() + "-1.html"
+                        },
+                        {
+                            "id": 5,
+                            "date": getYesterdayDateString(),
+                            "title": "美国经济展望的杰罗姆·鲍威尔讲话记录 ",
+                            "summary": "美国经济展望的杰罗姆·鲍威尔讲话记录 。",
+                            "link": getYesterdayDateString() + "-2.html"
+                        }
+                    ],
                     "updated_at": new Date().toISOString()
                 };
             }
