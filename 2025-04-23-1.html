@@ -1,0 +1,684 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>2025-04-23-1</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(50, 48, 44, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-default_background {
+	color: rgba(50, 48, 44, 1);
+}
+.highlight-gray_background {
+	background: rgba(248, 248, 247, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(248, 243, 252, 1);
+}
+.highlight-pink_background {
+	background: rgba(252, 241, 246, 1);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(248, 248, 247, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(248, 243, 252, 1);
+}
+.block-color-pink_background {
+	background: rgba(252, 241, 246, 1);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: undefined; }
+.select-value-color-pink { background-color: rgba(225, 136, 179, 0.27); }
+.select-value-color-purple { background-color: rgba(168, 129, 197, 0.27); }
+.select-value-color-green { background-color: rgba(123, 183, 129, 0.27); }
+.select-value-color-gray { background-color: rgba(84, 72, 49, 0.15); }
+.select-value-color-transparentGray { background-color: undefined; }
+.select-value-color-translucentGray { background-color: undefined; }
+.select-value-color-orange { background-color: rgba(224, 124, 57, 0.27); }
+.select-value-color-brown { background-color: rgba(210, 162, 141, 0.35); }
+.select-value-color-red { background-color: rgba(244, 171, 159, 0.4); }
+.select-value-color-yellow { background-color: rgba(236, 191, 66, 0.39); }
+.select-value-color-blue { background-color: rgba(93, 165, 206, 0.27); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="1dfb42d6-c689-8051-9fc7-c0cffb6a06c6" class="page sans"><header><h1 class="page-title">2025-04-23-1</h1><p class="page-description"></p></header><div class="page-body"><h1 id="1dfb42d6-c689-802b-b721-fe10dd0982b1" class="">杰米·戴蒙敦促美国与中国接触的记录</h1><ul id="1dfb42d6-c689-80ff-8355-c05a0da379ff" class="bulleted-list"><li style="list-style-type:disc"><time>@2025年4月16日 14:20</time></li></ul><ul id="1dfb42d6-c689-80dc-a797-ddb58222082f" class="bulleted-list"><li style="list-style-type:disc">由 <a href="https://singjupost.com/author/singju/">Pangambam S</a></li></ul><ul id="1dfb42d6-c689-8085-9287-e937ff35de26" class="bulleted-list"><li style="list-style-type:disc"><a href="https://singjupost.com/business-finance/">商业与金融</a></li></ul><figure id="1dfb42d6-c689-803f-a0eb-c75d9126ce50" class="image"><a href="https://singjupost.com/wp-content/uploads/2025/04/conversation-between-Financial-Times-editor-Roula-Khalaf-and-JPMorgan-Chase-CEO-Jamie-Dimon-930x605.jpg"><img style="width:700px" src="https://singjupost.com/wp-content/uploads/2025/04/conversation-between-Financial-Times-editor-Roula-Khalaf-and-JPMorgan-Chase-CEO-Jamie-Dimon-930x605.jpg"/></a></figure><ul id="1dfb42d6-c689-809d-956c-c61380f89570" class="bulleted-list"><li style="list-style-type:disc"><strong><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsingjupost.com%2Ftranscript-of-jamie-dimon-urges-us-to-engage-with-china%2F&amp;t=Transcript%20of%20Jamie%20Dimon%20Urges%20US%20To%20Engage%20With%20China">分享</a></strong></li></ul><ul id="1dfb42d6-c689-8050-ba7b-c4d30093daf2" class="bulleted-list"><li style="list-style-type:disc"><strong><a href="https://x.com/intent/tweet?text=Transcript%20of%20Jamie%20Dimon%20Urges%20US%20To%20Engage%20With%20China&amp;url=https%3A%2F%2Fsingjupost.com%2Ftranscript-of-jamie-dimon-urges-us-to-engage-with-china%2F&amp;via=singjupost">推特</a></strong></li></ul><ul id="1dfb42d6-c689-80af-8f72-c2f4694872c2" class="bulleted-list"><li style="list-style-type:disc"><strong>Pinterest</strong></li></ul><ul id="1dfb42d6-c689-8000-9a13-d43dd34b4d9a" class="bulleted-list"><li style="list-style-type:disc"><strong><a href="https://www.notion.somailto:?subject=Transcript%20of%20Jamie%20Dimon%20Urges%20US%20To%20Engage%20With%20China&amp;body=https%3A%2F%2Fsingjupost.com%2Ftranscript-of-jamie-dimon-urges-us-to-engage-with-china%2F">电子邮件</a></strong></li></ul><p id="1dfb42d6-c689-80d1-b841-f48833539557" class="">阅读《金融时报》编辑鲁拉·卡拉夫与摩根大通首席执行官杰米·戴蒙之间的对话完整记录，2025年4月14日。</p><p id="1dfb42d6-c689-800a-a2b1-f165aa7043d9" class=""><strong>采访从这里开始：</strong></p><h1 id="1dfb42d6-c689-80a6-b60b-e87c4616fa27" class=""><strong>介绍和中美关系</strong></h1><p id="1dfb42d6-c689-8022-8a73-ea2293e5b742" class="">鲁拉·卡拉夫：我在纽约的摩根大通总部，我今天的嘉宾是杰米·戴蒙。杰米·戴蒙，很高兴在 FT 视频上见到你。你是美国企业界最有影响力的声音之一。当然，摩根大通是华尔街和主街上最大的银行。上周，特朗普总统引用了你的评论，称其对他决定暂停一些关税有影响。你现在对中国当局有什么建议来缓解贸易战？你会对他们说些什么？</p><p id="1dfb42d6-c689-8002-9884-fd300b368308" class="">杰米·戴蒙：首先，欢迎。很高兴来到这里。我每天都读《金融时报》，而且已经读了二三十年。我尽量对我们所想的一切保持诚实。我努力进行深入的工作和深入的分析。在我的股东信中有一部分是关于中国的。</p><p id="1dfb42d6-c689-8097-b319-c869fc868210" class="">我认为中国实际上为自己的国家做了很多好事。我不同意专制独裁等，但他们将一个人均 GDP 为 400 美元的国家提升到了 15,000 美元。相比之下，美国是 85,000 美元。但人们对中国有一些合理的抱怨。如果你看看他们的邻国，这是一个非常复杂的邻国，但他们正在吓唬日本、韩国、印度尼西亚、越南、印度等。</p><p id="1dfb42d6-c689-80c9-9158-e9c2bc7bfbb9" class=""><strong>他们应该反思自己，看看关于贸易的合理抱怨在哪里。</strong> 世界上很多国家认为他们一直在向其他国家倾销过剩产能，他们应该审视这一切。</p><p id="1dfb42d6-c689-80f3-8348-e27d7e10535d" class="">我在信中说，美国不应该害怕。美国拥有所有自由和繁荣的国家，我们应该与盟友合作，这正是中国不想要的。但我认为中国和美国应该接触。他们已经开始了，但现在他们交流不多。我认为当你和任何人坐下来时，首先要说的是，你的家人怎么样？你的目标是什么？你知道，我们都有共同的利益。</p><p id="1dfb42d6-c689-80a2-8368-d68017da76b2" class="">ROULA KHALAF：你认为总统应该打电话给习近平，问问他的家人吗？</p><p id="1dfb42d6-c689-805c-9912-cd006277674e" class="">JAMIE DIMON：我会让他们自己决定怎么做，但我不想陷入这种针锋相对的局面。<strong> 我认为成年人应该互相交谈，倾听对方，并承认对方是对的，或者至少有一个好的观点。</strong></p><p id="1dfb42d6-c689-8018-940d-ca523e528d32" class="">ROULA KHALAF：我注意到在你的信中，你呼吁与中国进行尊重、强有力和持续的接触，但这不是我们今天的状况，对吗？</p><p id="1dfb42d6-c689-802c-940a-d56363015463" class="">JAMIE DIMON：我认为我们现在没有任何接触。但这可以从明天开始。无需等一年，可以从明天开始。你可以从一个电话开始。任何一位总统都可以指派某人打电话给他们并去见他们。我们已经这样做了与伊朗，我认为这是好的。</p><h1 id="1dfb42d6-c689-8080-88a0-da7d07face2c" class=""><strong>与中国脱钩</strong></h1><p id="1dfb42d6-c689-8077-a3bc-e77487edddca" class="">ROULA KHALAF：你认为美国今天有可能与中国脱钩吗？</p><p id="1dfb42d6-c689-8071-921a-e8e91f5a03b0" class="">杰米·戴蒙：我认为随着时间的推移，这绝对是可能的。如果你说那是我们的目标，我不认为那应该是目标。我认为从美国的角度来看，我的目标是任何与国家安全相关的事情。显然，美国应该依靠自己或亲密盟友来处理这些问题。任何关于真正不公平贸易的事情，都应该得到解决。很多国家都是如此。到处都有很多不公平贸易。这种情况已经持续了一百年。</p><p id="1dfb42d6-c689-805c-a3cf-ee08493ef218" class="">但是很多事情并没有那么重要。你知道，你的纺织品、鞋类、家具是在哪里制造的。所以我认为我们应该清楚我们想要实现什么。<strong> 而且我也认为我们应该与盟友一起这样做。</strong> 我认为如果西方世界，我希望最终能与欧洲、英国、日本、韩国、澳大利亚、菲律宾进行谈判，建立非常强大的经济关系，然后与中国对峙，并说，我们想与你们进行贸易，但这是我们都认为公平合理的贸易条件。</p><h1 id="1dfb42d6-c689-8014-9492-d9e2555c7e85" class=""><strong>西方联盟</strong></h1><p id="1dfb42d6-c689-805c-93d4-ee2a5a9b60a1" class="">ROULA KHALAF：我认为你在信中非常明确地表达了关于联盟的观点。当我与世界各地的人们、政府和企业交谈时，有一种感觉是，今天是美国本身在破坏它所创建的战后秩序。你如何解决这个问题？你认为现在应该怎么办？</p><p id="1dfb42d6-c689-806f-8d73-d746193adcd9" class="">JAMIE DIMON: <strong>我认为最重要的是，我们不要在 40 年后读到一本关于西方如何失去的书。</strong> 我认为任何国家或美国说，我认为这在贸易、军事成本方面是不公平的，这是一回事。我认为有一些非常好的观点，我认为欧洲知道他们需要在军事上投入更多。但这并不意味着我们不应该与欧洲保持军事联盟。</p><p id="1dfb42d6-c689-8098-964b-f3bd19ccbb2c" class="">同样在经济方面。他们需要做得更多。欧洲的人均 GDP 已经从大约美国的 70%下降到大约 50%。这是不可持续的。我认为欧洲已经认识到，如果他们想要更快地增长，就需要改变自己的规则、法规和指导方针。我认为这是真的，但应该与我们一起完成。在我看来，目标应该是加强欧洲，使他们更接近，而不是让他们更弱、更远。</p><p id="1dfb42d6-c689-80cf-9f99-cb0d2ccf02d5" class=""><strong>我认为世界的分裂是个坏主意。西方世界的分裂可能会导致世界看起来像第一次和第二次世界大战之前，每个国家都在为自己着想，试图弄清楚如何保护自己。</strong> 不幸的是，这可能会导致核武器的扩散。</p><p id="1dfb42d6-c689-80a5-8915-f5315abf8fb5" class="">ROULA KHALAF：这种潜在的分裂对摩根大通有什么后果？</p><p id="1dfb42d6-c689-80ec-aa28-d4ffef683e77" class="">杰米·戴蒙：嗯，我认为从公司的角度来看，沃伦·巴菲特谈到了美国的韧性。如果你只投资于美国，我认为这是真的。但对于这里的任何公司来说，世界各地的许多西方国家的公司，拥有一个强大的美国对他们有利，拥有一个强大的西方世界对他们有利。所以如果这不是真的，我认为这会让我们处于一个更弱的状态。我说的是40或50年，而不是未来三年左右。</p><h1 id="1dfb42d6-c689-8045-81af-f72c4636396f" class=""><strong>市场波动和财政部担忧</strong></h1><p id="1dfb42d6-c689-8064-933a-e8e3b4219b7a" class="">ROULA KHALAF：我们来谈谈市场，因为摩根大通是国债的大交易商，我想听听你对上周国债市场发生情况的理解。是谁在卖出，这一事件在多大程度上显示了对杠杆对冲基金的脆弱性，比如基差交易？</p><p id="1dfb42d6-c689-80db-bfc0-d69a5d9e4655" class="">杰米·戴蒙：系统中存在杠杆。显然，对冲基金去杠杆化导致了其中一些问题。我认为真正的问题是围绕关税、潜在报复的持续不确定性，以及如果你能够做到这一点，如何重组你的制造供应链。我认为这些事情要重要得多。显然还有美元疲软和十年期债券疲软。这是其结果。但这在短期内会发生。当然，你会有去杠杆化，这可能暂时结束了。我们拭目以待。</p><p id="1dfb42d6-c689-8072-8bca-ed0711ccf315" class="">ROULA KHALAF：你上周没有看到市场上有任何混乱吗？</p><p id="1dfb42d6-c689-8052-a55e-c283bf1d74cb" class="">杰米·戴蒙：这是一个快速的举动之类的，但大多数市场都还好。信用利差确实大幅扩大。这意味着每个筹集资金的公司都在以两种方式支付更多的资金。一是绝对利率上升，二是信用利差扩大。这将给系统带来一些额外的压力和紧张。</p><h1 id="1dfb42d6-c689-8094-aa83-f2487300a565" class=""><strong>美国经济信心</strong></h1><p id="1dfb42d6-c689-8094-832a-e5e7114dc369" class="">ROULA KHALAF：过去一周，一些经济学家，尤其是在美元也下跌的情况下，认为人们对美国的信心正在丧失。对此你有多担心？</p><p id="1dfb42d6-c689-805e-9646-e5f23613dd8d" class="">JAMIE DIMON：美国仍然是世界上最繁荣的国家，仍然是一个避风港，因为它的实力、法治、美国经济的实力、创新、增长，以及美国军队，不仅保护美国，还保护了西方世界的一大部分。所以它仍然非常强大。但是，是的，很多这种不确定性正在对其构成一些挑战。</p><p id="1dfb42d6-c689-8009-b1f8-fa367683c79c" class="">在我的信中我写道，美国优先是可以的，但不是美国独自优先。<strong> 我对市场的担忧不如对保持西方世界团结、自由和民主安全的担忧。</strong> 对我来说，这意味着你要加强经济关系。如果有不公平，就解决它。但我们应该小心。我认为没有人应该认为他们有成功的天赋权利，因此不必担心。</p><p id="1dfb42d6-c689-801e-88e7-d0eb223166e9" class="">ROULA KHALAF：所以你不能掉以轻心。</p><p id="1dfb42d6-c689-803b-a6ee-f45ecdc46ec7" class="">杰米·戴蒙：我绝不会想当然。不。</p><p id="1dfb42d6-c689-80fb-b8a0-eba8ba38168d" class="">ROULA KHALAF：你相信 Scott Bessent 能够引导经济吗？</p><p id="1dfb42d6-c689-80b5-a54c-c4dc9cd03551" class="">杰米·戴蒙：我希望如此。我对他有一点了解。我认为他是个成年人。我并不认同政府正在做的一切，所以我并不是在争论这一点。但我认为他可能是应该谈判这些贸易协议的人。问题是，它们非常复杂。有12,000种不同的产品线。还有所有这些其他复杂性。有转运、税收、配额、增值税、担保、补贴。就像我说的，这已经持续了100年。</p><p id="1dfb42d6-c689-803d-9e61-e62a4e5833f3" class="">我希望他身边有合适的人可以说，好吧，我们应该如何处理欧洲，我们应该如何处理日本，我们应该如何处理韩国？我认为他们越早达成我所谓的原则性协议越好，因为他们无法就什么是合理的进行谈判。你可以说，例如，与欧洲，你需要更多的军事装备。是的。更多的液化天然气。是的。降低关税。是的。我们达成一个对欧洲、英国和美国都有利的友好协议。这可能吗？我认为是的。我希望他们正在努力做这样的事情。但我不知道。</p><p id="1dfb42d6-c689-80e6-b804-d571c38c60c7" class=""><strong><a href="https://singjupost.com/international-business-machines-ibm-ceo-ginni-rometty-q3-2014-results-earnings-call-transcript/">另请阅读： 国际商业机器公司（IBM）首席执行官 Ginni Rometty 关于 2014 年第三季度业绩的电话会议记录</a></strong></p><p id="1dfb42d6-c689-8001-968b-ef4bdbd50c8a" class="">ROULA KHALAF：所以你不能告诉我们在三个月内关税和贸易的问题就会解决吗？</p><p id="1dfb42d6-c689-8029-907c-ff2c6231387d" class="">杰米·戴蒙：我不能。但如果不是，我认为这只会引起更多的不安。</p><h1 id="1dfb42d6-c689-80db-820a-d7662fe15bed" class=""><strong>摩根大通的业绩和业务展望</strong></h1><p id="1dfb42d6-c689-8091-9cfb-c17218a95c64" class="">鲁拉·卡拉夫：你在2024年表现出色。你在第一季度也超出了分析师的预期。但你确实对投资银行和交易管道的不确定性发出了警告。因此，有一些证据表明投资者在观望。你认为什么会让投资者放心？你需要看到什么？</p><p id="1dfb42d6-c689-8039-a1c4-f657221f4a58" class="">杰米·戴蒙：我不花时间试图安抚投资者。我也不太在意一年的结果或季度的结果。<strong> 利润只是冰山一角，它们有点短暂，有好的收入和坏的收入。人们对什么让你成为一家强大的公司感到非常困惑。</strong> 2024 年的结果是我们过去 15 年所做事情的结果。这不是因为你在 2024 年实际做了什么。</p><p id="1dfb42d6-c689-80dd-ae2f-e027a0815cb3" class="">但这毫无疑问。我们现在看到了。我们实际上开始调查客户，客户在投资上有所减少。并购活动已经下降。中端市场的并购有点枯竭。外国直接投资可能会下降。所以这就像实时的。我们并不真正知道。这更多是轶事。但在这种情况下，这些轶事可能是准确的，你实际上会看到一些未来的数据。</p><p id="1dfb42d6-c689-804a-ac0f-f29b47e8c97f" class="">但我总是告诉人们，他们总是说，给我们留下一个好印象或积极的印象。我不认为这是我的工作。<strong> 我只是试图描述世界的现状，而不是我想要的世界。我必须面对现实世界。</strong> 所以，我们以前也经历过起伏。我们以前也经历过经济衰退。我对这个问题并不那么担心，我更担心我们已经谈过的更大问题。</p><p id="1dfb42d6-c689-801e-817b-e86dffaf7df2" class="">ROULA KHALAF：感觉今天，上周你说经济衰退的可能性是 50-50。几乎每天你都必须评估经济衰退的风险。如果你是一家计划投资的企业，这真的很难，你做任何决定都很难。</p><h1 id="1dfb42d6-c689-80ef-b900-c94e6b08a084" class=""><strong>应对经济不确定性</strong></h1><p id="1dfb42d6-c689-807a-8bd3-f8a9630639b5" class="">杰米·戴蒙：是的。所以你必须分开两件事。你永远无法预知未来。如果你是一个商人，你可能会看到经济衰退的机会。我认为每天不断地这样做几乎是浪费时间。当你建立一家公司或一艘船时，你必须说，“我必须应对这一系列的结果。”</p><p id="1dfb42d6-c689-808d-9756-f3ca32caba3c" class="">我总是说经济就像天气。可能会有风暴，也可能会阳光明媚。<strong> 你不能建立一个只能在一种情况下生存的公司。</strong> 我认为其他一些不确定性是重要的。其中一个已经存在多年——地缘政治问题、贸易关税、潜在的报复、放松管制的好处。</p><p id="1dfb42d6-c689-8024-9c43-d11bd96f4cf6" class="">这些事情都在发生。我们会以一个对他们主权有利的协议解决乌克兰问题吗？对以色列有利的协议？伊拉克的某种协议？我不知道。但所有这些事情都造成了你所说的——预测中的异常动荡。这可能会改变你投资资金的方式。你不是因为潜在的经济衰退而改变，而是因为你对未来有完全不同的看法。</p><h1 id="1dfb42d6-c689-80bb-ab83-e79f1f04fe97" class=""><strong>华尔街与主街</strong></h1><p id="1dfb42d6-c689-808d-9888-df035354bd38" class="">ROULA KHALAF：政府在华尔街和主街之间做出区分。重点总是“对华尔街不利的事情可能对主街有利。” 摩根大通是最大的贷款机构，因此您可以从全国和主街的角度看到情况。您在主街上看到了什么？</p><p id="1dfb42d6-c689-80cb-af23-e81b27d46f07" class="">杰米·戴蒙：首先，我同意主街比华尔街更重要。我们为8000万美国人和600万小企业、城市、学校、州、医院、100个国家提供银行服务。我认为这些事物的健康远比我如何看待摩根大通或华尔街的健康更为重要。</p><p id="1dfb42d6-c689-80ef-b46a-d572e5c289c0" class="">我反对这个“华尔街”的说法，因为谁是华尔街？我们是由全国各地的退伍军人、退休人员、养老金计划所拥有的。这就是我所代表的。当你说华尔街时，你是否包括代表退伍军人、工会、加州公共雇员退休系统和加州教师退休系统的机构投资者？</p><p id="1dfb42d6-c689-800e-aebe-f76f850dcfca" class="">这是共生的。每当一家大公司建造一个雇佣 5,000 人的工厂时，通常会在工厂外的小企业中雇佣 20,000 人。<strong> 如果我们在过去 20 年中每年增长 3%，而不是 2%，那将是多出 15,000 美元的 GDP，这将提升整个社会，尤其是低收入群体。</strong> 当你发展经济时，他们受益最大。当你缩小经济时，他们受伤最重。我们的目标应该是让整个经济变得更好。</p><h1 id="1dfb42d6-c689-80b8-b5d0-f1d3862fb7cf" class=""><strong>消费者和商业压力</strong></h1><p id="1dfb42d6-c689-800e-9faf-ed50f7451c50" class="">ROULA KHALAF：但您开始看到企业和消费者的压力了吗？</p><p id="1dfb42d6-c689-8049-a1eb-e3485cd20d68" class="">杰米·戴蒙：消费者？影响很小。人们写到信贷损失上升，但实际上已经正常化。它们可能会继续恶化。工作岗位仍然存在。消费者没有了疫情期间的额外资金，但他们仍在消费。很难判断有多少是提前购买，因为他们担心关税。汽车销量在过去几周明显上升。</p><p id="1dfb42d6-c689-800b-9e70-d1582e8e9b02" class="">通常，当失业率上升时，消费者会感到压力。那时你会看到信用损失增加，房价和车价下降。</p><p id="1dfb42d6-c689-808d-9c3f-eea0de857f6a" class="">企业仍在正常运作并赚钱。但我认为现在一切都不确定了。在接下来的三四个月里，公司将陆续报告收益，并告诉你他们对关税对他们、他们的销售和消费者的影响的看法。有些公司可能会感受到很大的压力，而有些公司可能会从中受益。你会实时看到人们对此的看法。</p><p id="1dfb42d6-c689-80dc-a374-e0b95cc589c2" class="">ROULA KHALAF：所以目前还没有压力，但预计会有压力。</p><p id="1dfb42d6-c689-8051-a027-f1f041cdca6e" class="">JAMIE DIMON：这里的压力很大。<strong> 我没有遇到过一个商人不感到有点压力，试图弄清楚这一切意味着什么。</strong></p><h1 id="1dfb42d6-c689-80ac-ba67-d3337c7913dd" class=""><strong>美国企业的视角</strong></h1><p id="1dfb42d6-c689-804c-b469-e3a56e77e83c" class="">ROULA KHALAF：所以你还记得几个月前的达沃斯。我认为我的观察是，那是美国商业的乐观顶峰。每个人都对税收、放松管制感到兴奋。每个人都在淡化所有潜在的负面因素。</p><p id="1dfb42d6-c689-80ca-ab8e-cf48badd9508" class="">杰米·戴蒙：顺便说一下，我不是其中之一。</p><p id="1dfb42d6-c689-805f-ba64-d77041256570" class="">ROULA KHALAF：好的，知道这一点很好。尽管您确实发表了一些让那里的一些人感到惊讶的声明。但您认为美国企业界和华尔街低估了本届政府的革命性吗？</p><p id="1dfb42d6-c689-80ad-bb30-da7f993e7735" class="">JAMIE DIMON：是的，他们确实低估了。记住，我总是说美国例外主义有一个非常大的“但是”。这个“但是”是，自从 COVID 以来的五年里，我们借贷并花费了 11 万亿美元。这 11 万亿美元出现在消费者手中。他们有多余的现金。信用损失下降，他们花掉了很多。这造成了一些通货膨胀，带来了增长，也带来了企业利润。</p><p id="1dfb42d6-c689-80d1-9ad2-cf7f23e8e776" class=""><strong>我们每年仍有 2 万亿美元的赤字。这仍然是一个很大的“但是”。</strong> 当你花费这么多钱时，那座山的另一边就会显现。美国是特殊的，但并没有那么特殊。如果欧洲再借一万亿美元并花掉，他们的 GDP 可能会高出一万亿美元。</p><p id="1dfb42d6-c689-80fa-ac6a-c30b88e8b7bc" class="">我认为当时的热情过于高涨。我当时就这么认为。当他们宣布解放日关税时，与人们的预期大相径庭——完全超出预料。这对全球体系来说是一个震惊，不仅仅是在美国。当然，有些已经被撤回了。</p><h1 id="1dfb42d6-c689-800f-896f-c06854704153" class=""><strong>行政策略</strong></h1><p id="1dfb42d6-c689-80ca-a4df-ca109205ed8c" class="">ROULA KHALAF：嗯，现在不清楚会发生什么，我们似乎在日复一日地生活。你认为这里有一个宏伟的计划吗？我经常听到政府官员谈论过渡。那么目的地是什么？这里有一个特定的目的地吗？</p><p id="1dfb42d6-c689-80e1-9e7d-fc0b422235c8" class="">杰米·戴蒙：我不知道。你真的得问他们。我希望目的地……我理解我们需要为某些事情提供资源，我认为这是正确的。我们需要特别是在国家安全、不公平贸易方面进行回流。</p><p id="1dfb42d6-c689-8002-9848-c9ee23e37e66" class="">但我们这里有很多先进的制造业。我们今天正在研究制造业是什么。制造业包括鞋类、纺织品、家具、像组装烤面包机这样的低价值物品，一直到世界上一些最高价值的东西。对此你应该非常慎重。</p><p id="1dfb42d6-c689-8087-8e4b-fa92f184784a" class="">在这些问题需要解决的范围内，它们应该被解决。<strong> 目标应该是加强全球联盟，帮助欧洲解决其问题，也许指出他们的缺陷，但帮助他们渡过难关，承认这并不总是单方面的。</strong> 当我去欧洲时，我会听到抱怨“你们也这样做。” 这是真的。这不是单行道。</p><p id="1dfb42d6-c689-8098-8bd9-db4fa80ceac9" class="">我希望我们能实现总统的目标，但我们要在军事和经济上保持西方世界的团结。对我来说，这是唯一超级重要的事情。</p><h1 id="1dfb42d6-c689-8063-9e29-f8c2d5306fdb" class=""><strong>商业界反应</strong></h1><p id="1dfb42d6-c689-805c-9601-c383d9f891a7" class="">ROULA KHALAF：当我今天与欧洲的企业交谈时，他们的一个问题是，为什么美国企业界没有更多地发声和抵制？我知道你已经发声并产生了影响，但商界在这里是否有更大的作用？</p><p id="1dfb42d6-c689-808f-b1c0-d7864f186c9d" class="">杰米·戴蒙：我不确定我是否产生了影响，但我认为很多商界人士正在与总统和政府进行持续反馈交流。当你这样做时，你必须说出对你的国家有利的事情。你不能只是全球主义者，只关心你的利润。因为那样的话，他们的第一反应会是“不了，谢谢。”</p><p id="1dfb42d6-c689-801d-b3b0-ec021870ed56" class=""><strong><a href="https://singjupost.com/salesforce-coms-crm-ceo-marc-benioff-q2-2015-results-earnings-call-transcript/">另请阅读：salesforce.com (CRM) 首席执行官 Marc Benioff 关于 2015 年第二季度业绩的电话会议记录</a></strong></p><p id="1dfb42d6-c689-8035-a467-ea8de19f6d18" class="">我认为他们收到了很多反馈。当人们提到“商业界”时，他们的意见各不相同。它还没有在一个地方凝聚。有些人想支持放松管制的目标。有些公司将从关税中受益，有些则会受到伤害，豁免正在进行中。</p><p id="1dfb42d6-c689-8094-9078-f1e27c7477a9" class="">我希望它不会最终变成一个人人都来分一杯羹的企业食槽。总有一天，可能会形成一种关于我们应该和不应该做什么的共识。</p><p id="1dfb42d6-c689-803d-ae50-efa81defab1f" class=""><strong>商界人士通常是爱国的。他们希望帮助总统为国家做好工作 </strong>，就像你们的商界人士可能希望帮助你们的总理为国家做好工作一样。</p><h1 id="1dfb42d6-c689-80ae-b177-c926babe27e7" class=""><strong>银行战略</strong></h1><p id="1dfb42d6-c689-803a-b4f7-ca5de1404525" class="">ROULA KHALAF：让我问问你关于银行的事情，因为你既非常传统又非常具有未来感。传统是因为你真的相信分行。我最大的挫折之一是我在伦敦找不到银行分行。而你们还在扩张。解释一下为什么你认为在数字银行业务增长的同时，这么做如此重要？</p><p id="1dfb42d6-c689-8013-b9bc-ea8849e174b4" class="">杰米·戴蒙：我不是老派。如果对客户有用，那就是我们要做的。如果对客户没有用，我就不会做。我们总是着眼于未来——他们想要什么？</p><p id="1dfb42d6-c689-8024-ace0-d122291c3d10" class="">将近一百万人访问我们的分行。他们需要我们的分行。我们在分行开设账户，我们在分行进行教育。小企业使用分行，私人客户使用分行，中型市场客户使用分行。如果它们不起作用，我就会关闭它们。</p><p id="1dfb42d6-c689-80c1-b0f0-cc7bbfc8012c" class="">我们也非常数字化。将近八千万人使用各种数字服务。我们正在为人们提供更多他们想要的东西——一些实体地点、在线交易、在线支付、在线数据、财富管理。我们努力服务客户，并从他们的角度看待世界。</p><p id="1dfb42d6-c689-8046-83f2-f5f9b7c6d314" class="">要做到这一点，你必须具有前瞻性，但也要非常有分析能力。这不是关于我想要什么或人们说什么。我们不必猜测。我们进行大量分析以确定什么有效，什么无效，以及原因。</p><h1 id="1dfb42d6-c689-80bf-9100-eee530e507c4" class=""><strong>人工智能和技术</strong></h1><p id="1dfb42d6-c689-80bf-b3da-fc785c8862cd" class="">ROULA KHALAF：你也被称为银行业的 Nvidia。你在人工智能方面进行了早期且大量的投资。你也开发了自己的LLM。你认为你需要进行文化转型以让员工接受并采纳这一点吗？</p><p id="1dfb42d6-c689-808e-8a17-d85b71b14e52" class="">杰米·戴蒙：不，我不是那样看的。任何公司都在不断成长、变化和学习。如果你不这样做，你就不会表现得很好。如果你看看公司的失败，往往是自满、傲慢、官僚主义。你认为自己很优秀，以至于忘记了去真正关注外界正在发生的事情。</p><p id="1dfb42d6-c689-808c-8ec4-ed206eb34355" class="">我们一直使用技术来为客户提供更好、更快的服务。我们一直非常重视分析。这一切都是为了客户的需求。你如何让银行家或员工更好地为客户服务？这应该是公司的一种常态。</p><p id="1dfb42d6-c689-8025-81c9-d4234b6f9d29" class="">ROULA KHALAF：你如何判断这些钱是否花得值得？你使用哪些指标？</p><h1 id="1dfb42d6-c689-800c-be40-c7be71ec5e7d" class=""><strong>人工智能与投资策略</strong></h1><p id="1dfb42d6-c689-80b2-8555-ddcd8187a4d2" class="">杰米·戴蒙：好的，所以我们分开了。首先，我总是，如果你看我的管理学习课程，总是有好的开支和坏的开支。我总是告诉人们，比如我们花费建造一个分行，这在一段时间内是负面的，但它会赚钱。我称之为投资。我不在乎会计师称其为开支。还有坏收入。你知道，这是收入。不，不良贷款是不良收入。所以你必须深入了解你在做什么。</p><p id="1dfb42d6-c689-8090-937e-febdf16f7b88" class="">这很有道理。但我们谈论技术、人工智能、所有事情。每个项目都被识别出来。它希望实现什么以及如何实现，时间表，我们将花费多少钱。对于很多项目，我称之为 NPV。你看看回报，我们知道我们在这个风险应用中投入了 2 亿美元，一个大项目。这每年减少了 1 亿到 2 亿美元的风险和欺诈损失。这是一个很好的回报。这就是为什么我们的成本在很多领域没有上升而是下降的原因。</p><p id="1dfb42d6-c689-8069-99b7-da01c6a7d5d1" class="">所以我们已经在风险、欺诈、营销错误、客户代理等方面使用了 AI。你能想到的都有。有些是可以识别的。我们做的某些事情。我甚至不试图为此辩解。将你的数据放入一个更易用的平台。对我来说，这只是基本要求。去做吧。</p><p id="1dfb42d6-c689-8075-a72d-df75a8ae40ce" class="">我记得我们在做数字开户。你知道，人们想花时间分析，这是否值得？这将花费大量资金来构建集成到我们的系统中。你知道，我们会得到这个，失去那个，并且会节省空间。看，我当时想，忘掉那些。投资回报率永远不会正确。<strong> 客户会想要它，就去做吧。</strong> 所以没有净现值。因此，我们做所有事情时都说，忘掉那些。这对客户来说是更好的事情。就去做吧，我们会没事的。</p><p id="1dfb42d6-c689-806e-a4ed-f996f4b9fd4f" class="">ROULA KHALAF：当你看到我们所见的大量投资，尤其是在数据中心方面的投资时，你认为存在投资泡沫吗？你认为投资者真的会赚钱吗？因为这仍然非常不明确。</p><p id="1dfb42d6-c689-8082-9a89-db3fd819cd74" class="">杰米·戴蒙：首先，对我来说这是一个问题。我想用它为客户做到最好。我不太关心开放模型或封闭模型，或者这个芯片或那个芯片，或者是否获得许可。只要使用它。我们将使用所有这些东西。正如你已经提到的，我们在自己的数据上使用LLM。很快你就能在不泄露我们数据的情况下，将我们的数据与外部数据结合使用，这非常重要。我们必须对此保持适当的控制。</p><p id="1dfb42d6-c689-8008-b4f5-ec8f69daa334" class="">是的，我认为有些事情不会顺利，会很糟糕。你经历过 2000 年的互联网泡沫。我认为有些会做得很好。所以我不认为一刀切的方式适合所有情况。<strong> 有很多资金投入其中，你会看到很多错误的假设 </strong>，比如推理的成本是多少。是否必须使用大型语言模型，而小型语言模型也能工作？我们做了很多事情。大型语言模型耗时太长。你不能这样做。所以你必须使用更有限的模型，更有限的推理，更有限的数据库，但你仍然能获得 90%的收益。</p><h1 id="1dfb42d6-c689-80f5-b931-ef4a12c3204b" class=""><strong>领导层继任</strong></h1><p id="1dfb42d6-c689-80ed-afc7-e2b5e066ada7" class="">ROULA KHALAF：那么让我先问你一些关于 Jamie Dimon 的趣闻。我相信你已经很习惯这个问题了，但你已经管理这家银行将近 20 年了。去年你说你的时间表少于五年。当你考虑谁将接替你担任 CEO 时，我知道有几个候选人。你在寻找什么样的品质？</p><p id="1dfb42d6-c689-80d0-b575-d4bd7a010d5b" class="">杰米·戴蒙：首先，这是董事会。我的意思是，他们显然我也是其中的一部分，他们会非常依赖我。但这是董事会。是董事会，是董事会。我们每次都谈论这个问题，而且已经谈了很多年，董事会。所以你的听众知道他们每次都在没有我的情况下开会。所以我们有。我认为这是最重要的治理变革之一，如果你问我，所有我们不得不做的愚蠢事情中，董事会应该在没有 CEO 的情况下独立开会。我认为这创造了一定程度的独立性、思考和挑战。</p><p id="1dfb42d6-c689-80e4-912b-c6ecf7939cbf" class="">自从我担任 Bank One 的 CEO 以来，我一直在这样做，远在要求之前。即使在今天，也只要求一年一次。所以。他们了解整个管理团队，所以并不是只听我一个人说。我从未在董事会上做过演示。总是由其他人来做。他们会来。我们今天有一个董事会会议，大约五六个高层人员，不仅仅是直接下属，还有更下层的人会来参加晚宴。这就是董事会如何感到放心的方式。他们是谁？你是做什么的？公司是如何运作的？你知道，它是否真的做到它所承诺的事情？</p><p id="1dfb42d6-c689-80e8-a932-cb08fa9f95a2" class="">但我会告诉你这些品质。我们分析了好的继任和不好的继任。<strong> 我认为当人们说我们真的在寻找未来在技术方面的人，或者我们在寻找一个市场营销人员时，这是一个错误。你最好找到一个完整的人。</strong> 所以你想要一个开放的人。你想要一个有分析能力和细节的人，他们管理得很好，他们被管理。但我认为最重要的是心。他们在乎。而且人们知道这一点。好奇心。他们总是在这里或在路上询问什么有效，什么无效，这也是一种谦逊。</p><p id="1dfb42d6-c689-80b9-9611-cdb1de2fd850" class="">我不知道。请向我解释一下。我不明白我们应该怎么做？一点点勇气。他们在这些工作中必须承受很多打击，但你要继续前进，你有你的愿景，并通过人们来推进愿景。看你的行动。你说到做到，言行一致。当你听到官僚主义时，你拿起电话，采取行动。你知道，你让人们觉得有趣。</p><p id="1dfb42d6-c689-807d-a3cb-dbe5d00abad2" class="">所以所有这些各种各样的东西，你知道，勇气、毅力、心灵和能力，所有人类都是这些东西的混合体。你知道，你不能单独挑出一个，你知道，你在其中任何一个方面都不完美。但是。他们组成团队，你知道，那些人成为杰米的朋友，这总是以灾难告终。</p><p id="1dfb42d6-c689-8097-869c-e54c1cda468b" class=""><strong><a href="https://singjupost.com/ken-chenault-ceo-of-american-express-at-view-from-the-top-talk-transcript/">另请阅读：Ken Chenault，美国运通首席执行官在“顶尖视角”演讲（文字记录）</a></strong></p><p id="1dfb42d6-c689-80a7-b060-e25cfe0de1be" class="">我还取笑了一件事。<strong> 当人们说，你需要一个变革性的领导者。卖掉股票。</strong> 领导者应该走进员工的鞋子，理解，不断观察竞争对手和问题，不断质疑。要做一个怀疑论者，但不是愤世嫉俗者。让所有类型和信仰的人走进房间时都感到他们想要贡献，并且你实际上是认真的，你知道，你知道什么？你可以帮助我们为公司、客户、我们运营的国家等做得更好。</p><p id="1dfb42d6-c689-8062-a816-c2b69ce1914b" class="">ROULA KHALAF：那么你所识别的所有这些候选人，你认为他们都有这些品质吗？</p><p id="1dfb42d6-c689-8070-9595-d0b3a21b40fe" class="">JAMIE DIMON：程度不同，你知道，然后他们都有不同的工作。你可以看到他们在不同的工作中，在不同的压力水平下运作，处理新事物总是更难。</p><h1 id="1dfb42d6-c689-80e9-9130-fdcd0cd311e8" class=""><strong>年度公路旅行</strong></h1><p id="1dfb42d6-c689-80e7-b44f-c4381613dc86" class="">ROULA KHALAF：我不会问你谁将成为下任首席执行官，因为这不是你的决定。对吧。所以你在 2024 年进行了一次年度夏季分行巡访。我想你去了爱荷华州、明尼苏达州、内布拉斯加州、密苏里州、堪萨斯州和阿肯色州。今年你要去哪里？</p><p id="1dfb42d6-c689-8009-86b6-ddff3e58fdcd" class="">JAMIE DIMON：我想我们会去阿拉巴马州、密西西比州之类的地方。实际上，我还没看到具体计划，但我们在这些州开设了新分行。所以可能会从新奥尔良开始。</p><p id="1dfb42d6-c689-8078-8492-cf0810ef11a7" class="">ROULA KHALAF：你为什么要这样做？</p><p id="1dfb42d6-c689-803f-a218-cb616bb47553" class="">JAMIE DIMON：这不是分行巡访，而是一次公路旅行。我们为中型市场客户、小企业客户、首席执行官举办大型午餐会。我们在棕榈滩与大公司的首席执行官们也这样做。我们还会访问分行、呼叫中心以及州长和市长。在一些站点之间，人们会在巴士上来来去去。</p><p id="1dfb42d6-c689-80f2-af8f-ca16253cb62e" class="">ROULA KHALAF：你从中得到了什么？</p><p id="1dfb42d6-c689-80c8-bec0-fbf57d71d2b3" class="">杰米·戴蒙：我可以看到我的管理团队在行动。我只想说，在巴士上，我们有时间记录员、分行经理和贷款专员。我会说，教教我们，告诉我们。这是一瓶啤酒和豁免权。告诉我们我们做的最愚蠢的事情。这样你就可以看到你自己的人。你会发现很多关于竞争对手的事情，比如你在一个城市的表现如何，你的银行家表现如何，可能是投资银行家不够努力去帮助圣路易斯 X 或奥马哈 Y。</p><p id="1dfb42d6-c689-8075-9635-c70d2e50b2db" class="">你会玩得很开心。我的意思是，单就巴士旅行本身而言，并不完全是新的。我们已经做了15年了。但我总是进行公路旅行，你知道的，我就是这样做的。我做同样的事情。我们去英国，我们四处走走。你知道的，不完全是那样。我们在那里没有零售系统。但你会尽量见很多人。</p><p id="1dfb42d6-c689-800b-b4be-f75f753871ac" class="">ROULA KHALAF: 你有没有去过美国的某个地方，特别喜欢的？</p><p id="1dfb42d6-c689-8018-ace2-d724c712f177" class="">JAMIE DIMON: 我喜欢所有地方。你知道，特别是在不太知名的地方，民主制度发挥作用，当地社区，比如所有这些城市、市长、州长、企业、非营利组织、大学，他们都在共同努力建设河滨步道，带来就业机会，教孩子们为当地企业需要做些什么。这是有效的。小型民主制度是有效的。从中可以学到很多东西。</p><p id="1dfb42d6-c689-80b6-8fce-f908380b1831" class="">哦，另一件事也很振奋人心。<strong> 奥斯汀、奥马哈、堪萨斯、圣路易斯的巨大创新。这不仅仅是硅谷。</strong> 这种创新的扩散现在也到了欧洲。所以当我现在去英国时，我们在格拉斯哥、都柏林、伯恩茅斯做了大量的技术工作，我们在巴黎和英国举办了金融科技会议。我认为这些技术改变了世界，使其变得更好。</p><h1 id="1dfb42d6-c689-803d-b901-d4ce4518aaf3" class=""><strong>职业反思</strong></h1><p id="1dfb42d6-c689-803c-8c4f-ca629a56f406" class="">ROULA KHALAF：说到孩子，如果你今天毕业，你还会进入银行业吗？</p><p id="1dfb42d6-c689-80f2-b699-cee77329acd7" class="">JAMIE DIMON：是的，这是……</p><p id="1dfb42d6-c689-804d-a9b4-d7a88ecacc7a" class="">ROULA KHALAF：听起来不太有说服力。</p><p id="1dfb42d6-c689-8010-8f82-f73088a5d2e5" class="">杰米·戴蒙：这就是它的伟大之处。你知道，我会的。但我理解为什么人们可能不想这样做，因为它总是不断地被各方攻击。但它的美妙之处在于，它是创造这些伟大经济体的飞轮之一。它是思想、人与资本的汇聚以及资本的分配。资本以正确的方式部署是有意义的，以错误的方式部署则可能摧毁一个国家。</p><p id="1dfb42d6-c689-8032-94bc-ec3936a0bdf3" class="">因此，这不仅仅是银行，还有风险投资、私募股权、对冲基金，以及所有这些各种各样的东西。然后，当你早上醒来，读报纸时，几乎所有内容都会影响到你，你知道，人们喜欢在鸡尾酒会上聊天，因为你怎么看这个？你怎么看那个？你知道，这在某些行业是不同的。他们在自己的行业中非常狭隘。</p><p id="1dfb42d6-c689-80cd-a538-f4910542136e" class="">所以这是一个迷人的领域，它节奏快、变化快、风险高。是的，我会进入这个领域，但我理解为什么有些人会说，给我一些更舒适的东西。</p><p id="1dfb42d6-c689-8013-8349-dee1f6bf4deb" class="">ROULA KHALAF：还有其他你会涉及的事情吗？</p><p id="1dfb42d6-c689-80c0-89e1-ff429a4053a5" class="">杰米·戴蒙：我一直很喜欢媒体，尽管我经常批评它。当我完成这份工作后，我可能会做一些与媒体相关的小事情。</p><p id="1dfb42d6-c689-8065-97a7-f939800afed9" class="">ROULA KHALAF：请说。</p><p id="1dfb42d6-c689-8021-869a-dca6b9885d8a" class="">JAMIE DIMON：是的，好吧，我不会告诉你。</p><p id="1dfb42d6-c689-8074-a6f4-d3d4e2a4aba2" class="">ROULA KHALAF：可能是竞争对手吗？</p><p id="1dfb42d6-c689-80c5-a6b3-d1d9e2d05c50" class="">JAMIE DIMON：可能是竞争对手或助手。我认为所有报纸都应该这样做，但我现在不会告诉你是什么。所以我认为媒体对于教育公众至关重要。但更重要的是教育影响者。这些影响者可能是其他媒体、参议院行政官员。我说的是全世界的政客、政客的工作人员。这就是他们获取大量信息的来源，这也是为什么有时他们会受到批评。他们花更多时间，理解问题，然后再做出二元化的判断，你知道，然后就说一些根本不真实和误导的话。</p><p id="1dfb42d6-c689-807e-9480-e76c5c5d3b24" class="">ROULA KHALAF：你读很多历史吗？</p><p id="1dfb42d6-c689-8097-85ac-dbd365f87a83" class="">杰米·戴蒙：是的。</p><p id="1dfb42d6-c689-8000-89de-d94ab5485a72" class="">ROULA KHALAF：您目前在读什么书？</p><h1 id="1dfb42d6-c689-8067-80a0-fd22a8760d08" class=""><strong>对历史和特殊关系的思考</strong></h1><p id="1dfb42d6-c689-800b-bb9e-eedefa5e0a63" class="">杰米·戴蒙：我最近读的书是关于艾森豪威尔的。我床边有很多书，但我一直忙于处理这些小危机，写董事长的信等等。但我确实想对英国人指出这一点，因为这很重要。我认为人们谈论这种特殊关系，因为可能在你们的报纸上有文章，然后这里也有文章在嘲笑这种特殊关系。1939 年 9 月，好吗？从那一刻起，直到 1941 年 12 月美国参战，英国独自一人对抗纳粹主义，冒着极大的风险。<strong> 人们不了解，即使在美国，英国之战并不是一件短暂的事情。它持续了好几个月，4 万人丧生，他们独自坚守。他们很坚强，他们在等待援助。</strong> 愿上帝保佑他们，因为如果他们不这样做，世界可能会大不相同。</p><h1 id="1dfb42d6-c689-804c-991c-c279f3e918c5" class=""><strong>关于政治抱负</strong></h1><p id="1dfb42d6-c689-80e0-b498-d4ba17e7f665" class="">鲁拉·卡拉夫：你有没有考虑过竞选总统？</p><p id="1dfb42d6-c689-80d9-b2db-d510878838c8" class="">杰米·戴蒙：没有。</p><p id="1dfb42d6-c689-80c2-a53d-ea92216c3236" class="">鲁拉·卡拉夫：没有，但不确定？</p><p id="1dfb42d6-c689-802d-8ca0-cf12de3857dd" class="">杰米·戴蒙：不，不。这件事一直有人提到。我确信很多 CEO 都会遇到这种情况，但我从未认真考虑过。我确实曾问过一个人，这到底意味着什么？你被告知要放弃整个生活吗？你知道，家庭或者其他？12 个月在外奔波，筹集资金，所有这些事情。我只是不确定那是否适合我。</p><p id="1dfb42d6-c689-80a3-a78c-e7f95e63cf4f" class="">ROULA KHALAF：但你一直在工作，不是吗？</p><p id="1dfb42d6-c689-8035-b40b-dc35bf07d321" class="">杰米·戴蒙：是的。</p><h1 id="1dfb42d6-c689-80a9-92c5-cc4a72e9fdaf" class=""><strong>个人生活和爱好</strong></h1><p id="1dfb42d6-c689-804e-b17a-f65c87ceaaac" class="">ROULA KHALAF：你如何放松？</p><p id="1dfb42d6-c689-80dc-9811-c1b6dc27abc7" class="">JAMIE DIMON：所以我花很多时间和家人在一起，我的女儿们经常说，“爸爸，你需要一些爱好。”我告诉她们我有。你们。我们一起出去吃饭，我们烧烤，我们一起度假。我们以前一起滑雪。我读历史书，喜欢葡萄酒。我喜欢音乐，喜欢徒步旅行。你知道，我不能再打网球了。我们以前一起打网球。这些是我喜欢的事情。我对豪车不感兴趣。我不参加很多黑领带或红地毯之类的活动。所以，你知道，周末我去我的乡村别墅。我的所有孩子都会来。我有七个孙子孙女。<strong> 那是我的爱好。</strong> 我也喜欢读历史书，所以如果我有多余的时间。我还没有开始播客，虽然我有很多，因为你得听这些。但当我一个人走路或在跑步机上时，我喜欢思考，我会听音乐，但我喜欢思考，我不喜欢我的大脑 100%时间都被人告诉我事情。</p><p id="1dfb42d6-c689-8012-889c-d3d58874b0f7" class="">ROULA KHALAF：Jamie Dimon，谢谢你。</p><p id="1dfb42d6-c689-8018-abb9-d6317e200734" class="">杰米·戴蒙：谢谢。</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>

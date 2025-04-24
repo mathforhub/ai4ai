@@ -1,0 +1,685 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>20250424-3</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(50, 48, 44, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-default_background {
+	color: rgba(50, 48, 44, 1);
+}
+.highlight-gray_background {
+	background: rgba(248, 248, 247, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(248, 243, 252, 1);
+}
+.highlight-pink_background {
+	background: rgba(252, 241, 246, 1);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(248, 248, 247, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(248, 243, 252, 1);
+}
+.block-color-pink_background {
+	background: rgba(252, 241, 246, 1);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: undefined; }
+.select-value-color-pink { background-color: rgba(225, 136, 179, 0.27); }
+.select-value-color-purple { background-color: rgba(168, 129, 197, 0.27); }
+.select-value-color-green { background-color: rgba(123, 183, 129, 0.27); }
+.select-value-color-gray { background-color: rgba(84, 72, 49, 0.15); }
+.select-value-color-transparentGray { background-color: undefined; }
+.select-value-color-translucentGray { background-color: undefined; }
+.select-value-color-orange { background-color: rgba(224, 124, 57, 0.27); }
+.select-value-color-brown { background-color: rgba(210, 162, 141, 0.35); }
+.select-value-color-red { background-color: rgba(244, 171, 159, 0.4); }
+.select-value-color-yellow { background-color: rgba(236, 191, 66, 0.39); }
+.select-value-color-blue { background-color: rgba(93, 165, 206, 0.27); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="1dfb42d6-c689-806e-9c28-eaff26853490" class="page sans"><header><h1 class="page-title">20250424-3</h1><p class="page-description"></p></header><div class="page-body"><h1 id="1dfb42d6-c689-8077-ba50-c6a644359c8e" class="">亨利·蒂尔曼访谈实录：中国的钍革命——六万年的廉价能源</h1><p id="1dfb42d6-c689-805f-924e-c70b44452600" class="">原文：<a href="https://singjupost.com/transcript-of-henry-tillman-chinas-thorium-revolution-60-000-years-of-cheap-energy/?singlepage=1">https://singjupost.com/transcript-of-henry-tillman-chinas-thorium-revolution-60-000-years-of-cheap-energy/?singlepage=1</a></p><ul id="1dfb42d6-c689-80a6-aab7-fed5bee00d1a" class="bulleted-list"><li style="list-style-type:disc"><time>@2025年4月24日 17:14</time></li></ul><ul id="1dfb42d6-c689-8027-bd59-e3a2f551b3c5" class="bulleted-list"><li style="list-style-type:disc">作者：<a href="https://singjupost.com/author/singju/"> 庞甘巴姆·S</a></li></ul><ul id="1dfb42d6-c689-8021-9e88-f0a4fd1f8fbb" class="bulleted-list"><li style="list-style-type:disc"><a href="https://singjupost.com/podcasts/">播客</a></li></ul><figure id="1dfb42d6-c689-8024-8945-e31a9744e903" class="image"><a href="https://singjupost.com/wp-content/uploads/2025/04/Henry-Tillman-China-s-Thorium-Revolution-60-000-Years-of-Cheap-Energy.jpg"><img style="width:700px" src="https://singjupost.com/wp-content/uploads/2025/04/Henry-Tillman-China-s-Thorium-Revolution-60-000-Years-of-Cheap-Energy.jpg"/></a></figure><ul id="1dfb42d6-c689-80d0-a752-e8be37b70ba6" class="bulleted-list"><li style="list-style-type:disc"><strong><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsingjupost.com%2Ftranscript-of-henry-tillman-chinas-thorium-revolution-60-000-years-of-cheap-energy%2F&amp;t=Transcript%20of%20Henry%20Tillman%3A%20China%27s%20Thorium%20Revolution%20-%2060.000%20Years%20of%20Cheap%20Energy">分享</a></strong></li></ul><ul id="1dfb42d6-c689-8020-bcba-ca4b60da08e0" class="bulleted-list"><li style="list-style-type:disc"><strong><a href="https://x.com/intent/tweet?text=Transcript%20of%20Henry%20Tillman%3A%20China%27s%20Thorium%20Revolution%20-%2060.000%20Years%20of%20Cheap%20Energy&amp;url=https%3A%2F%2Fsingjupost.com%2Ftranscript-of-henry-tillman-chinas-thorium-revolution-60-000-years-of-cheap-energy%2F&amp;via=singjupost">推文</a></strong></li></ul><ul id="1dfb42d6-c689-80a5-891e-d04db95f6ba7" class="bulleted-list"><li style="list-style-type:disc"><strong>Pinterest</strong></li></ul><ul id="1dfb42d6-c689-8008-91ad-c268699ee3e0" class="bulleted-list"><li style="list-style-type:disc"><strong><a href="https://www.notion.somailto:?subject=Transcript%20of%20Henry%20Tillman%3A%20China%27s%20Thorium%20Revolution%20-%2060.000%20Years%20of%20Cheap%20Energy&amp;body=https%3A%2F%2Fsingjupost.com%2Ftranscript-of-henry-tillman-chinas-thorium-revolution-60-000-years-of-cheap-energy%2F">邮件</a></strong></li></ul><p id="1dfb42d6-c689-8033-8e73-c024863d9dda" class="">以下是格伦·迪森教授与 Aiyana 咨询与研究公司首席执行官亨利·蒂尔曼就“中国的钍革命——六万年的廉价能源”于 2025 年 4 月 23 日进行的对话完整实录。</p><h2 id="1dfb42d6-c689-803c-a522-d5dc8fc1632e" class="">引言</h2><p id="1dfb42d6-c689-80b3-a26b-c78ff889862f" class="">格伦·迪森：大家好，欢迎收看。本期我们邀请到了 Aiyana 全球咨询与研究公司首席执行官亨利·蒂尔曼，他深度参与能源和基础设施项目。欢迎来到节目。</p><p id="1dfb42d6-c689-80d0-95f2-dc7edfa63b8a" class="">亨利·蒂尔曼：谢谢你，格伦。很荣幸能和你在一起。</p><p id="1dfb42d6-c689-8028-9eff-f2ee61fafa4c" class="">格伦·迪森：能源获取一直是文明的基石，无论是人力、煤炭与钢铁、石油、电力还是核能。但我们似乎正接近一场可能改变人类文明的能源重大革命。我不确定这是否夸张，但现在有人说，中国有望依靠钍在未来六万年内获得廉价能源。</p><p id="1dfb42d6-c689-8067-903c-cf8f4aa3f55c" class="">因此，这通常被认为是核能领域的圣杯。事实上，我们现在已经有新闻报道说中国戈壁滩上建成了第一个可运行的钍反应堆。你能解释一下这是什么，以及它为什么如此重要吗？</p><h2 id="1dfb42d6-c689-80a7-9e5f-d987f8838cf0" class="">钍能源的历史</h2><p id="1dfb42d6-c689-8083-813e-ff08f1932c46" class="">亨利·蒂尔曼：当然。首先，你选择的这些词正是我在10月23日北极圈论坛“钍革命”上向25个国家展示时所用的词。所以我在几年前就同意了这些观点。</p><p id="1dfb42d6-c689-80e9-85bf-e0f6c72ddc78" class="">但实际上，钍的故事可以追溯到19世纪30年代的挪威，当时它基本上被视为一种稀土元素。到了1941年，在美国伯克利——我后来也在那里上学——钚和钍都被纳入曼哈顿计划的考虑范围。但钍本身并不具有爆炸性，所以最终选择了钚。</p><p id="1dfb42d6-c689-8005-aab1-d03bb7f5d7eb" class="">到1959年，埃德蒙·泰勒作为艾森豪威尔安全核能计划的一部分，开发了钍作为核反应堆，并于1959年向第一家美国石油公司展示，称我们面临二氧化碳问题，而这就是解决方案，因为它燃烧清洁且不易爆炸。</p><p id="1dfb42d6-c689-8098-a28d-f27302eb8785" class="">从1962年到1972年，美国用钍驱动了第一艘货船，连续运行了10年，没有发生任何事故。随后，从1965年到1969年，这项技术也在橡树岭陆上运行了大约13,000小时。虽然是间歇性的，但在1972年，由与尼克松关系密切、颇具个性的美国海军上将里科弗领导，最终的计划是不再继续使用钍，而是在核计划中使用钚。</p><p id="1dfb42d6-c689-8014-8009-dc77c26ab7d7" class="">因此，从1972年到2011年，美国在英国的支持下封锁了钍的使用配方。然后福岛事件发生了。当福岛事件发生时，美国决定，我们必须回到过去。在2011年前后，美国向许多大学和政府开放了这项技术。这也得益于我所做的研究，以及两位美国参议员的推动，一位来自犹他州，一位来自内华达州的哈里·里德，他们表示，让我们开放这项技术。如果你使用这项技术，你必须将知识产权返还。因此，他们在2011年把这项技术交给了某个中国人，确实是来自中国，但也传到了俄罗斯和其他一些国家。</p><h2 id="1dfb42d6-c689-8033-bcd3-e63c0054c8e3" class="">中国的钍开发</h2><p id="1dfb42d6-c689-80f4-8a6d-fd78495dfa21" class="">我觉得有趣的是，在 20 世纪 50 年代，钍也曾在加拿大一个名为 Candu 的项目中被少量使用，在法国也有应用。所以当时已经有一些相关知识。当然，中国在 50 年代和 60 年代也了解加拿大正在发生的事情。所以中国在 50 年代、60 年代和 70 年代就已经掌握了这些知识。</p><p id="1dfb42d6-c689-80e7-89bc-f36a41ec7a9b" class="">所以当这种技术变得可以开放使用时，中国迅速抓住了机会，其他国家也是如此。但中国一直是这一领域的领导者，并作为一个国家做出了战略决策，全力支持这一技术。因此，他们加快了核技术的应用，首先是在第三代核能中使用非钍技术，然后才进入你所说的钍技术领域。</p><p id="1dfb42d6-c689-80de-8f1a-d3da3554d4cd" class="">你说得对，这一切始于2011年。他们在2011年开始投入资金。这个项目在去年变得可运行。当然，之所以我们现在提出这个问题，是因为在过去几天里他们为反应堆加料了。是的，所以这是一个可运行的反应堆，他们正按计划建设一个大型陆上反应堆，预计在2029/2030年投入运行。</p><p id="1dfb42d6-c689-80ec-8577-db182d286805" class="">但更近一步的是，中国也在使用玲龙一号，该反应堆将在明年投入运行。因此，从小型模块化反应堆（SMR）的角度来看，他们在这方面可能至少领先世界其他国家五年，甚至十年，而且在大型反应堆中使用钍方面，他们无疑比世界其他国家领先十年。</p><h2 id="1dfb42d6-c689-80e7-9ed9-daaf44191645" class="">全球分布与潜力</h2><p id="1dfb42d6-c689-80db-9a67-e4ae6359cb7b" class="">现在，回到你的问题，钍本身分布在全世界，没有人能够控制它。印度拥有最多的储量。土耳其也拥有最多的储量。中国有一部分。挪威，你们国家，也有一部分。我和你们的前能源部长谈过，挪威在2008-09年曾考虑过使用钍，但没能找到可行的方法。</p><p id="1dfb42d6-c689-80c5-926f-d53ca4dbb701" class="">所以在世界其他地方，它要便宜得多，功能更强大，也更安全。即将推出的 SMR 是第三代 SMR，而钍反应堆是第四代 SMR，老一代的是第二代。所以代数越高，安全性越高，功能也越强大。</p><p id="1dfb42d6-c689-80ba-9e19-dca8c1d0e879" class="">它可以在全世界范围内使用，但建造它需要大量时间、大量专注以及大量政府支持。因此，中国在这方面的投入已经从4亿美元增加到可能有60亿美元，员工人数也从几个人增加到400多人。</p><p id="1dfb42d6-c689-80e8-84bd-cae225f87d2d" class=""><strong>但正如你所指出的，这项技术对“一带一路”国家的影响将是巨大的。首先是较小的 SMR，当然还有更大型的项目，随着陆上钍反应堆的投入使用。</strong></p><h2 id="1dfb42d6-c689-8072-820b-d3806124ee9a" class="">为什么不是所有人都在争相开发钍？</h2><p id="1dfb42d6-c689-800b-8719-c4d3e47b7a34" class="">格伦·迪森：是的，确实如此。但如果这种技术比传统核能高效200倍，或者能产生200倍的能量，而且更清洁、更安全，为什么全世界没有掀起一场大规模竞赛，争相开发这种技术呢？</p><p id="1dfb42d6-c689-8059-8894-f63d896b3f2d" class="">亨利·蒂尔曼：其实他们确实如此。这个问题问得很好。我第一次开始研究这个是在2018年，2023年我首次发表了相关内容。如果你看看股价，美国的大宗商品和美国核能公司股价都飙升了，尽管他们在2030年、2031年之前都不会有收入。</p><p id="1dfb42d6-c689-803c-b2fe-eb0b92c44085" class="">当然，前期在钍上的大额投入是一张40亿美元的门票。我认为印尼的数字也是40亿美元，因为印尼正试图用来自丹麦和美国的技术建造一座钍工厂。这是第一项40亿美元的投入。第二项，即使你建成了，在通过这个项目的商业模式开始赚钱之前，也还需要一段时间。</p><p id="1dfb42d6-c689-803b-b1a9-ffe379be6c15" class="">就像中国在过去25年里支持太阳能和风能一样，随后价格下降，变得可行。这些技术要变得可行还需要几年时间，无论是在小型模块化反应堆层面，还是在地面层面的钍反应堆。所以获取成本更低，资源也更加丰富。</p><p id="1dfb42d6-c689-80f2-9478-dedee5a54621" class="">我担任许多国家的顾问，许多国家似乎无法理解这一进展的速度有多快。他们现在拥有的铀供应在未来五到十年可能会非常值钱。现在他们正从铀转向钍，而钍的储量要多得多，他们甚至在政府层面都无法理解这一切变化得有多快。实际上，这非常非同寻常。</p><p id="1dfb42d6-c689-805e-b8b1-e3b793d0cb74" class=""><strong><a href="https://singjupost.com/transcript-of-palki-sharma-on-the-ranveer-show-podcast/">另请阅读：《The Ranveer Show Podcast》Palki Sharma 访谈实录</a></strong></p><h2 id="1dfb42d6-c689-80d0-bcbc-dfbc529df429" class="">中国的领先地位及其经济影响</h2><p id="1dfb42d6-c689-80a4-a5d7-f423f62ead88" class="">格伦·迪森：但我们如何解释中国在这方面有如此巨大的领先优势？我想这对中国经济未来的发展意味着什么？</p><p id="1dfb42d6-c689-80ea-acd5-f4651c245200" class="">亨利·蒂尔曼：首先，这是一种强大的能源。所以它的燃烧过程有98%的清洁度。使用后几乎没有废弃物。成本也低得多。你可以用它为整个国家供能。</p><p id="1dfb42d6-c689-8077-a92a-ed308aa87ef6" class="">如果我再进一步，大概15年后，我认为你将需要这个来为人工智能提供动力。所以现在在美国，许多大型公司正在尝试为他们的人工智能或数据中心供能，这意味着你需要核能。这是在一段时间内最好的配方和最有效的核能形式。</p><p id="1dfb42d6-c689-80da-8dd6-f73e1b13e087" class="">因此，在近期内，他们将不得不考虑其他选项。但在几年后，大约2030年至2035年期间，钍将在许多其他国家得到应用。我看到有估计称，“一带一路”沿线有30到41个国家有兴趣考虑使用钍反应堆为本国供能。</p><p id="1dfb42d6-c689-80c5-947a-c09abe29c190" class="">格伦·迪森：但他们有自己的技术吗，还是会依赖中国来帮助他们建造这个？</p><p id="1dfb42d6-c689-808a-951a-d501a3c35254" class="">亨利·蒂尔曼：这将是中国的技术。许多实际上都是模块化的。小型模块化反应堆是模块化的，所以是逐步组装的。但没错，它们依赖于中国技术。所以这将带来巨大的变革。</p><h2 id="1dfb42d6-c689-802f-8095-d4dbaad18eca" class="">对能源和交通的全球影响</h2><p id="1dfb42d6-c689-8084-8708-f4cfa8e2a054" class="">格伦·迪森：但如果全球大部分竞争和冲突都围绕能源资源展开，这会取代其他形式的能源吗？您如何预测这将塑造国际体系？</p><p id="1dfb42d6-c689-8046-98a8-e5334fae87f2" class="">亨利·蒂尔曼：这是个非常好的问题，因为有很多人说，直到最近几天钍才真正活跃起来——在此之前，仍有很多怀疑者。如果我回顾几年前，我在2018年开始研究这个。当时人们说这不行，那也不行。确实，1965年到1969年期间它是有效的，但其实也不是一直有效，只是部分时间有效。有很多怀疑者说它根本行不通。现在它已经行得通了。</p><p id="1dfb42d6-c689-80c6-af83-f09832bca5b5" class=""><strong>我个人认为，这不是政府的声明，而是我作为研究人员的看法：到 40 年代中期，你可以从韩国到德国，横跨欧亚大陆，依靠人工智能，无论是无人驾驶汽车、铁路还是由这种核能驱动的卡车，全部都是无人驾驶的。</strong> 这完全像《星球大战》里的情节。但我的意思是，我真的认为在一段时间内，到 2045 年，这些事情会迅速发生。所以所有这些国家都将能够利用这种中国技术来实现这一点。这是中国的技术，但钍在其他地方也有。</p><p id="1dfb42d6-c689-8044-b923-f59f2095fd8f" class="">GLENN DIESEN：在全球范围内，这项技术被应用于航运和所有其他形式的交通运输。</p><p id="1dfb42d6-c689-8089-94a5-cbbe828ba9c6" class="">亨利·蒂尔曼：这是个非常好的问题。实际上，两者都有。中国正在建造世界上最大的由钍驱动的货船，该船于2023年下水。同时，他们也在关注海上核能，目前这一领域由俄罗斯领先。俄罗斯一直处于领先地位。世界上第一座海上核电站是俄罗斯在2020年建成的，但那不是钍，而是铀为主，但确实是海上的。</p><p id="1dfb42d6-c689-802c-9230-f185a84af476" class="">然后我认为，从我的角度来看，西方有许多国家正在研究如何在海洋领域实现这一点。而这项工作的领军人物是 Mikhail Bo，他经营着 Core Power UK，是带领西方在全球范围内推动这一进程的关键人物，得到了来自其他渠道的股权资本以及各国政府的支持来推动这一计划。</p><p id="1dfb42d6-c689-80a7-ba5a-e13e829e9c33" class="">现在，Core Power 主要由日本合作伙伴资助，但也有一些西方合作伙伴，包括斯堪的纳维亚或东北亚国家，由英国通过 Core Power 牵头，还有美国，因为美国最终希望利用这种能源为河流上的船只提供动力。</p><p id="1dfb42d6-c689-8089-b02a-d46216eade6e" class="">所以是的，这将同时应用于陆上和海上，既有钍也有铀。这一切发展得非常非常快，但由于某些原因几乎没有媒体报道，或者现有的报道并没有详细描述这一切。</p><h2 id="1dfb42d6-c689-8022-9e20-e7f32a3334a2" class="">中国的竞争优势</h2><p id="1dfb42d6-c689-800c-8072-ce495592b9df" class="">格伦·迪森：是什么解释了中国的竞争力？这只是中国的技术进步，还是他们在实施方面的规模能力？因为正如你提到的，美国和其他国家也在研究这个，但他们还处于科学或实验阶段，而中国实际上已经在实施，并且第一个反应堆已经运行。那么你怎么解释这一点？是规模化吗？因为通常在其他技术领域，你会发现这是一个关键优势。</p><h2 id="1dfb42d6-c689-80ff-99ad-e2f56c163d91" class="">钍的优势与中国的承诺</h2><p id="1dfb42d6-c689-80ce-ab34-fb5090291eeb" class="">亨利·蒂尔曼：我可以用中国政府负责该项目的一位人士最近的一句话来回答这个问题，大意是有时候兔子会变得疲惫和肥胖，而有时候乌龟能追上它们。所以我是在转述这些话，但从根本上说，美国自1959年以来就拥有这项技术。自1959年以来。而他们在1972年停止了这项技术。</p><p id="1dfb42d6-c689-80f7-91c2-e9cb8d5ecf9d" class="">我认为，如果你看看这个——我并不确定，因为我没有参与这些讨论——我认为你会发现美国目前在未来几年里的重点是向欧洲出售液化天然气，把液化天然气卖给欧洲，这在特朗普时期也是如此，同时迫使俄罗斯将其液化天然气销往其他地方。所以重点实际上是一个短期的策略，而不是一个长期的二十年计划。</p><p id="1dfb42d6-c689-8075-9f4a-d9e9129322d8" class="">请记住，我所说的这个用于钍反应堆的 TF1 项目是从 2011 年开始的，他们全力以赴地推进，而中国也全力以赴地投入其中。但也要记住，中国自上世纪 50 年代就开始研究这个。他们研究了很长一段时间。他们知道里面有什么，但不知道如何让它运作。但当终于有机会让它运作时，他们倾尽全力。</p><p id="1dfb42d6-c689-803a-9613-c40b84ebd86b" class=""><strong>他们现在仍然这样做。我认为这些工人几乎没有假期，因为他们多年来一直在开发这些东西，经历了许多事件。</strong> 所以这是从工人到国家高层的巨大投入，因为从本质上讲，这将改变世界。正如你所说，这是一场革命，钍的革命。</p><p id="1dfb42d6-c689-80f2-ba0c-d0501abd27f5" class="">我认为没有什么能阻止这一进程。事实上，我们现在看到的是，他们已经不再说中国只有2万年的钍储量，而是说中国境内有6万年的钍储量。如果你再往后看，你会发现中国希望到2040年在月球上建造一座钍反应堆。</p><p id="1dfb42d6-c689-807f-b842-ded7d983c85c" class="">格伦·迪森：所以这实际上是无限的能源供应。</p><p id="1dfb42d6-c689-8013-a8ce-fa259764addf" class="">亨利·蒂尔曼：而且不仅仅是中国，世界上的领导者，比如印度和土耳其。世界各地都有大量这种资源。它比铀便宜得多。</p><h2 id="1dfb42d6-c689-8010-8b31-ebd3d63579f5" class="">全球影响与能源变革</h2><p id="1dfb42d6-c689-80fe-acbf-f5f16d065523" class="">格伦·迪森：嗯，这其实是一个乐观的理由，不是吗？资源不稀缺。如果资源非常稀缺，你会认为会有冲突，或者如果所有资源都集中在中国。但现在资源分布广泛且丰富——这会取代天然气和石油吗？我在努力理解这其中的意义。</p><p id="1dfb42d6-c689-80aa-817e-ce2fad35d42d" class="">
+</p><p id="1dfb42d6-c689-8007-8d37-e2819a929492" class="">亨利·蒂尔曼：嗯，我从事咨询行业。我认为人们会考虑分散风险。我对绿色氢能在中短期内持乐观态度。如果你看看北非、纳米比亚或世界其他地区正在考虑用绿色氢能为欧洲供能。所以在这方面有很多过渡性的举措。</p><p id="1dfb42d6-c689-80a1-acbb-ee332e8f9ce3" class="">但从更长远来看，我认为钍将发挥重要作用。正如我对你说的，我设想有那么一段时间，横贯欧亚的旅行将由钍提供动力，人工智能将由钍提供动力，“一带一路”也将由钍能驱动。我知道这听起来有点奇怪，人们会问你怎么了？但我很确定这正在酝酿之中。</p><p id="1dfb42d6-c689-80c3-94e2-feb983c2f54c" class="">格伦·迪森：嗯，众所周知，人工智能需要大量能源，显然中国还有“一带一路”倡议。所以这实际上是对中国更广泛经济活动的有力补充。我是说，这将为整个体系提供动力。</p><p id="1dfb42d6-c689-8046-b4c5-c42fd3dee366" class="">亨利·蒂尔曼：我认为这是正确的用词。正如我所说，你正在考虑能源组合中的许多不同选择。即使是海湾地区的大型生产国也在认真关注这一点。我可以推测，他们在未来某个时候会成为中国在钍能源活动中的合作伙伴。</p><p id="1dfb42d6-c689-8064-8f63-c0d063513ea5" class=""><strong>我认为全世界都低估了仅仅运行数据中心所需的电力。</strong> 我曾在某处读到，位于华盛顿特区郊外的亚马逊数据中心所需的电力与芝加哥全市相当——仅仅是一个数据中心。所以你必须有足够的电力来运行所有这些。仅仅是数据中心本身，再加上其他国家正在讨论的内容。因此，你将需要大量的核能，这也是为什么中国将引领全球核能发展作为到 2030 年的头号优先事项。</p><h2 id="1dfb42d6-c689-802f-a0a4-fd1392ad247e" class="">历史背景与颠覆性潜力</h2><p id="1dfb42d6-c689-80e8-8cd8-f501046a1d8e" class="">格伦·迪森：但这实在是极具颠覆性的。如果我们回顾第一次工业革命，显然英国处于领先地位，但像中国、俄罗斯这样的国家却落后了，并为此付出了沉重的代价。俄罗斯人在克里米亚战争中被击败，很大程度上是因为他们在19世纪中叶落后于工业革命。与此同时，中国也在鸦片战争中被击败。但这项极具颠覆性的全新技术将再次让中国处于主导地位。</p><p id="1dfb42d6-c689-802f-963a-dac3d2321ad8" class="">亨利·蒂尔曼：我认为有必要关注一下俄罗斯国家原子能公司（Rosatom）。我们去年在我们的研究网站上发表过一篇关于 Rosatom 的文章，我们每天都在关注 Rosatom。Rosatom 做得非常出色。他们的铀小型模块化反应堆（SMR）发展得很好，并且还在不断扩大规模，最近刚刚宣布了第四代铀 SMR。他们在 2020 年开始在海上部署浮动核电站（FNPP）。</p><p id="1dfb42d6-c689-8071-a6af-e5a6913378b6" class="">如果你看看他们在全球拥有的合作伙伴数量，他们已经进入了 57 个国家。这非常惊人。所以 Rosatom——没有人谈论 Rosatom，但它是一家市值 200 亿美元的公司。它与普京总统关系非常密切。每当他出访，Rosatom 的人都会随行，他们的影响力极大。他们刚刚在乌兹别克斯坦的模块化 SMR 项目中取得了一系列胜利，我在那边做过一些研究。今年第一季度，他们还宣布了越南的项目。</p><p id="1dfb42d6-c689-8024-a46a-f02f538ff22c" class="">他们的业务也在拓展。不仅仅是铀，还包括风能、太阳能和铀的生产，不只是核能。所以这是一家多元化的公司，他们正在非常积极地扩展业务，并且是商业化运作的。</p><h2 id="1dfb42d6-c689-8036-8bb0-c7e6cb687767" class="">东盟的核能转型</h2><p id="1dfb42d6-c689-80e9-b2fd-e3d9b4043d56" class="">我刚才提到了东盟。我刚刚写了一篇文章并发给了英国政府。东盟地区，除了印度尼西亚（2022、2023年涉及钍），在过去六个月里发生了巨大变化。不仅仅是越南与俄罗斯国家原子能公司合作，我们还看到马来西亚政府在一年前表示，尽管他们从世界各地获得了大量半导体、太阳能、风能等领域的投资，但他们突然意识到需要开始认真考虑核能。</p><p id="1dfb42d6-c689-80cb-b405-f0b478e60174" class="">所以，这同样是政府主导、总理主导的，他们将在 12 个月的时间里推进这项工作。他们刚刚决定走小型模块化反应堆（SMR）路线。因为他们想一步一步来，确保人们明白这种核能不是代表过去发生事故的第二代核能。第三代、第四代核能已经不会再发生那样的事故了。所以需要一两年时间来获得社会认同。</p><p id="1dfb42d6-c689-8011-8860-c07ec5925318" class="">最近让我非常惊讶的是新加坡——一个小岛，我们真的需要核能吗？我记得是在2月19日，他们的副总理说我们真的应该考虑这个问题，因为我们需要一些东西来驱动这些数据中心。第二天，他们就向一个基金投资了50亿美元，来考虑如何为此提供资金。他们还在寻找顾问，帮助他们开展核能项目。这就是新加坡，一个高度保守、由保守方式管理的岛屿。看看他们是多么快地从保守转变为“我们需要抓住这个机会”。</p><p id="1dfb42d6-c689-8078-a54a-f4ce2583a590" class="">所以我认为关于不仅仅是谷歌和所有主要公司，亚马逊等，对核能的需求是个大新闻，各国也是如此。但关于钍的报道或新闻却很少，这也是我想和你一起做这件事的原因——为了教大家，因为人们对这方面知之甚少，也很少有人知道它的历史有多悠久。美国多年来一直掌握着这项技术。</p><h2 id="1dfb42d6-c689-8027-a548-d5925ec30fc2" class="">俄罗斯的核能立场</h2><p id="1dfb42d6-c689-800e-bcfb-f1624134a763" class="">格伦·迪森：很明显，中国已经在引领潮流了。但你提到了俄罗斯核能公司 Rosatom。俄罗斯在核能领域一直处于非常领先的地位，他们账面上有许多在全球范围内新建核电站的项目。他们提供核电站交钥匙解决方案——可以建造核电站，可以运营核电站，可以提供燃料，也可以处理废料。你认为俄罗斯人能从中获得巨大收益吗？他们能够顺利转型进入这个领域，还是说这会成为他们现有产业的竞争对手？</p><p id="1dfb42d6-c689-80b6-88a3-d28225d43113" class="">亨利·蒂尔曼：正如我之前所说，人们会从多种不同的方式来考虑这个问题。钍可能是其中的一部分，铀也可能是其中的一部分。但我想回应你提出的一个非常好的观点。去年在津巴布韦，俄罗斯国家原子能公司提出了一个方案，计划开采铀矿、建设核电站、建设数据中心、处理所有采矿相关事务，还包括制造业。为政府提供了一份全面的服务清单。交钥匙工程清单，说明它能做什么。这正是俄罗斯国家原子能公司所具备的能力。对非洲许多国家来说，这非常有力。</p><p id="1dfb42d6-c689-8089-b20b-d092d4f81255" class="">事实上，他们现在正在讨论在几内亚建造一家制造工厂。所以我认为俄罗斯做得相当不错。那是一家商业公司，正如我所说，我认为它的市值是 200 亿美元，按照今天的市场情况，谁也说不准。但这是一家规模可观且盈利的公司。所以他们做得相当不错。所以我认为这是互补的，因为其中很多业务将会在海外进行，而且很多多元化的收入来自于 Rosatom 所建立的各类业务。</p><h2 id="1dfb42d6-c689-804a-b87c-d15ac2740927" class="">核扩散问题</h2><p id="1dfb42d6-c689-8042-bd6f-e5020474886e" class="">格伦·迪森：鉴于与传统核能不同，这种技术实际上无法被武器化，不能用于制造炸弹，那么这是否会对核扩散产生非常积极的影响？因为每个国家都想要发展核能项目。但一旦他们接近拥有制造核武器的技术，其他国家通常就会变得紧张，最终导致冲突。你认为这会对核扩散产生有益影响吗？</p><p id="1dfb42d6-c689-80bb-a344-f4427e2c8765" class=""><strong><a href="https://singjupost.com/transcript-jefferson-fisher-on-the-mel-robbins-podcast/">另请阅读： 文字稿：Jefferson Fisher 做客 The Mel Robbins Podcast</a></strong></p><p id="1dfb42d6-c689-809d-a5d9-d46a2406476e" class="">亨利·蒂尔曼：嗯，我认为钍并不会助长核扩散，因为正如你所知，它实际上无法被武器化。这也是为什么美国政府、美国军方和美国海军在1972年决定不能使用它，因为我们无法将其武器化。</p><p id="1dfb42d6-c689-80d7-a1e8-d7dee9bfd521" class="">但我希望世界能以有益的方式推动这项技术。我有孩子，也有孙子孙女，他们对此充满热情，因为正如1959年所说——这是一种安全的核技术。使用它吧。它将有助于减少全球的二氧化碳。这并不是什么新鲜事。中国已经将其适应到第四代标准。</p><p id="1dfb42d6-c689-80f6-93bd-f810854b0c39" class="">不过，人们很难改变。我认为他们总是开玩笑说“change”是英语中最难的词。人们很难从过去对核能的看法中转变过来。我是说，我看过《奥本海默》这部电影。我认为我有足够的数据来展示一部更好的电影，就是这部，因为这里不是人们死亡，而是人们在一个更绿色的世界里活得更久。但这需要很多改变，而人们并不愿意去做这些改变。正如我们所看到的，石油公司在 1959 年拒绝这样做。尽管阿美石油公司做得非常出色，沙特和阿联酋实际上也在迈向新世界方面做得非常好。</p><p id="1dfb42d6-c689-80e6-a363-f06ce5b316b7" class="">格伦·迪森：在开发相同技术方面。</p><p id="1dfb42d6-c689-80f5-b907-f6c8877aab45" class="">亨利·蒂尔曼：就欢迎此类新技术而言，如果中国未来不与阿联酋、沙特以及其他国家在钍领域建立合作伙伴关系，我会感到惊讶。</p><p id="1dfb42d6-c689-8085-87cb-c9cd80c1ba2d" class="">格伦·迪森：不过，我看到一些媒体报道称中国窃取了这项技术。你怎么看待这些指控？</p><h2 id="1dfb42d6-c689-8099-a435-c798cc166cbc" class="">美国技术共享与中国的发展</h2><p id="1dfb42d6-c689-8033-b401-f77393e449d2" class="">亨利·蒂尔曼：正如我之前简要提到的，多年前我所展示的研究表明，2011年美国向外开放了所有这些技术。我发现有报告称，来自内华达州的哈里·里德和犹他州的参议员莫里斯·尤德尔实际上是专门为中国开放的。我了解到，美国政府无论是出于个人还是职业原因，都把这些技术交给了当时居住在美国的某个中国人，只要他们能归还。请记住，那时美国与其他国家的关系要友好得多。</p><p id="1dfb42d6-c689-80e6-b9a6-ce8dcff309f7" class="">我在那里没有看到任何被窃取的东西。莱特希泽的批评是，2008年，当美国试图帮助早期的工艺——从第二代工艺过渡到第三代工艺时，中国与美国有一个合资企业，莱特希泽指责他们窃取了签署协议之外的技术。但那与钍无关。那是三年前的事，与钍没有任何关系。</p><p id="1dfb42d6-c689-80d8-b775-e7ecc9e69627" class=""><strong>实际上，钍是由美国政府向世界介绍并于 2011 年与全球分享的。</strong> 这也是我很高兴在这里强调这一点的原因，因为我认为从一开始就应该以事实为依据，而不是歪曲事实。感谢你的提问。</p><h2 id="1dfb42d6-c689-804d-a1ed-d0a0cd4c721a" class="">地缘政治的赢家与输家</h2><p id="1dfb42d6-c689-800d-9f34-d4fe716c3b8d" class="">格伦·迪森：是的，我想我的最后一个问题是，这项技术的好处非常明显。如果有六万年之久的廉价清洁能源，这无疑是个巨大的好消息。但在当前的地缘战略竞争中，您认为会有明显的赢家和输家吗？还是说现在下结论还为时过早？</p><p id="1dfb42d6-c689-802d-b37a-c8745267a5d8" class="">亨利·蒂尔曼：这取决于谁愿意为此投入资金。正如你们迄今所见，美国已经把资金分散到其他地方。他们对此并不热衷，而中国则专注于此。他们表示，我们要把这作为我们的战略计划的一部分来做。这是值得的。我们作为一个国家在推动这件事。这对我们来说是改变游戏规则的事情。</p><p id="1dfb42d6-c689-804c-ab70-d6231c9d4c2a" class="">我还没有看到美国或其他任何国家在这个层面上有类似的举措。法国做得很好。我认为法国是一个优秀的核能国家，并且一直依靠核能供电。所以我可以看到法国在这里发挥作用，我也可以看到其他国家在这里发挥作用，正如我之前提到的。但我看不到有谁能在这方面赶上，因为中国在2011年就做出了这个决定，并在2021年加倍投入，我认为这一点不会改变。</p><p id="1dfb42d6-c689-8044-9afb-e2d06222c5e0" class="">格伦·迪森：不，这确实有点令人难以置信，整个发展过程。</p><p id="1dfb42d6-c689-8050-95a6-f7eb11cf3746" class="">亨利·蒂尔曼：自 2018 年以来我一直在做这件事，所以我很高兴。我每年都会在冰岛做这件事，试图教大约 25 个国家。这在推进，但进展缓慢。但至少我很感激有机会谈论这个话题，分享一些事实，让大家了解。<strong> 但这一切自 1959 年就已经开始了。而美国自 1972 年以来就一直处于封锁状态。</strong></p><h2 id="1dfb42d6-c689-80a9-82d3-fc9bfc10a9eb" class="">未来展望</h2><p id="1dfb42d6-c689-8015-89a0-f3b9415e6d2b" class="">格伦·迪森：其实还有一个最后的问题。接下来我们可以期待看到什么？因为正如你之前提到的，过去有很多怀疑者，很多人认为这不可能实现。但现在中国的第一个反应堆已经运行了。你认为接下来会发生什么？会有更多国家争相投入其中吗？还是中国会大规模推广以实现能源自给自足？还是说这还只是过度猜测？</p><p id="1dfb42d6-c689-8085-bd29-e3715590ab7f" class="">亨利·蒂尔曼：嗯，我无法预测未来，但我很确定有一长串的人想要使用玲龙一号，这是他们的小型模块化反应堆，如果不是今年晚些时候，就是明年将会商业化。我也很确定有一长串“一带一路”国家在等着钍反应堆在2029-2030年实现商业化时引进这项技术。</p><p id="1dfb42d6-c689-8093-b08b-e1cdbd80125b" class="">所以，如果你再看看这将如何改变“一带一路”，如何改变世界的地缘政治格局，我相信中国人会比我更好地解决这个问题。</p><p id="1dfb42d6-c689-8000-894e-ee5fd2fca0c3" class="">格伦·迪森：那么“一带一路”倡议将会是主要的倡议，给予相关国家优惠待遇吗？</p><p id="1dfb42d6-c689-80c5-a9ad-ddfc2eea5424" class="">亨利·蒂尔曼：嗯，我认为这正是“一带一路”倡议背后的全部目的，不是吗？无论是这个，还是你还没提到的一种新型医疗模式，叫做“同一健康同一药物”，但那是另一个故事，今天不谈。<strong> 所以中国不断为加入“一带一路”增添优势，而这些优势对批评它的人来说未必是显而易见的。但这一次意义重大。这是一次变革性的举措。</strong></p><h2 id="1dfb42d6-c689-8074-b280-fc63fd25e1eb" class="">结语</h2><p id="1dfb42d6-c689-8033-bb8d-fcfdf1b5e7e9" class="">格伦·迪森：你知道，这确实感觉像是一个革命性的时刻。亨利·蒂尔曼，非常感谢你的时间。我真的很感激。这个话题非常有趣。</p><p id="1dfb42d6-c689-805d-b4dc-c4d4a331768c" class="">亨利·蒂尔曼：我很感激有机会与大家分享这些数据，因为这是一个重要的考量。作为一名父亲和祖父，我感觉现在的形势非常好，我们正朝着一个无法阻挡的方向前进。这项技术曾经被搁置了四十年或五十年，现在它已经被释放出来，一旦魔法精灵从瓶子里出来，就不会再回去了。</p><p id="1dfb42d6-c689-80ec-af98-e2b5334fccbc" class="">格伦·迪森：再次感谢。</p><p id="1dfb42d6-c689-8068-81e4-d6db3638caca" class="">亨利·蒂尔曼：谢谢你。</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
