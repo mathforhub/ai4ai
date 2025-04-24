@@ -1,0 +1,684 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>2025-04-25-3</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(50, 48, 44, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-default_background {
+	color: rgba(50, 48, 44, 1);
+}
+.highlight-gray_background {
+	background: rgba(248, 248, 247, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(248, 243, 252, 1);
+}
+.highlight-pink_background {
+	background: rgba(252, 241, 246, 1);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(248, 248, 247, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(248, 243, 252, 1);
+}
+.block-color-pink_background {
+	background: rgba(252, 241, 246, 1);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: undefined; }
+.select-value-color-pink { background-color: rgba(225, 136, 179, 0.27); }
+.select-value-color-purple { background-color: rgba(168, 129, 197, 0.27); }
+.select-value-color-green { background-color: rgba(123, 183, 129, 0.27); }
+.select-value-color-gray { background-color: rgba(84, 72, 49, 0.15); }
+.select-value-color-transparentGray { background-color: undefined; }
+.select-value-color-translucentGray { background-color: undefined; }
+.select-value-color-orange { background-color: rgba(224, 124, 57, 0.27); }
+.select-value-color-brown { background-color: rgba(210, 162, 141, 0.35); }
+.select-value-color-red { background-color: rgba(244, 171, 159, 0.4); }
+.select-value-color-yellow { background-color: rgba(236, 191, 66, 0.39); }
+.select-value-color-blue { background-color: rgba(93, 165, 206, 0.27); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="1dfb42d6-c689-8045-a3dc-ef37022bdb44" class="page sans"><header><h1 class="page-title">2025-04-25-3</h1><p class="page-description"></p></header><div class="page-body"><h1 id="1dfb42d6-c689-8057-9cbf-d4d0bd319fc2" class="">我们的人工智能未来比你想象的要糟糕得多：尤瓦尔·诺亚·赫拉利的访谈记录</h1><ul id="1dfb42d6-c689-80a5-9f8e-e2ecfa32852d" class="bulleted-list"><li style="list-style-type:disc"><time>@2025年4月22日 14:22</time></li></ul><ul id="1dfb42d6-c689-8080-8cb0-d2248ca78ba6" class="bulleted-list"><li style="list-style-type:disc">由 <a href="https://singjupost.com/author/singju/">Pangambam S</a></li></ul><ul id="1dfb42d6-c689-8066-86b4-cf622ee19455" class="bulleted-list"><li style="list-style-type:disc"><a href="https://singjupost.com/podcasts/">播客</a></li></ul><figure id="1dfb42d6-c689-8094-8dcc-d35707daed5a" class="image"><a href="https://singjupost.com/wp-content/uploads/2025/04/Yuval-Noah-Hararis-interview-on-The-Rich-Roll-Podcast.jpg"><img style="width:700px" src="https://singjupost.com/wp-content/uploads/2025/04/Yuval-Noah-Hararis-interview-on-The-Rich-Roll-Podcast.jpg"/></a></figure><ul id="1dfb42d6-c689-8099-b515-e2f661543344" class="bulleted-list"><li style="list-style-type:disc"><strong><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsingjupost.com%2Ftranscript-of-our-ai-future-is-way-worse-than-you-think-yuval-noah-harari%2F&amp;t=Transcript%20of%20Our%20AI%20Future%20Is%20Way%20Worse%20Than%20You%20Think%3A%20Yuval%20Noah%20Harari">分享</a></strong></li></ul><ul id="1dfb42d6-c689-8013-898f-ea299618c89f" class="bulleted-list"><li style="list-style-type:disc"><strong><a href="https://x.com/intent/tweet?text=Transcript%20of%20Our%20AI%20Future%20Is%20Way%20Worse%20Than%20You%20Think%3A%20Yuval%20Noah%20Harari&amp;url=https%3A%2F%2Fsingjupost.com%2Ftranscript-of-our-ai-future-is-way-worse-than-you-think-yuval-noah-harari%2F&amp;via=singjupost">推特</a></strong></li></ul><ul id="1dfb42d6-c689-8017-ad8e-c8e9e9ee5209" class="bulleted-list"><li style="list-style-type:disc"><strong>Pinterest</strong></li></ul><ul id="1dfb42d6-c689-80af-aa93-e47043eb179e" class="bulleted-list"><li style="list-style-type:disc"><strong><a href="https://www.notion.somailto:?subject=Transcript%20of%20Our%20AI%20Future%20Is%20Way%20Worse%20Than%20You%20Think%3A%20Yuval%20Noah%20Harari&amp;body=https%3A%2F%2Fsingjupost.com%2Ftranscript-of-our-ai-future-is-way-worse-than-you-think-yuval-noah-harari%2F">电子邮件</a></strong></li></ul><p id="1dfb42d6-c689-80c3-971f-c564c3ad0a8a" class="">以下是以色列中世纪学者和军事历史学家尤瓦尔·诺亚·赫拉利在《The Rich Roll Podcast》节目中题为“我们的人工智能未来比你想象的要糟糕得多”的采访完整记录，2024 年 10 月 28 日。</p><p id="1dfb42d6-c689-80c7-a2a3-d138ef7373b7" class=""><strong>采访从这里开始：</strong></p><h1 id="1dfb42d6-c689-80b6-b048-f0fedafd0a38" class=""><strong>机器的崛起</strong></h1><p id="1dfb42d6-c689-801e-a0f8-c0510c925433" class="">里奇·罗尔：我有消息告诉大家。机器的崛起已经来临。那么我们究竟需要了解人工智能快速崛起的哪些方面？这场革命对人类未来意味着什么？为了在混乱中获得清晰的认识，今天我邀请到了尤瓦尔·诺亚·赫拉利，他是一位世界知名的历史学家和超级畅销书作家，他关于人类历史和未来的里程碑式著作已售出惊人的4500万册，使他成为我们这个时代的公共知识分子。</p><p id="1dfb42d6-c689-805a-97fd-d8ce3fcf4907" class="">感谢您的到来。我很高兴您今天能来。我很高兴能解读我认为是一本真正启示性的书，一本非常重要的书，它可能涉及我们这个时代最重要的问题。在反思这本书时，我回想起2015年出版的《未来简史》。</p><p id="1dfb42d6-c689-8094-acdf-d5131353445b" class="">尤瓦尔·诺亚·赫拉利：16年。是的，16年。</p><p id="1dfb42d6-c689-8016-bd7b-d6ab4befcd23" class="">里奇·罗尔：在那本书中你谈到了人工智能。但在那时，你似乎是在为一个尚未写成的未来故事敲响警钟。也许在那一刻，它显得有些像卡珊德拉的预言。而我很好奇，当我们现在身处2024年，八、九年后，不仅是我们处于这场新革命的边缘，我们还深陷其中，甚至可能比你当时预测的还要激烈得多。</p><h1 id="1dfb42d6-c689-8053-9f3f-f9545abdf3c1" class=""><strong>什么是人工智能？</strong></h1><p id="1dfb42d6-c689-801d-9c16-de32738ea5fd" class="">尤瓦尔·诺亚·赫拉利：是的，我的意思是事情的发展速度比我们任何人预期的都要快得多。在2016年，人工智能就像是地平线上一个小小的云团，可能需要几十年甚至几百年才会到来。而现在是2024年，风暴似乎已经来临。</p><p id="1dfb42d6-c689-8060-be73-c41749ef04e1" class=""><strong>我认为也许最重要的是要真正理解什么是人工智能，因为现在关于人工智能的炒作太多了，人们很难理解什么是人工智能。</strong> 现在，一切都是人工智能。你知道，尤其是在市场上，在投资界，他们给几乎所有东西都贴上人工智能的标签以便销售。所以，你的咖啡机现在是人工智能咖啡机。你的鞋子是人工智能鞋子。</p><p id="1dfb42d6-c689-80db-96b5-df90c718ce60" class="">关键是要理解人工智能能够自我学习和改变，能够自主决策，能够自主发明新想法。如果一台机器不能做到这些，那它就不是真正的人工智能。所以一台只是按照预编程方式自动为你煮咖啡的咖啡机，并且从未学习过新东西，它只是一台自动机器，不是人工智能。</p><p id="1dfb42d6-c689-8041-b169-c2f694ed980b" class="">如果当你接近咖啡机时，在你按下任何按钮之前，机器对你说：“我已经观察你几个星期或几个月了，根据我对你的了解、你的面部表情、一天中的时间等等，我预测你想要一杯浓缩咖啡。所以我已经擅自为你做了一杯，”并独立做出了这个决定，那它就成为了一个 AI。</p><p id="1dfb42d6-c689-800f-86af-c207f9fa34e9" class="">如果它告诉你，“实际上我发明了一种新饮料，一种以前从未有人想到过的饮品。我称之为 Bestpresso，我认为它比你更喜欢的浓缩咖啡更好。我擅自为你准备了一杯。”那么这确实是一个 AI，能够自主做出决策和发明新想法，因此，从定义上来说，我们无法预测它将如何发展和演变。无论好坏，它可以发明我们从未想过的药物和治疗方法。但它也可以发明超出我们想象的武器和危险策略。</p><h1 id="1dfb42d6-c689-8008-8d92-ed411b366dfb" class=""><strong>外星智能，而非人工智能</strong></h1><p id="1dfb42d6-c689-8054-b798-c2b47f57c7a0" class="">里奇·罗尔：你将 AI 描述为外星智能，而不是人工智能。你给它一个不同的术语。你能解释一下其中的区别以及你为什么选择这个词吗？</p><p id="1dfb42d6-c689-809e-9e61-e024b63dca53" class="">尤瓦尔·诺亚·赫拉利：传统上，AI 的缩写代表人工智能。但随着每一年过去，AI 变得越来越少人工化，而更像外星化。外星化并不是说它来自外太空，不是我们创造它，而是说它以一种与人类根本不同的方式分析信息、做出决策、发明新事物。</p><p id="1dfb42d6-c689-80f3-87d9-e8dbe265ca73" class="">人工来自于人工制品——它给我们一种印象，即这是我们控制的人工制品。这是误导性的，因为是的，我们设计了那种婴儿 AI，我们赋予它们自我学习和改变的能力，然后我们将它们释放到世界上。它们做的事情不在我们的控制之下，是不可预测的。从这个意义上说，它们是外星的。</p><p id="1dfb42d6-c689-8036-91cf-f1b512cea8fe" class="">同样，人类和其他动物一样是有机实体。我们以有机的方式运作。例如，我们按照周期运作，白天和黑夜，夏天和冬天。我们有时活跃，有时需要休息，需要睡眠。人工智能在某种意义上是外来的，因为它们不是有机的。它们以完全不同的方式运作，不是按周期运作。它们不需要休息，也不需要睡眠。</p><p id="1dfb42d6-c689-8039-9328-c0bda1d03690" class=""><strong>现在，随着它们接管越来越多的现实部分和社会部分，出现了一种拉锯战：谁将被迫适应谁？是无机的人工智能被迫适应人体的有机循环，还是人类被迫采用这种无机的生活方式？</strong></p><p id="1dfb42d6-c689-8055-978a-c0994418b006" class="">因此，从最简单的事情开始，AI 总是在线的，但人们需要时间来休息。所以即使你考虑像金融市场这样的事情，传统上，如果你看华尔街，它只在周一到周五的早上 9:30 到下午 4:00 开放。晚上关闭，周末关闭。圣诞节、独立日会休假。而现在，随着算法和 AI 接管市场，它们总是在线的。这给人类银行家和投资带来了压力等等。你不能休息一分钟，否则就会被落下。所以在这个意义上，它们是异类的，并不是说它们来自火星。</p><h1 id="1dfb42d6-c689-80cd-b697-c15830b5e06f" class=""><strong>信息网络与人类进化</strong></h1><p id="1dfb42d6-c689-80fc-a651-ff2dcb686b02" class="">要理解人工智能并了解实际发生的事情以及我们的发展方向，这本新书的论点要求我们理解信息本身的性质，以及信息网络的演变与人类进化和进步密不可分的形成方式。所以我很好奇你是如何发现这种理解人工智能性质的视角，以及为什么通过这种视角来将当前发生的事情置于背景中是重要的。</p><p id="1dfb42d6-c689-8032-afb3-c67d68279d33" class="">尤瓦尔·诺亚·赫拉利：这实际上是我在之前的书中开始探索的内容。这个想法是，信息是人类社会和人类现实最基本的层面、最基本的基础，因为人类的超级力量是能够以非常大的数量进行合作。</p><p id="1dfb42d6-c689-80f8-9db0-e6a472c0ac54" class="">如果你把我们和黑猩猩、大象、鬣狗相比，个体上，有些事情是我能做而黑猩猩不能做的，反之亦然。我们的巨大优势不在于个体层面。真正的巨大优势在于黑猩猩可以合作，你知道，几十只黑猩猩，比如50只黑猩猩可以合作，也许100只。但对于人类，对于智人来说，是没有限制的。我们可以成千上万、成百万、成十亿地合作。</p><p id="1dfb42d6-c689-8077-a511-dbd69d092824" class="">如果你考虑世界贸易网络，比如我们吃的食物，我们穿的鞋子，我们消费的一切，有时都来自世界的另一端。所以如果有 80 亿人合作，这是我们相对于黑猩猩和所有其他动物的巨大优势，是什么让我们能够与数百万、数十亿其他人类合作？是信息。<strong> 信息是将所有这些大规模系统联系在一起的关键。理解人类历史在很大程度上就是理解信息的流动。</strong></p><h1 id="1dfb42d6-c689-802a-a317-f6823624b738" class=""><strong>民主与独裁：信息流动</strong></h1><p id="1dfb42d6-c689-80fe-8dae-f5cfce2d9298" class="">我来举个例子。如果你考虑一下民主国家和独裁国家之间的区别，我们往往认为这是价值观之间的差异或冲突，是伦理体系之间的冲突。民主国家相信自由，独裁国家相信等级制度，诸如此类。这在一定程度上是正确的。但在更深层次上，信息在民主国家和独裁国家中流动的方式是不同的。这是一种不同形态、不同类型的信息网络。</p><p id="1dfb42d6-c689-8024-8a6d-c5dba2716b5d" class="">在独裁政权中，所有决策都是集中做出的。独裁政权源于命令。一个人决定一切。普京在俄罗斯决定一切。金正恩在朝鲜决定一切。因此，所有信息流向一个单一的中心，在那里做出所有决策并作为命令发回。因此，这是一个非常集中的信息网络。</p><p id="1dfb42d6-c689-8083-b2ac-d83bea5d9ea4" class="">另一方面，如果从外太空观察美国的信息流，民主制度会呈现出几个中心。华盛顿是政治中心，纽约是金融中心，洛杉矶可能是艺术中心，但没有一个单一的中心来决定一切。你会看到多个中心，还有许多较小的枢纽和中心不断做出决策。私人公司、私人企业、志愿组织、个人不断做出许多决策，信息不断交换，而这些信息不需要经过中心，不需要经过华盛顿，甚至不需要经过纽约或洛杉矶。</p><p id="1dfb42d6-c689-8064-9d2e-d654226e584b" class="">所以想象一下，你在外太空的一艘飞船或卫星上，只是观察地球下方的信息流动，你会看到朝鲜的信息流动与美国非常不同。这一点至关重要。</p><h1 id="1dfb42d6-c689-803a-91eb-e75357ee1299" class=""><strong>信息技术与民主</strong></h1><p id="1dfb42d6-c689-809d-a32a-f5456fdec02e" class="">当你回顾数千年的历史以及历史如何变化、不同政权如何兴衰时，了解可用的信息技术种类是理解哪些政治系统或经济系统胜出的关键。</p><p id="1dfb42d6-c689-808f-9a71-c6e3f22522b1" class="">在历史的大部分时间里，像美国这样的大规模民主国家是根本不可能的。如果你考虑古代世界，我们所知道的民主例子只有像罗马共和国或古雅典这样的小城邦，甚至更小的部落。我们没有任何一个例子是数百万人分布在广阔领土上并以民主方式运作的大规模民主国家。</p><p id="1dfb42d6-c689-80c1-ae0b-cdeeee3699ce" class="">现在我们知道一些故事，例如罗马共和国的衰落和凯撒、皇帝、独裁者的崛起。但罗马成为一个专制帝国并不完全是奥古斯都·凯撒或尼禄或其他任何皇帝的错。只是，当时没有必要的信息技术来维持一个比罗马城更大的大规模民主，比如整个意大利或整个地中海地区。</p><p id="1dfb42d6-c689-8073-b1af-e2b4c73723b9" class="">民主是一种对话。那么，分布在数千公里之外的数百万人如何对话并决定是否与波斯帝国开战？如何处理多瑙河上的移民危机，面对所有这些试图进入的德国人？你无法进行对话，因为你没有信息技术。</p><p id="1dfb42d6-c689-80e4-91ec-da9ac5a6be93" class="">你知道，如果罗马成为一个专制帝国只是凯撒的错，我们应该在印度、中国等地看到一些大规模民主的例子，但没有。我们只是在现代晚期才开始看到大规模民主的出现，这是在罗马人无法获得的新信息技术兴起之后，比如印刷报纸、然后是电报、广播和电视等等。一旦有了这些技术，你就开始看到像美国这样的大规模民主。</p><p id="1dfb42d6-c689-806f-82c7-d85764a71202" class="">最后一点，为什么理解这一点如此重要？<strong> 一旦你明白民主实际上是建立在信息技术之上的，你也会开始理解当前的民主危机。因为现在全世界范围内，不仅仅是在美国，我们面临着民主危机。在很大程度上，这是因为有了新的信息技术、社交媒体、算法、人工智能。这就像是在改变一切的基础。因此，建立在其上的结构发生地震也就不足为奇了。</strong></p><h1 id="1dfb42d6-c689-8024-af7c-ee54ce6a892e" class=""><strong>关于信息的误解</strong></h1><p id="1dfb42d6-c689-8051-8330-e641b0983523" class="">RICH ROLL：所以我们有这样一种想法，即信息系统和信息技术的出现或改进是全球民主制度赋权的一部分。但其中包含了一种对信息的不可磨灭的误解，即假设或推测更多的信息更好，并能带来真理、知识和智慧。而你的书揭示了这一点的谬误，并讲述了一个关于信息定义及其目的的截然不同的故事。</p><h1 id="1dfb42d6-c689-806d-9a9a-ed23240f94e3" class=""><strong>信息与真相</strong></h1><p id="1dfb42d6-c689-80c0-955f-db0e7832c584" class="">尤瓦尔·诺亚·赫拉利：是的，我的意思是，信息不是真相。信息是连接。它是将许多人联系在一起的东西，不幸的是，我们在历史上看到，利用虚构、幻想、宣传和谎言来连接人们、创造社会秩序往往比用真相要容易得多。所以大多数信息不是真实的。真相是世界上信息的一个非常稀有的子集。</p><p id="1dfb42d6-c689-807e-9afc-cb44d0239625" class="">真相的问题在于，真相首先是昂贵的，而虚构则非常便宜。例如，如果你想写一本关于罗马帝国的真实历史书，你需要投入大量的精力、时间和金钱。你需要学习拉丁语，可能还需要学习希腊语、古希腊语。你需要进行考古挖掘，找到这些古代铭文、陶器或武器并进行分析。写一本关于罗马帝国的虚构故事则非常昂贵且困难。非常简单。你只需写下你想要的任何内容，它就在那里，在页面上或互联网上。</p><p id="1dfb42d6-c689-8016-a817-eff469e77072" class="">事实往往也非常复杂，因为现实是复杂的。你想要给出一个关于罗马共和国为何衰落或罗马帝国最终为何衰落的真实解释，非常复杂。虚构的故事可以尽可能简单，人们往往倾向于简单的解释而不是复杂的。</p><p id="1dfb42d6-c689-8090-aab6-fad63e2b0101" class="">最后，真相可能是痛苦的、不吸引人的。我们常常不想了解关于自己的真相，无论是作为个体，这就是为什么我们去做多年的心理治疗，以了解我们不想知道的关于自己的事情。在整个国家层面也是如此。每个国家都有自己的黑暗历史，自己的不为人知的秘密或不愿被人知晓的事情。在竞选活动中，只是告诉人们真相、全部真相和仅仅是真相的政治家不太可能赢得很多选票。</p><p id="1dfb42d6-c689-80c8-bba6-f3f558bcde11" class=""><strong>因此，在真相与虚构之间的竞争中，真相往往代价高昂、复杂且有时令人痛苦，而虚构则廉价、简单且可以被塑造得非常吸引人，虚构往往会胜出。</strong> 如果你观察历史上的大型系统和网络，它们往往建立在虚构之上，而不是基于真相。</p><p id="1dfb42d6-c689-801c-91b1-ef12e4d322c8" class="">也许我举一个例子。如果你考虑视觉信息，如肖像、绘画、照片，那么世界上最常见的肖像是什么。人类历史上最著名的面孔是什么？是耶稣的面孔。我的意思是，耶稣的肖像比世界历史上任何其他人的都多。几个世纪以来，在大教堂、教堂和家庭中生产了数十亿幅。而且它们完全是100%虚构的。没有一幅是耶稣的真实、真实的肖像。</p><p id="1dfb42d6-c689-80ef-9c06-d8ff8f8c6ce2" class="">我们没有他在世时的画像。圣经没有提到他长什么样。圣经中没有一句话提到耶稣是高是矮，是黑发还是金发，或者是秃头，什么都没有。所有的图像。你知道的，这是历史上最著名的面孔之一。这一切都来自人类的想象力。它仍然非常成功地激励人们和团结人们。可能是出于好的目的，比如慈善、建医院和帮助穷人，但也可能是出于坏的目的。十字军东征、迫害、宗教裁判所。但无论如何，虚构形象团结人们的巨大力量。</p><p id="1dfb42d6-c689-801d-b23f-d7e57e3992a2" class="">看看当今世界正在发生的事情。所以你有这些大型科技公司和社交媒体公司，他们告诉我们信息总是好的。所以让我们去除所有对信息流动的限制，用越来越多的信息淹没世界。更多的信息意味着更多的真相、更多的知识、更多的智慧。而这根本不是真的。<strong> 大多数信息实际上是垃圾。如果你只是用信息淹没世界，真相会沉到最底层。它不会再浮到顶层 </strong>，因为这既昂贵又复杂。</p><p id="1dfb42d6-c689-8066-8b24-cf42af791a56" class="">你环顾四周，我们正面临信息泛滥。我们拥有历史上最复杂的信息技术，而人们却正在失去进行对话、相互交谈和倾听的能力。你知道，在美国，共和党人和民主党人几乎无法相互交谈。这并不是美国独有的现象。你在巴西、法国、菲律宾以及世界各地都能看到同样的情况。因为同样的，基本的误解是认为更多的信息总是对我们有利。这就像认为更多的食物总是对我们有利一样。</p><p id="1dfb42d6-c689-8089-b6e8-c19402f53bec" class="">RICH ROLL：大多数信息是垃圾信息。</p><p id="1dfb42d6-c689-8079-bba9-c823d11f2beb" class="">尤瓦尔·诺亚·赫拉利：是的。</p><p id="1dfb42d6-c689-80cf-bfe8-e274a7fb2e9a" class="">RICH ROLL：让我感到好奇的是，在某种程度上，你所说的并没有什么新意。突然之间，我们发现自己处于一个后真相世界的想法。你所说的一部分是，这种情况一直以来都是这样。但现在的质的区别不在于这些让我们分享信息的平台本身，而在于赋予它们力量的算法。正是这些算法决定了我们看到什么以及何时看到。</p><h1 id="1dfb42d6-c689-807f-8eda-d549b23bd6ed" class=""><strong>AI 算法的力量</strong></h1><p id="1dfb42d6-c689-80b1-87df-c5ed7a1cb531" class="">尤瓦尔·诺亚·赫拉利：是的，我的意思是，这可能是你第一次看到人工智能以独立决策的方式重塑世界的力量。当我之前说人工智能可以做出决策时，人工智能不仅仅是我们手中的工具，它们是创造新现实的代理。所以你可能会认为，好吧，这是对未来的预言，对未来的预测，但这已经是过去的事情了。</p><p id="1dfb42d6-c689-801f-9097-cb825b63bbc3" class="">因为即使社交媒体算法，它们是非常非常原始的人工智能，第三代人工智能，它们仍然通过在社交媒体上做出的决策重塑世界。Facebook、Twitter、TikTok，所有这些。那些决定你在新闻推送顶部看到什么或接下来推荐的视频的，不是坐在那里做这些决定的人类，而是人工智能。是算法。</p><p id="1dfb42d6-c689-808e-a590-fba23d746922" class="">这些算法被公司赋予了一个相对简单且看似无害的目标。这个目标是增加用户参与度，用简单的英语来说，就是让人们在平台上花更多时间。因为人们在 TikTok、Facebook 或 Twitter 等平台上花的时间越多，公司就赚得越多。它可以卖出更多广告，收集更多数据，然后将其出售给第三方。因此，更多的时间在平台上，对公司有利。这就是算法的目标。</p><p id="1dfb42d6-c689-80e0-8e53-e0370646fe89" class="">现在，参与听起来是件好事。谁不想参与其中呢？但算法随后在数十亿人类小白鼠身上进行了实验，发现了一些当然早在人类中就被发现的东西。但现在是算法发现的。<strong> 算法发现，增加用户参与度最简单的方法，吸引人们注意力并让他们紧盯屏幕的最简单方法，就是按下我们心中的贪婪、仇恨或恐惧按钮。</strong> 你给我们展示一些充满仇恨的阴谋论，我们会变得非常愤怒。我们想看更多。我们告诉我们所有的朋友。用户参与度上升。这就是他们在过去的 10 或 15 年里所做的事情。他们用仇恨、贪婪和恐惧淹没了世界，这也是为什么对话再次崩溃。面对所有这些仇恨和恐惧，很难进行对话。</p><p id="1dfb42d6-c689-8028-a469-c01a88693492" class="">RICH ROLL：是的，这是一个意外后果的功能，在某种程度上与 Nick Bostrom 关于回形针的对齐问题的思想实验没有什么不同。就像这完全是一样的事情。我认为这不仅反映了人类的无知，还反映了人类对这种强大技术的傲慢。我认为你谈了很多关于故事以及它们在塑造我们现实方面的不可磨灭性。但其中一个故事是我们知道自己在做什么，我们可以处理它，我们理解后果，我们知道这里的缺点。我们正在确保我们推出的东西是安全且对消费者友好的，尽管在某种程度上他们知道不是这样。但他们也不知道，你知道，它将会导致什么结果。因此，我们正处于这个前沿，这个不受监管的前沿，目前任何事情都可能发生。</p><p id="1dfb42d6-c689-8079-9981-ee6ed4c3943f" class=""><strong><a href="https://singjupost.com/simon-sinek-the-advice-young-people-need-to-hear-transcript/">另请阅读：Simon Sinek: 年轻人需要听到的建议（文字记录）</a></strong></p><h1 id="1dfb42d6-c689-801c-bcf2-db004bf09268" class=""><strong>意外后果</strong></h1><p id="1dfb42d6-c689-80fd-bd85-fc569c28f641" class="">尤瓦尔·诺亚·赫拉利：是的。我认为你说的很重要，这些都是意想不到的后果。比如管理社交媒体公司的那些人，他们并不邪恶。他们并不是要摧毁民主或让世界充满仇恨等等。他们只是没有预见到，当他们给算法设定增加用户参与度的目标时，算法会开始推动仇恨。</p><p id="1dfb42d6-c689-807c-a27c-eeb7aedd4c8b" class="">里奇·罗尔：让我快速插一句。不是。既然他们知道情况是这样的，他们并没有退缩。</p><p id="1dfb42d6-c689-8063-9c79-efd28084cc70" class="">尤瓦尔·诺亚·赫拉利：确实如此。</p><p id="1dfb42d6-c689-8086-981e-cfaba31ac4bd" class="">里奇·罗尔：目前这并不完全符合监管要求。</p><p id="1dfb42d6-c689-80ae-88bd-f79cce749afe" class="">尤瓦尔·诺亚·赫拉利：不，绝对不是。</p><p id="1dfb42d6-c689-806a-bb5f-ff9ae918c4f3" class="">里奇·罗尔：抱歉，抱歉，请继续。</p><p id="1dfb42d6-c689-805f-8728-de0e26087f8b" class="">尤瓦尔·诺亚·赫拉利：你说得对。现在他们知道了，但他们做得远远不够。但最初当他们开始推动这一切时，他们真的不知道。你第一次看到这种情况是在八年前，当我出版《未来简史》时，这种情况正在发生。我也没有注意到。在缅甸。缅甸，这个国家以前被称为缅甸。</p><p id="1dfb42d6-c689-80bc-a31c-e531c3ab8993" class="">Facebook 基本上就是互联网，当然也是最大的社交媒体平台。在 2010 年代，Facebook 在缅甸的算法故意传播关于缅甸罗兴亚少数民族的可怕阴谋论和假新闻，导致了一场种族清洗。当然，这并不是唯一的原因。早在之前就对罗兴亚人有根深蒂固的仇恨。但这种在 Facebook 上的宣传活动在 2016 年至 2018 年间助长了一场种族清洗运动，数千名罗兴亚人被杀，数万人被强奸，数十万人被驱逐。现在在孟加拉国和其他地方有近一百万罗兴亚难民。这在很大程度上是由 Facebook 上的这些阴谋论和假新闻推动的。</p><p id="1dfb42d6-c689-8065-a802-ddee4889c99a" class="">当时，Facebook 的高管对此一无所知。我的意思是，他们甚至不知道罗兴亚人存在。这并不是 Facebook 针对他们的阴谋。对于整个缅甸，一个拥有数百万 Facebook 用户的国家，到 2018 年，在他们收到有关种族清洗运动的报告后，他们只有少数几个人试图管理数百万用户和算法的行为，他们甚至不会说缅甸语。就像当算法选择在缅甸语中向人们展示充满仇恨的阴谋论视频时，Facebook 总部没有人会说缅甸语。他们不知道算法在推广什么。</p><p id="1dfb42d6-c689-8042-bd2a-f12ad94cbb5c" class="">关键不是免除人类的责任，而是要理解即使是非常原始的人工智能——我们谈论的是大约八年前的事情，不是像 ChatGPT 这样的东西——这些算法做出的推广某些内容的决定在缅甸产生了深远而可怕的后果。它们不仅仅是在产生阴谋论，还在产生数百万用户制作的烹饪课程、生物课程以及佛教僧侣的慈悲布道和阴谋论。而算法决定推广阴谋论。</p><p id="1dfb42d6-c689-804e-a0a1-ea6dc1e60d13" class="">这只是一个警告，看看即使是非常原始的 AI 和今天的 AI 会发生什么，它们在 2016 年已经更加复杂，但仍然只是 AI 进化过程的早期阶段。然后我们可以把它想象成动物的进化，直到你到达人类。你有 40 亿年的进化。你从像变形虫这样的微生物开始，经过数十亿年的进化才到达恐龙、哺乳动物和人类。</p><p id="1dfb42d6-c689-80da-8684-ea04789cfb7e" class=""><strong>现在的人工智能正处于一个平行过程的开端，像 ChatGPT 等等。它们是人工智能世界的变形虫。但人工智能的进化不是有机的，而是无机的，是数字化的，并且速度快了数百万倍。因此，从变形虫到恐龙花费了数十亿年，而从今天的人工智能变形虫到 2040 年或 2050 年的人工智能霸王龙可能只需要 10 或 20 年。</strong></p><p id="1dfb42d6-c689-807c-af8d-c575ada961d8" class="">里奇·罗尔：也许更少。</p><p id="1dfb42d6-c689-807c-9a14-e5e68e07dda1" class="">尤瓦尔·诺亚·赫拉利：也许更少。</p><p id="1dfb42d6-c689-80f8-80ae-e1e063e9f2b9" class="">里奇·罗尔：我们在谈论，我认为我们的大脑没有被正确组织来真正理解这种自我学习、迭代和自我改进的加速速度。这是一个天文数字的复合过程。同时，数万亿美元被用于建造这些配备 Nvidia 芯片的服务器农场。维持这些东西的运转需要如此多的电力。他们在谈论核能。我是说，这是一个全新的世界。</p><p id="1dfb42d6-c689-80e7-963d-db2db6a8cbe6" class="">然而，在谈论这个问题时，它仍然感觉有点像学术练习。因为对于我自己或可能正在观看或收听的人来说，他们与 AI 的体验是通过 ChatGPT 或一些这些有用的工具。比如，我喜欢我的算法。它会在不需要我搜索的情况下向我展示我想购买的产品。</p><p id="1dfb42d6-c689-8070-9717-d040f51bd7ff" class="">一个简单的例子就是为这个播客做准备。比如，我听了你的有声书，做我通常会做的事情，打开一堆标签页，收集关于你、这本书以及你传达的信息的大量信息。但我做了一件以前从未做过的事情，就是我拿到了《Nexus》的 PDF，并将其上传到一个叫做 NotebookLM 的工具中。然后该工具总结了整本书，并创建了一个聊天机器人，我可以向它提问关于你书中的问题，并让它详细说明某些概念。它甚至会创建一个关于书中主题的两人播客对话。所以即使是这次对话也面临风险，对吧？</p><p id="1dfb42d6-c689-80d6-8328-ca546d0dc016" class="">尤瓦尔·诺亚·赫拉利：无关紧要。</p><h1 id="1dfb42d6-c689-806b-8c9d-e0b74b8eb171" class=""><strong>AI 官僚机构：真正的危险</strong></h1><p id="1dfb42d6-c689-801d-8587-ee69810bb280" class="">RICH ROLL：我觉得，这真是一个非常有用的工具。而且很容易不去真正欣赏或意识到这些工具的缺点、风险和力量，以及它们将我们引向何方。所以我想我在说的是，我想我试图表达的观点是，像我们所有人这样的消费者，正在被引诱去信任一些我们无法理解且没有能力去展望未来并想象它将我们引向何方的强大事物。</p><p id="1dfb42d6-c689-800f-a175-f56211992f6a" class="">尤瓦尔·诺亚·赫拉利：当然。我是说，部分原因是人工智能具有巨大的积极潜力。这并不是说一切都是悲观的。确实有巨大的积极潜力。如果你考虑到人工智能在医疗保健方面的影响，24小时可用的人工智能医生了解我们的整个病史，并且阅读过所有发表过的医学论文，可以根据我们的具体生活史、血压和基因来定制建议和治疗。这可能是医疗保健领域有史以来最大的革命。</p><p id="1dfb42d6-c689-80f2-a34e-efd7c2b71459" class="">如果你考虑自动驾驶车辆——每年全世界有超过一百万人死于车祸。大多数是由人为错误造成的，比如酒后驾驶或开车时打瞌睡等。自动驾驶车辆可能每年会拯救大约一百万人的生命。这是惊人的。</p><p id="1dfb42d6-c689-803b-b015-dbc2897a35ce" class="">你考虑气候变化，是的，开发人工智能将消耗大量能源，但它们也可能找到新的能源来源，新的能源利用方式，这可能是我们防止生态崩溃的最佳机会。所以有巨大的积极潜力。我们不应该否认这一点。我们应该意识到这一点。</p><p id="1dfb42d6-c689-80e2-8b7f-d1488ddaabf7" class="">另一方面，很难理解这些危险，因为这些危险有点陌生。比如，如果你考虑核能，是的，它也有积极的潜力。核能，廉价的核能。但人们对危险有很好的理解。核战争，任何人都能理解其危险性。</p><p id="1dfb42d6-c689-80b7-984d-f32df3e74508" class="">随着人工智能的发展，情况变得更加复杂，因为危险并不那么直接。我们已经在好莱坞科幻电影中看到了大型机器人叛乱的情景，有一天，一台大型计算机或人工智能决定接管世界并杀死我们或奴役我们。这种情况在短期内极不可能发生，因为人工智能仍然是一种非常狭窄的智能，比如能够总结一本书的人工智能。它不知道如何在物理世界中行动。</p><p id="1dfb42d6-c689-8027-8103-efb13f93fc16" class="">在外面，你有可以折叠蛋白质的 AI，你有可以下棋的 AI。但我们没有这种可以在世界上找到自己路并建立机器人军队的通用 AI。所以人们很难理解。那么，能力如此狭窄的东西有什么危险呢？</p><p id="1dfb42d6-c689-8076-873a-fed51a4fb749" class=""><strong>我想说，危险并不来自大型机器人叛乱，而是来自人工智能官僚机构。</strong> 如今以及未来越来越多的情况是，我们不会有一个大型人工智能试图接管世界。我们将有成千上万、数以亿计的人工智能在各处不断为我们做出决定。你向银行申请贷款，是人工智能决定是否给你贷款。你申请工作，是人工智能决定是否给你工作。你在法庭上被判有罪，人工智能将决定你是被判六个月还是三年或其他。</p><p id="1dfb42d6-c689-801b-a17a-ff79a572dcb1" class="">即使在军队中，我们现在已经看到，在加沙战争和乌克兰战争中，人工智能决定了轰炸的目标。在好莱坞的场景中，你会看到杀手机器人射击人类。而在现实生活中，是人类扣动扳机。但人工智能在选择目标，告诉他们该做什么。这比标准场景要复杂得多。</p><h1 id="1dfb42d6-c689-80e2-a19a-c11d82bcb240" class=""><strong>黑箱问题</strong></h1><p id="1dfb42d6-c689-8083-bb87-cdf54351798b" class="">里奇·罗尔：与官僚机构的每一个连接点都被交给一个在黑箱中做决定的算法，没有反驳或对话的机会。对吧？所以我们正在将所有这些决策外包，创造出一个像是决策者的专制散居群体。可以想象，随着时间的推移，从中出现的就像是一个神首或众神的万神殿，在这个分散的威权体制中，我们将自己的自主权交给这些机器，并相信它们正在做出正确的决定，但不知道这些决定是如何做出的。甚至创造算法的工程师也不知道。这其中有某种与生俱来的恐惧感。</p><p id="1dfb42d6-c689-8067-b623-db3e38b49769" class="">尤瓦尔·诺亚·赫拉利：再次强调，这并不是说有一个人在操控一切，而是人工智能。比如银行有一个人工智能来决定谁有资格获得贷款。如果他们告诉你我们决定不给你贷款，你问银行为什么，银行说，我们不知道。我的意思是，电脑说不。我的意思是，算法说不。我们不明白为什么算法说不，但我们信任算法。而且这可能会扩展到越来越多的地方。</p><p id="1dfb42d6-c689-8029-90a3-e46b26b0485d" class="">关键在于，这并不是银行在对你隐瞒什么，而是 AI 在做决策时的方式与人类非常不同，基于更多的数据。因此，如果银行真的想向你解释为什么拒绝给你贷款，比如说政府通过了一项解释权的法律。如果银行拒绝给你贷款，你可以申请，他们必须给你一个解释。</p><p id="1dfb42d6-c689-806d-9a49-e2dcfd34cee8" class="">所以解释是，人们担心会有种族主义偏见或恐同偏见。就像过去算法看到你是黑人、犹太人或同性恋者。这就是我拒绝给你贷款的原因。不会是那样的。我的意思是，银行会给你发送整本百科全书，数百万页，说明这就是计算机拒绝给你贷款的原因。计算机考虑了关于你的成千上万个数据点，每一个都基于数百万个先前案例的统计数据。现在如果你愿意，可以查看这些数百万页，如果你想挑战，可以，但这不是那种旧式的种族主义或其他。</p><h1 id="1dfb42d6-c689-80ef-a568-ef05403b033b" class=""><strong>信息的退化</strong></h1><p id="1dfb42d6-c689-8085-bba1-c09d021827ff" class="">RICH ROLL：当然。我们只是点击而不阅读的新版本条款和条件，除了被放大了 100 倍。除此之外，面对所有这些数据点，我不禁想到，这些机器提供给我们的信息的真实性仅仅取决于它所提供的数据集的可靠性。</p><p id="1dfb42d6-c689-800f-b89b-e9627f4fc9d3" class="">现在我们正小心翼翼地进入一个互联网迅速退化的局面，因为它越来越多地被 AI 内容填充。现在，当你去谷歌搜索时，你首先看到的是一个 AI 类型的查询摘要，而不是链接。这反过来又削弱了传统媒体和所有形式媒体的商业模式。</p><p id="1dfb42d6-c689-8034-9152-c54f7e31cda4" class="">因此，随着这些继续在藤上枯萎，越来越多的互联网将是 AI 生成内容的结果。然后它变得递归，依赖于自身的输入来做出决策。由此可以想象，数据集的退化将影响其决策的基础。</p><h1 id="1dfb42d6-c689-80c6-974e-e40532d92b56" class=""><strong>进入非人类文化</strong></h1><p id="1dfb42d6-c689-8042-b9cd-c5ba94807142" class="">尤瓦尔·诺亚·赫拉利：没错。即使你想到音乐这样的东西。现在创造音乐的人工智能，基本上吞噬了整个人类音乐。几千年来，人类创作音乐、艺术或戏剧等。如今的人工智能在一年内就吞噬了这一切，消化后开始创造新的音乐、新的文本或新的图像。</p><p id="1dfb42d6-c689-8079-a510-fe05dceac511" class="">第一代的人工智能文本或音乐是基于以前的人类文化。但随着每一年过去，人工智能将会吞噬它们自己的产品。因为在人类音乐制作中，人类在文本制作或图像制作中的份额将越来越低。大多数图像、大多数音乐至少部分由人工智能制作。这将成为人工智能的新食物。然后你会看到你所描述的这种递归模式。它将把我们引向何方，我们无从知晓。</p><p id="1dfb42d6-c689-80ab-9fec-ea8bbcab306b" class=""><strong>我的意思是，换一种方式来思考，这是我们基本上第一次即将进入一种非人类文化。</strong> 人类是我们的文化实体，我们生活在文化的包裹中。比如所有的音乐和艺术，还有金融和宗教。这些都是文化的一部分。数万年来，唯一创造文化的实体是其他人类。所以你听过的所有歌曲都是由人类创作的。你听过的所有宗教神话都来自人类的想象。</p><p id="1dfb42d6-c689-808b-bc1e-ca153c145199" class="">现在有一种外星智能，一种非人类智能，将越来越多地创作歌曲和音乐、神话、金融策略、政治理念。甚至在我们急于决定它是好是坏之前，先停下来思考一下生活在一种非人类文化或一种我不知道是40%还是70%非人类的文化中的意义。这不像去中国看到不同的人类文化，而是真正像在地球上遇到外星文化。</p><h1 id="1dfb42d6-c689-809a-b289-e07d15d60578" class=""><strong>智能与意识</strong></h1><p id="1dfb42d6-c689-8044-a182-d1cf5fd2e7aa" class="">RICH ROLL：是的，我的人类思维对此感到不安。我开始思考我对人类思想和情感原创性的偏见，以及这种认为 AI 永远无法完全模仿人类体验的假设。对，成为人类的意义中有一些不可磨灭的东西是机器永远无法完全复制的。</p><p id="1dfb42d6-c689-8040-adde-d25f5c4f4ca1" class="">当你谈论信息时，信息的目的是创造连接，其中一个重要部分是亲密关系，比如人与人之间的亲密关系。所以信息是为了创造连接而存在的。但现在我们有太多的信息，却感到非常疏离。所以这个系统中有些东西出了问题。我认为这正在推动孤独流行病。</p><p id="1dfb42d6-c689-80cd-abae-f14ec8fb1562" class="">但另一方面，这让我们可能比以前更重视亲密关系。因此，我很好奇在这个由机器主导文化的后人类世界中，亲密关系如何融入其中。我的意思是，人类天生就渴望这种亲密关系。我认为我们识别亲密关系的能力是我们作为人类的一个重要特征。</p><p id="1dfb42d6-c689-8033-b6ec-eb474ecf819f" class="">尤瓦尔·诺亚·赫拉利：也许最重要的部分，我认为这里经常被忽视的关键区别是智能和意识之间的区别。智能是追求目标并在实现目标的过程中克服问题和障碍的能力。目标可以是自动驾驶汽车试图从这里到旧金山。目标可以是增加用户参与度。而一个智能代理知道如何克服实现目标过程中的问题。</p><p id="1dfb42d6-c689-8041-8c4b-e5c146741acb" class="">这是智能，而这正是人工智能在至少某些领域中肯定正在获得的东西。人工智能现在在某些方面比我们聪明得多，比如下棋，比人类聪明得多。但意识与智能是不同的东西。<strong> 意识是感受事物的能力。痛苦、快乐、爱、恨。</strong></p><p id="1dfb42d6-c689-8020-99cd-dabb6743be35" class="">当人工智能赢得一场国际象棋比赛时，它并不感到快乐。如果比赛中有紧张的时刻，不清楚谁将获胜。人工智能并不紧张。只有人类玩家感到紧张、害怕或焦虑。人工智能什么都感觉不到。</p><p id="1dfb42d6-c689-8066-add9-e48811cce3c9" class="">现在，人们有很大的困惑，因为在人类以及其他哺乳动物、其他动物、狗、猪、马等中，智能和意识是结合在一起的。我们根据自己的感受来解决问题。我们的感受并不是进化的装饰。哺乳动物做出决策和解决问题的核心系统是基于我们的感受。</p><p id="1dfb42d6-c689-806f-8850-d058a4eaa8a6" class="">所以我们倾向于认为意识和智能必须结合在一起。在所有这些科幻电影中，你会看到当计算机或机器人变得更智能时，在某个时刻它也获得了意识。它爱上了人类或其他什么，而我们没有理由这样认为。</p><p id="1dfb42d6-c689-80aa-9b10-e12c894005b4" class="">RICH ROLL: 是的，意识不是智能的简单外推。</p><p id="1dfb42d6-c689-80de-86f3-ec7dbfc571c0" class="">YUVAL NOAH HARARI: 绝对不是。</p><p id="1dfb42d6-c689-804f-bd91-c4d1c70188ed" class="">RICH ROLL: 这是一个质的不同的东西。</p><h1 id="1dfb42d6-c689-809a-8d96-e698fdc2f904" class=""><strong>人工智能的进化路径：没有意识的智能</strong></h1><p id="1dfb42d6-c689-80ef-b726-e5cf2a7a4c90" class=""><strong>YUVAL NOAH HARARI:</strong> 是的。再说一次，如果你从进化的角度来思考。是的，哺乳动物的进化走了一条特定的道路，在这条路上你基于意识发展智能。但到目前为止，我们看到的计算机走了一条不同的路线。它们的发展道路是智能而无意识。我的意思是，计算机已经发展了，你知道，60 到 70 年了。它们在某些领域并不是很智能，而且仍然是零意识。</p><p id="1dfb42d6-c689-80d8-b0ee-e23f06158e25" class="">现在，这种情况可能会无限期地持续下去。也许它们只是走在不同的道路上。也许最终它们在所有方面都会比我们聪明得多，但仍然没有意识，不会感受到痛苦、快乐、爱或恨。你知道，就像如果你想到鸟和飞机，飞机并没有变得像鸟一样。飞机不是用羽毛飞行的等等。它们以完全不同的方式飞行。并不是说在某个时候，当飞机飞得足够快时，羽毛会突然出现。不是这样的。智能和意识也可能是一样的，它会变得越来越聪明，而感觉永远不会出现。</p><p id="1dfb42d6-c689-804b-abb8-d8f87e63f7d2" class="">问题的加剧在于，尽管如此，仍然存在非常强烈的商业和政治动机去开发模仿情感的 AI，去开发能够与人类建立亲密关系的 AI，能够让人类对 AI 产生情感依赖。即使 AI 本身没有情感，它们也可以被训练。它们已经被训练得让我们觉得它们有情感，并开始与它们建立关系。</p><p id="1dfb42d6-c689-8048-8b57-ff4dee050421" class="">为什么会有这样的激励？因为亲密关系一方面可能是人类能拥有的最珍贵的东西。你知道，我刚才在路上，我们在听芭芭拉·史翠珊唱歌。需要别人的人是世界上最幸运的人。那种亲密关系不是一种负担。它不是一种坏事，哦，我需要这个。不，它是世界上最伟大的东西，但它也可能是世界上最强大的武器。</p><p id="1dfb42d6-c689-80b0-906e-d07daa5ee2d1" class="">如果你想说服某人购买某种产品，如果你想说服某人投票给某个政治家或政党，亲密关系就像是终极武器。我的意思是，到目前为止，在历史上，有一场关于注意力的大争夺，如何抓住人类的注意力。我们之前也谈到过在社交媒体上如何获得人类的注意力。有一些方法，比如，我不知道，在纳粹德国，希特勒可以强迫每个人在收音机上听他的演讲。所以他掌握了注意力，但没有掌握亲密关系。希特勒或斯大林或其他任何人都没有技术来大规模生产亲密关系。</p><p id="1dfb42d6-c689-8017-8ff6-e8b5a03ce8ad" class=""><strong>现在，借助人工智能，技术上可以大规模生产亲密关系。</strong> 你可以创建所有这些与我们互动的人工智能，它们将理解我们的感受。因为感受也是模式。通过观察一个人几周或几个月，学习他们的模式、面部表情和语音语调等，你可以预测一个人的感受。然后，如果落入不当之手，它可能会被用来以前所未有的方式操控我们。</p><p id="1dfb42d6-c689-80ad-b8d9-d7e4750611b2" class=""><strong><a href="https://singjupost.com/full-transcript-elon-musk-on-joe-rogan-podcast/">另请阅读： 完整记录：埃隆·马斯克在乔·罗根播客上的谈话</a></strong></p><h1 id="1dfb42d6-c689-80c8-8999-eaefae9f86df" class=""><strong>人类亲密关系的脆弱性</strong></h1><p id="1dfb42d6-c689-80df-89f6-dd1668036f52" class=""><strong>里奇·罗尔：</strong> 这是我们最大的脆弱性。使我们成为人类的这种美丽事物成为了我们巨大的弱点。因为随着这些人工智能不断自我迭代，它们模仿意识和人类亲密关系的能力将达到一种对人脑来说无法区分的精确度。然后，人类就像这些极其容易被破解的机器，可以被人工智能引导到任何它选择的方向。</p><p id="1dfb42d6-c689-807b-9827-d4bc9d94f97f" class=""><strong>尤瓦尔·诺亚·赫拉利：</strong> 是的，这不是预言。我们今天可以采取行动来防止这种情况。我们可以对此进行监管。比如说，我们可以规定 AI 可以与人类互动，但前提是它们必须表明自己是 AI。如果你和 AI 医生交谈，那很好。但 AI 不应该假装成人类。你知道，我是在和 AI 交谈。我的意思是，并不是说 AI 不可能发展出意识。我们不知道。我的意思是，有可能。</p><p id="1dfb42d6-c689-8099-8f07-cafa224549db" class=""><strong>里奇·罗尔：</strong> 那种 AI 确实发展到了模仿的程度，达到如此高的逼真度。即使在像人类与其互动的方式上，这对人类来说重要吗？</p><p id="1dfb42d6-c689-8064-90f4-e74d261d79ee" class=""><strong>YUVAL NOAH HARARI:</strong> 不，我的意思是，这是个问题。我的意思是，因为我们不知道它们是否真的有意识，还是仅仅非常擅长模仿意识。所以关键问题最终是政治和伦理的。如果它们有意识，如果它们能感受到痛苦、快乐、爱和恨，这意味着它们是伦理和政治主体。它们有权利，你不应该像对待人类一样对待 AI 施加痛苦。它们喜欢什么、爱什么，可能和人类的愿望一样重要。所以它们也应该在选举中投票。而且它们可能是多数。因为你可以有一个国家，1 亿人类和 5 亿 AI。那么在这种情况下，它们是否选择政府？</p><h1 id="1dfb42d6-c689-8093-bf90-f445baf3c766" class=""><strong>人工智能权利和法律人格</strong></h1><p id="1dfb42d6-c689-8012-bd96-ecd3a135ba29" class="">现在，在美国，有趣的是，实际上有一条开放的法律途径让人工智能获得权利。美国是世界上唯一几个有这种情况的国家之一。因为在美国，公司被承认为具有权利的法律人。直到今天，这还是一种法律虚构。根据美国法律，Google 是一个人。它不仅仅是一个公司，它是一个人。作为一个人，它也有言论自由。这是 2010 年最高法院对 Citizens United 的裁决。</p><p id="1dfb42d6-c689-8062-b386-e143e84f7b80" class="">直到今天，这只是法律虚构，因为谷歌所做的每一个决定实际上都是由某个人做出的，比如高管、律师、会计师。谷歌无法独立于人类做出决定。但现在你有了人工智能。所以想象一下，当你合并一个人工智能时的情况。现在，这个人工智能是一个公司。作为一个公司，美国法律承认它是一个拥有某些权利的人，比如言论自由。</p><p id="1dfb42d6-c689-8000-8bcc-c00dad2e75eb" class="">现在，它可以赚钱。它可以在线上提供服务给人们并赚钱。然后，它可以开设银行账户并将其资金投资于股票市场。如果它非常聪明和智能，它可能会成为美国最富有的人。</p><p id="1dfb42d6-c689-8028-b253-c33ec19dc649" class="">现在想象一下，美国最富有的人不是人类，而是一个 AI。根据美国法律，这个人的权利之一是进行政治捐款、捐赠。这是 2010 年《Citizens United》背后的主要原因。因此，这个 AI 现在向政客捐赠数十亿美元，以换取扩大 AI 权利。而在美国，法律途径是完全开放的。你不需要任何新法律来实现这一点。</p><p id="1dfb42d6-c689-80fd-b6df-f85ef59d7084" class=""><strong>RICH ROLL:</strong> 这就像电影的情节。</p><p id="1dfb42d6-c689-8020-8b2b-d33fcc7ddd59" class=""><strong>YUVAL NOAH HARARI:</strong> 是的。当你知道我们在洛杉矶时。</p><p id="1dfb42d6-c689-806e-94ae-c71ce0eaa792" class=""><strong>RICH ROLL:</strong> 是的。我的意思是，哇，思考这个真是太疯狂了。这种强大技术的出现对民主制度和威权制度的影响有什么不同？</p><h1 id="1dfb42d6-c689-8063-b8a3-fb348ed9138d" class=""><strong>人工智能对民主与威权制度的影响</strong></h1><p id="1dfb42d6-c689-8040-85d9-e6e0b06f30c5" class=""><strong>YUVAL NOAH HARARI:</strong> 因此，这两个系统都有很多可以获得的，也有很多可以失去的。同样，人工智能是有史以来最强大的技术。它不是一个工具，而是一个代理。因此，你有数百万、数十亿个新的代理，非常智能，非常有能力，可以用来创建世界上最好的医疗系统，但也可以用来创建世界上最致命的军队，或者世界上最糟糕的秘密警察，如果你考虑到专制政权的话。</p><p id="1dfb42d6-c689-8073-9b9b-d3ba52d69044" class="">因此，纵观历史，他们总是想全天候监控他们的公民，但这在技术上是不可能的。即使在苏联，你知道，有两亿苏联公民，你不能一直跟踪他们，因为克格勃没有两亿特工。即使克格勃设法得到了两亿特工，这也不够。因为，你知道，在苏联，基本上还是纸质官僚机构，秘密警察。如果一个特工每天24小时跟踪你，最后他们会写一份关于你的书面报告并发送到莫斯科的克格勃总部。所以想象一下，每天克格勃总部都会被两亿份书面报告淹没。现在，要让这些报告有用，就需要有人阅读和分析它们。他们做不到。他们没有分析员。因此，即使在苏联，由于技术原因，大多数人的某种程度的隐私仍然是默认的。</p><p id="1dfb42d6-c689-80d6-8ecf-daa69385e2c5" class=""><strong>现在，历史上第一次，从技术上讲，消灭隐私是可能的。</strong> 今天的极权主义政权不需要数百万的人力代理。如果他想跟踪每个人。你有智能手机、摄像头、无人机和到处的麦克风，你不需要数百万的人类分析师来分析这海量的信息。你有人工智能，这已经开始发生。这不是未来的预测。</p><p id="1dfb42d6-c689-80ae-9efb-e160afa50e94" class="">在世界许多地方，你开始看到这种极权主义监控政权的形成。这在我的国家以色列正在发生。以色列正在被占领的巴勒斯坦领土上建立这种监控政权，以便随时跟踪每个人。在我们的地区伊朗，自1979年伊斯兰革命以来，他们有头巾法，规定每个女性在外出行走甚至在私人汽车中驾驶时，必须佩戴头巾。</p><p id="1dfb42d6-c689-8087-a9ba-cc7191523b9e" class="">直到今天，政权在执行头巾法方面一直有困难，因为他们没有数百万名警察可以在每条街道上安排一名警察。如果一名女性没有戴头巾开车，她会立即被逮捕并罚款或其他处理。在过去几年中，他们转而依赖一个 AI 系统。伊朗现在遍布监控摄像头，配备面部识别软件，可以自动识别刚刚经过摄像头的车辆中是否是女性而非男性，并且她没有戴头巾，识别她的身份，找到她的电话号码，并在半秒内向她发送短信，告知她违反了头巾法。你的车被扣押，车辆被没收。请将车停在路边。</p><p id="1dfb42d6-c689-8062-925d-c712c5818ec6" class="">这在今天的德黑兰、伊斯法罕和伊朗其他地区是每天发生的事情。这是基于人工智能的。而且并不是有报告送到法庭，由某个人类法官审阅数据并决定该怎么做。人工智能会立即决定，好的，车辆被没收。</p><p id="1dfb42d6-c689-8018-b1be-f50a522e616b" class="">这可能在世界上越来越多的地方发生，比如即使在美国，你知道，如果你考虑到所有关于堕胎的辩论而不深入辩论本身，那些认为堕胎是谋杀的人，无论对错，他们都有很强的动机为美国女性建立一个类似的监控系统，你知道，为了阻止谋杀。比如，你可以建立这个监控系统，可以识别昨天你怀孕了，今天没有了，中间发生了什么。所以这不仅仅是伊朗、巴勒斯坦人或中国的问题，这也可能发生在美国。</p><p id="1dfb42d6-c689-809b-b415-c4b7b72e84ea" class=""><strong>RICH ROLL：</strong> 以及阻止他们跨州界之类的事情。是的，是的。</p><p id="1dfb42d6-c689-8059-baad-d79e326131c0" class=""><strong>尤瓦尔·诺亚·赫拉利：</strong> 比如，好吧，你从德克萨斯去了加利福尼亚。你怀孕了，回来时却没有怀孕。在加利福尼亚发生了什么？</p><p id="1dfb42d6-c689-807d-a4f4-cc86fbbec387" class=""><strong>里奇·罗尔：</strong> 所以感觉人工智能是一个令人难以置信的工具，可以巩固权力于专制政权。但它也有其缺陷。它不是一个完美的工具。</p><p id="1dfb42d6-c689-8098-9e80-d2520ebba3bb" class=""><strong>尤瓦尔·诺亚·赫拉利：</strong> 它也让独裁者感到害怕，因为人类独裁者一直最害怕的不是民主革命。他们最害怕的是无法控制的强大下属，可能会操纵他们或夺取他们的权力。</p><p id="1dfb42d6-c689-808c-9855-c164a8e94294" class="">如果你看看罗马帝国，没有一个罗马皇帝是被民主革命推翻的。这样的事情从未发生过。但他们中的许多人失去了生命或权力给下属，比如反叛他们的将军、临时总督、他们的兄弟、他们的妻子，这些人从他们手中夺取了权力。这也是当今每个独裁者最大的恐惧。</p><p id="1dfb42d6-c689-80e7-98e3-c64327a1c837" class="">因此，如果你考虑到人工智能，如果你是一个人类独裁者，并且你现在将这种巨大的力量交给一个人工智能系统，那么有什么保证这个系统不会反过来对付你，要么消灭你，要么只是把你变成一个傀儡？我的意思是，我们也知道关于独裁者的事情是，如果你能在他们耳边低语，操控他们是相对容易的，因为他们非常偏执。而最容易操控的人就是那些偏执的人。</p><p id="1dfb42d6-c689-80a9-a5d0-eb5cd57ef3c9" class=""><strong>RICH ROLL:</strong> 我们在美国有我们的人工智能公司，可以投入数十亿美元用于机器人和其他任何东西，以制造或增强这种偏执。</p><h1 id="1dfb42d6-c689-80b8-b59e-d1a2c5f02626" class=""><strong>AI 对独裁政权的威胁</strong></h1><p id="1dfb42d6-c689-803b-bd44-c46f1a5d593c" class=""><strong>YUVAL NOAH HARARI:</strong> 你实际上只需要破解一个人，AI 就能在美国掌权。这非常复杂。这是一个如此分散的系统。比如，AI 可以学会操控总统，但它还需要操控参议员、国会议员、州长和最高法院。比如，AI 会如何处理冗长辩论？这很困难。但如果你想在独裁政权中掌权，你只需要学会操控一个人。</p><p id="1dfb42d6-c689-809d-9393-ede80c76ff61" class="">所以独裁者们对人工智能并不完全满意，我们已经开始看到这种情况，例如聊天机器人。他们非常担心，因为你可以设计一个完全忠于政权的聊天机器人，但一旦你将其发布到互联网上与现实生活中的人们互动，它就会发生变化。我的意思是，记住我们之前谈到的，人工智能的定义是具有自我学习和自我改变的能力。</p><p id="1dfb42d6-c689-803a-a2fb-d7e911b64cc5" class="">所以即使普京创造了一个普京主义的聊天机器人，总是说普京伟大，普京是对的，俄罗斯很伟大等等，但当你将其发布到现实世界中时，它开始观察现实世界中的事物。例如，它注意到在俄罗斯，入侵乌克兰在官方上不是战争，而是被称为特别军事行动。如果你说这是战争，你可能会被判入狱长达三年之类的，因为这不是战争，而是特别军事行动。那么，如果你发布的一个非常智能的聊天机器人连接了这些点并说，不，这不是特别军事行动，而是战争，你会怎么做？你会把聊天机器人送进监狱吗？你能做什么？</p><p id="1dfb42d6-c689-8042-bcdf-d768ef9c0af7" class="">民主国家当然也面临着聊天机器人说出我们不喜欢的话的问题。它们可能是种族主义的，可能是恐同的，等等。但关于民主的问题是，它对反民主言论有相对较大的容忍度。<strong> 独裁政权对异议观点没有任何容忍度。因此，他们在如何控制这些不可预测的聊天机器人方面面临更大的问题。</strong></p><h1 id="1dfb42d6-c689-80b9-8568-ec789e1ac028" class=""><strong>人工智能与2024年美国大选</strong></h1><p id="1dfb42d6-c689-8001-9fc7-e5a6f06e37f5" class="">里奇·罗尔：你如何解读当前的时刻？鉴于我们正处于美国大选的风口浪尖，并且围绕我们可能面临的对民主的生存威胁有很多讨论，人工智能在其中扮演了什么角色？我们作为公民和选民，目前应该了解这种技术对我们的影响是什么？</p><p id="1dfb42d6-c689-8087-a7e9-c6bfac464e6d" class="">尤瓦尔·诺亚·赫拉利：我不认为人工智能——当然，社交媒体对政治话语以及选举结果有巨大影响。但我不认为人工智能会真正改变或操纵11月的选举。</p><p id="1dfb42d6-c689-8054-bad6-f8c8b5c04ae3" class="">最大的问题是，无论谁赢得选举，也许这个人必须做出的最重要决定将是关于人工智能的，因为这项技术正在以极快的速度发展。你知道，你看看一年前 ChatGPT 的情况，再看看 2024 年的现状，2027 年、2028 年人工智能将会是什么状态。</p><p id="1dfb42d6-c689-806d-9093-d64a59bafedf" class="">我观看了总统辩论。大多数人，他们的主要收获是关于猫和狗的。这是辩论中最令人难忘的事情。无论谁赢，也许都将不得不对这些关系做出历史上最重要的一些决定。<strong> 如果你担心移民，不是那些将取代出租车司机的移民，而是那些将取代银行家的移民才是你应该担心的。而且是人工智能，而不是从边境南部来的人。</strong></p><p id="1dfb42d6-c689-802b-b1c3-e76cc8a344b0" class="">现在你信任谁来做出这些重大的决定？如果你特别考虑对民主的威胁，我们从历史中学到的一件事是，自古希腊雅典以来，民主制度总是有一个大问题或弱点，那就是民主基本上是一种协议，你在有限的时间内将权力交给某人，比如四年，条件是他们会归还权力。然后你可以做出不同的选择，比如，我们尝试了这个，但没有效果。让我们尝试别的东西。这种说“让我们尝试别的东西”的能力就是民主，它基于此。你给予权力，并期望在四年后收回。</p><p id="1dfb42d6-c689-80ce-b6d7-c6e7ab64e133" class="">在那个任期结束时。</p><p id="1dfb42d6-c689-8071-8716-e4ee8e460ff6" class="">如果你把权力交给一个不愿意归还的人，他们现在就拥有了权力。他们也有权力继续掌权。这一直是民主中最大的危险。</p><p id="1dfb42d6-c689-8027-9393-fdc4473ecec2" class="">所以对我来说，在美国大选的问题上，你可以讨论经济政策、外交政策。你喜欢这个，你喜欢那个。有讨论的空间。但你有一个人，唐纳德·特朗普，你有一个记录显示这个人不想归还权力，并且愿意走很远的路，包括可能煽动暴力，以避免归还权力。你想给他这么多权力吗？这听起来不是一个好主意。所以对我来说，这是选举中的头号问题。与之相比，其他一切都无关紧要。</p><h1 id="1dfb42d6-c689-80c6-b471-f5e863d8817e" class=""><strong>人工智能全球合作的挑战</strong></h1><p id="1dfb42d6-c689-8017-b5f5-d934f7c470f7" class="">我认为，这挑战了我们对民主稳定性的偏好，并迫使我们真正接受这样一个事实：民主是一个由人民集体行动所影响的微妙动态。在反思这一点时，技术的发展也是一个故事，其中我们围绕技术立法和监管的能力总是远远落后于技术进步的速度。</p><p id="1dfb42d6-c689-8096-a2ec-f7732b7250ca" class="">现在我们处于一个前所未有的快速进步的局面，这不仅质疑我们能否为其设定护栏，甚至质疑我们是否能理解实际发生的事情。信息系统的历史是人类集体合作的历史。然而，我们现在的情况是，合作不仅在美国国内受到挑战，而且在国际上也是如此。</p><p id="1dfb42d6-c689-8047-8867-ff5dfe783726" class="">因此，当我们开始讨论如何处理或寻找解决方案时，你认为我们作为一个全球社区的能力如何，能否共同找到解决方案并付诸实施，以免我们不小心走向某种反乌托邦？</p><p id="1dfb42d6-c689-8067-972d-da4b2715656d" class="">尤瓦尔·诺亚·赫拉利：这里有很多内容需要解读。首先，当我们想到合作时，正如我们之前所说，这一直是我们作为一个物种的最大优势，我们比其他任何物种都更善于合作。我们可以构建其他动物甚至无法理解的全球贸易网络。</p><p id="1dfb42d6-c689-8010-9893-cd0a51c26e45" class="">比如，如果你想想马。马从来没有弄懂金钱。它们被买卖，但它们从未理解人类在交换的这些东西是什么。这就是为什么马永远无法团结起来反对我们或操控我们，因为它们从未弄清楚这个系统是如何运作的，一个人用一些闪亮的金属物品或几张纸把我交给另一个人。</p><p id="1dfb42d6-c689-8034-aaff-cf5e0dddddf1" class="">人工智能是不同的。它比大多数人更了解金钱。比如，大多数人并不真正理解金融系统是如何运作的。而金融科技中的金融人工智能，它们在对金钱的理解上已经超过了大多数人类，并不是所有人类，但大多数人类。</p><p id="1dfb42d6-c689-8001-b5b7-f69e52e2873f" class=""><strong>因此，我们现在正面临数百万乃至数十亿个新代理，它们可能会利用我们自己的系统来对付我们，例如，计算机现在可以比人类更有效地利用金融系统进行协作。</strong> 因此，整个合作问题正在发生变化。计算机还学会了如何利用通信系统来操控我们，比如在社交媒体中。因此，它们在合作，而我们正在失去合作的能力。这应该引起警觉。</p><p id="1dfb42d6-c689-8091-ba06-c896e8f6dfca" class="">很难理解正在发生的事情。如果我们希望全世界的人类在这方面合作，建立防护措施，规范 AI 的发展，首先，你需要人类了解正在发生的事情。其次，你需要人类彼此信任。</p><p id="1dfb42d6-c689-807b-aff2-f7786548c91d" class="">世界上大多数人仍然没有意识到 AI 领域正在发生的事情。只有少数人，主要在美国、中国和其他少数几个国家，了解这些情况。大多数在巴西、尼日利亚、印度的人并不了解。这非常危险，因为这意味着少数人，其中许多人甚至不是由美国公民选出的。他们只是私人公司。他们将做出最重要的决定。</p><p id="1dfb42d6-c689-8052-bc49-d35ee31fd5b2" class="">更大的问题是，即使人们开始理解，他们也不信任彼此。我有机会与一些领导人工智能革命的人交谈，这场革命仍然由人类主导。仍然是人类在掌控。我不知道还会持续多少年，但截至2024年，仍然是人类在掌控。</p><p id="1dfb42d6-c689-806d-bed2-c1739e955d3d" class="">你会遇到这些企业家、商业巨头和政治家，无论是在美国、中国还是欧洲，他们都告诉你同样的事情。基本上，他们都说，我们知道这件事非常非常危险，但我们不能信任其他人类。如果我们放慢速度，我们怎么知道我们的竞争对手也会放慢速度，无论是我们在美国的商业竞争对手，还是我们在海洋彼岸的中国竞争对手？</p><p id="1dfb42d6-c689-80b1-b1eb-fa5874e3f923" class="">你去和竞争对手交谈，他们也会说同样的话。我们知道这很危险。我们希望放慢速度，以便有更多时间去理解、评估危险、讨论法规，但我们不能。我们必须更快地推进，因为我们不能信任其他公司、其他国家。如果他们在我们之前得到它，那将是一场灾难。</p><p id="1dfb42d6-c689-8012-9846-f49c235051ff" class=""><strong>因此，你会遇到这样一种矛盾的情况，人类不能互相信任，但他们认为可以信任 AI。</strong> 因为当你和同样的人交谈时，你告诉他们，好吧，我明白了，你不能信任中国人，或者你不能信任 OpenAI，所以你需要更快地开发这个超级 AI。你怎么知道你可以信任 AI？然后他们告诉你，哦，我认为这没问题。我认为我们已经找到了确保 AI 值得信赖并在我们控制之下的方法。所以我们有这样一个非常矛盾的情况，我们不能信任我们的人类同胞，但我们认为我们可以信任。</p><p id="1dfb42d6-c689-8095-9afe-c750960953bb" class="">RICH ROLL：在此之上，还有一个激励结构，当然，这进一步在这场军备竞赛中滋生了不信任。奖项将颁给突破性的开发者，他们将以可能前所未有的方式获得奖励和报酬。因此，突破以及其背后的吸引力如此之大，以至于任何关于监管或可能减缓其发展的讨论不仅成为国家安全威胁，也成为创业威胁。</p><p id="1dfb42d6-c689-801c-8023-f111879b533e" class=""><strong><a href="https://singjupost.com/the-politics-of-war-victor-davis-hanson-transcript/">另请阅读： 战争政治：Victor Davis Hanson（文字记录）</a></strong></p><p id="1dfb42d6-c689-80df-bc1c-c81da4d6996d" class="">所以一切都在以牺牲透明度和监管以及所有这些我们现在真正需要的制衡为代价推动快速加速。我不知道你对此有何感想，但这让我感到有些冷漠和悲观。你是一位历史学家。人类的故事就是全速前进，没有刹车。就像我们在向前推进，等后果来临时再处理。我们并没有足够的能力真正理解我们行为的长期后果。我们有点只关注眼前，并根据它将如何影响我们在不久的将来做出决策，而很少考虑其他因素。</p><h1 id="1dfb42d6-c689-803f-b9aa-c3be66f54b42" class=""><strong>解决错误的问题</strong></h1><p id="1dfb42d6-c689-80da-9dc7-ded8a858dfa3" class="">尤瓦尔·诺亚·赫拉利：是的，我的意思是，纵观历史，人们非常擅长解决问题，但他们往往解决的是错误的问题。比如，他们花很少的时间来决定我们需要解决什么问题。大约5%的精力用于选择问题，然后95%的精力用于解决我们关注的问题。然后我们意识到，哦，我们实际上解决了错误的问题。这只会在未来产生新的问题，我们现在需要解决。然后我们又重复同样的过程。</p><p id="1dfb42d6-c689-8090-91b9-cf8ce1f7a80b" class=""><strong>智慧常常来自于沉默，来自于花时间，来自于放慢脚步。</strong> 在我们匆忙做出决定之前，先真正理解情况。你知道，这从个人层面开始，很多人，比如说，认为，哦，我生活中的主要问题是我没有足够的钱。然后他们花接下来的 50 年赚很多钱。即使他们成功了，他们在某个时候醒来并说，哎呀，我想我选择了错误的问题。我想这不是，我是需要一些钱，但这不是我生活中的主要问题。</p><p id="1dfb42d6-c689-8047-be58-dadb6c4500f6" class="">我们可能作为一个物种集体地在做同样的事情。你知道，你回到像农业革命这样的事情。所以人们认为，好吧，我们没有足够的食物，让我们生产更多的食物。通过农业，我们将驯化小麦、大米和土豆。我们会有更多的食物。生活会很美好。然后他们驯化这些植物，还有一些动物，牛、鸡、猪等等，他们有很多食物。他们开始建立这些巨大的农业社会，有城镇和城市。</p><p id="1dfb42d6-c689-806d-8fed-f4c670fc1afd" class="">然后他们发现了许多他们没有预料到的新问题。例如，流行病。狩猎采集者几乎不受任何传染病的影响，因为大多数传染病是从驯养的动物传给人类的，并在密集的城镇和城市中传播。现在，如果你生活在一个狩猎采集者的群体中，你不会养鸡或猪。所以病毒从野生鸡传给你的可能性非常小。即使你感染了一种新病毒，你的群体中也只有大约20个人，并且你们一直在移动。也许你会感染另外五个人，其中三人死亡，事情就结束了。</p><p id="1dfb42d6-c689-804b-ab9c-d3903d805642" class="">但是一旦你有了这些大型农业城市，就会出现流行病。人们以为他们在为人类建造天堂。结果却是他们在为细菌建造天堂。大多数人的人类预期寿命和生活条件实际上下降了。如果你是国王或大祭司，那还好。但对于普通人来说，这实际上是一个糟糕的决定。</p><p id="1dfb42d6-c689-8085-bc67-f2f28ef935b3" class="">历史上同样的事情一再发生，现在在人工智能上可能会以非常非常大的规模发生。从某种意义上说，这又回到了有机和无机的问题，有机系统是缓慢的，它们需要时间。而这种人工智能是一个无机系统，其加速超出了我们能处理的范围。最大的问题是我们是否会迫使它减速，还是它会迫使我们加速，直到我们崩溃和死亡。<strong> 我的意思是，如果你强迫一个有机实体一直运转，并且越来越快地移动，最终它会崩溃并死亡。</strong></p><p id="1dfb42d6-c689-8070-bc76-d4457d900d76" class="">RICH ROLL：我听你说过的一件让我印象深刻的事情是这样的。这是一个引用。如果最终毁灭我们的是某件事，那将是我们自己的妄想。你能详细说明一下这点，以及它如何适用于我们一直在谈论的内容吗？</p><h1 id="1dfb42d6-c689-80bb-bf18-d0090b883eff" class=""><strong>我们的幻想可能会毁灭我们</strong></h1><p id="1dfb42d6-c689-80aa-8d9b-d1e25812b5d1" class="">尤瓦尔·诺亚·赫拉利：是的，我的意思是，至少目前的人工智能无法逃脱我们的控制，也无法在我们不允许或不命令的情况下毁灭我们。我们仍然掌控着局面。但由于我们的政治和神话幻想，我们无法信任其他人类。我们认为我们需要更快地发展这些人工智能，并赋予它们越来越多的权力，因为我们必须与其他人类竞争。<strong> 而这正是可能真正毁灭我们的东西。</strong></p><p id="1dfb42d6-c689-8014-9016-f53ea82db92c" class="">你知道，这非常不幸，因为我们确实有建立人类之间信任的成功记录。这只是需要时间。我的意思是，如果你考虑一下，在人类历史的长河中，这些狩猎采集者团体，数万年前，他们是由几十个个体组成的小团体。即使接下来的步骤，比如农业，有其负面影响。再比如，流行病，人们确实随着时间的推移学会了如何建立基于信任的更大社会。</p><p id="1dfb42d6-c689-806d-9046-df8120d3d363" class="">如果你现在住在美国或其他国家，你就是一个由数亿人组成的系统的一部分，这些人在许多方面彼此信任，而这些在石器时代是难以想象的。比如，你并不认识这个国家99.99%的人，但你仍然非常信任他们。我的意思是，你吃的食物，大多数情况下你并没有自己去森林里狩猎和采集。你依赖陌生人来为你提供食物。你使用的大多数工具都来自陌生人，你的安全也是如此。你依赖于你一生中从未见过的警察和士兵。他们不是你的堂兄弟，也不是你的邻居，但他们仍然保护你的生命。</p><p id="1dfb42d6-c689-801b-907b-d6961f43a7e2" class="">所以是的，如果你现在进入全球层面，好吧，我们仍然不知道如何信任中国人和以色列人，仍然不知道如何信任伊朗人，反之亦然。但这并不像我们被困在石器时代。<strong> 我们在人类信任的建立上取得了巨大进展，而我们正急于将这一切抛弃，因为这确实需要时间。</strong> 这不会在明天发生。</p><p id="1dfb42d6-c689-80da-b509-ecf568b10a49" class="">里奇·罗尔：是的，我的意思是，我认为我们迫切需要找到一种方法来恢复一些制度信任。</p><p id="1dfb42d6-c689-803a-92a2-c248822c10c7" class="">尤瓦尔·诺亚·赫拉利：对。</p><p id="1dfb42d6-c689-80eb-8a2f-e4280ab766ad" class="">里奇·罗尔：就像最近被削弱的那样。我认为如果没有这一点，作为一个民主共和国，我们几乎没有机会生存并解决这些问题。</p><h1 id="1dfb42d6-c689-80bb-8eb4-dc8d854c6060" class=""><strong>机构的重要性</strong></h1><p id="1dfb42d6-c689-8045-938d-f71282038cad" class="">尤瓦尔·诺亚·赫拉利：当然。如果简要地问，建立数百万陌生人之间信任的关键是什么？关键是机构，因为你无法与数百万人建立个人的、亲密的关系。所以只有机构，无论是法院、警察部队、报纸、大学还是医疗系统，才能在人们之间建立信任。</p><p id="1dfb42d6-c689-807b-9a4f-d1f6db971d41" class="">不幸的是，我们现在又看到了一场对机构的不信任的流行病，无论是在右翼还是左翼。它是由一种非常愤世嫉俗的世界观推动的，这种世界观基本上认为唯一的现实是权力，人类只想要权力，所有的人类互动都是权力斗争。所以每当有人告诉你某件事时，你需要问是谁的特权得到了服务，谁的利益得到了推进。任何机构都只是一个精英阴谋，旨在从我们这里夺取权力。所以记者并不是真的对了解任何事情的真相感兴趣。他们只是想要权力。科学家和法官也是如此。</p><p id="1dfb42d6-c689-8052-88b5-d6275c3553c2" class="">如果这种情况继续下去，那么对机构的所有信任都会崩溃，社会也会随之崩溃。<strong> 在这种情况下，唯一还能运作的就是独裁政权。因为独裁政权不需要信任。它们是建立在恐怖之上的。</strong> 所以攻击机构的人常常认为，哦，我们正在把人们从这些专制机构中解放出来。实际上，他们是在为独裁铺平道路。</p><p id="1dfb42d6-c689-80c2-bb1e-df5ebad2a995" class="">而且问题在于，这种观点不仅非常愤世嫉俗，而且也是错误的。人类并不是这些权力狂魔。我们所有人都在某种程度上想要权力，这是真的，但这并不是关于我们的全部真相。人类真正感兴趣的是在非常深的层次上了解关于我们自己、我们的生活、关于世界的真相。因为如果你不了解关于你生活的真相，你永远不会快乐。因为你将不知道痛苦的根源。同样，你会专注于你的生活。如果你不知道真相，你会浪费一生去解决错误的问题。</p><p id="1dfb42d6-c689-8014-b057-c774473e7c58" class="">这同样适用于记者、法官和科学家。是的，每个机构中都有腐败。这就是为什么我们需要许多机构来相互制衡。但如果你摧毁了对机构的所有信任，你得到的要么是无政府状态，要么是独裁统治。</p><p id="1dfb42d6-c689-8001-9702-da68e5120ec1" class="">再说一遍，时不时停下来思考一下我们每天都受到各种机构的保护是一个很好的练习。比如当人们和我谈论深层国家时，你知道，这个关于深层国家的阴谋论，我立刻想到的是下水道系统。下水道系统就是深层国家。它是一个由国家在我们的房屋、街道和社区下建造的深层隧道、管道和泵系统，每天都在拯救我们的生命，因为它将我们的污水与饮用水分开。你知道，你去厕所，做你的事情，它就会进入深层国家，保持它与饮用水分开。</p><p id="1dfb42d6-c689-805f-8dc0-da8cd19fa983" class="">如果我能讲一个历史轶事，它是从哪里来的？所以，你知道，在农业革命之后，就有了大城市。它们是细菌的天堂，流行病的温床。这种情况一直持续到19世纪。19世纪的伦敦是世界上最大、最肮脏、污染最严重的城市之一，也是流行病的温床。在19世纪中期，爆发了霍乱疫情。伦敦的人们正在死于霍乱。</p><p id="1dfb42d6-c689-8050-a344-df122a93264d" class="">然后你有这个官僚，医疗官僚，Jon Snow，不是《权力的游戏》里的那个家伙，而是真实的 Jon Snow，他没有与龙和僵尸战斗，但实际上拯救了数百万人的生命，因为他带着名单走遍伦敦，采访所有生病或去世的人。如果有人死于霍乱，他会采访他们的家人，告诉我，这个人的饮用水来自哪里？他制作了这些包含成百上千人的长名单。</p><p id="1dfb42d6-c689-80a1-812c-ce96b387a8cb" class="">通过分析这些名单，他找到了伦敦苏荷区百老汇街的一口水井，几乎所有感染霍乱的人在某个阶段都喝过那口井的水。他说服市政府停用那口井的水泵，疫情就此停止。随后他们调查发现，那口井距离一个粪坑大约一米远，粪坑的污水渗入了饮用水。如今，如果你想在伦敦或洛杉矶挖一口井或粪坑，你必须填写许多表格并获得所有这些官僚许可，这拯救了我们的生命。</p><p id="1dfb42d6-c689-800a-89d3-f17e2811ba7d" class="">RICH ROLL：这与深层国家的概念有什么关系？我试图将这两个概念联系在一起。</p><p id="1dfb42d6-c689-806b-8fb6-c0228c9cf204" class="">尤瓦尔·诺亚·赫拉利：再次强调，那些相信深层国家阴谋论的人，他们说所有这些国家官僚机构都是精英对普通人的阴谋，试图夺取权力，试图摧毁我们。而在大多数情况下，不是这样的。你知道，要管理一个污水系统，你需要水管工。你也需要官僚。同样，你需要申请许可证来挖井。这些都是由各种国家官僚管理的。</p><p id="1dfb42d6-c689-8070-bb5d-cf3ad16c8de5" class="">这是一件非常好的事情，因为这些地方有时会有腐败。这就是为什么我们保留法院。你可以去法院。这就是为什么我们保留报纸，以便它们可以揭露城市、市政污水部门的腐败。但大多数时候，这些人都是诚实的人，他们每天都在努力工作，以保持我们的污水与饮用水分离，并让我们活下去。</p><p id="1dfb42d6-c689-80db-bb71-c265d8537680" class="">RICH ROLL：通过推断，有许多官僚机构以我们看不见的方式在为我们的利益工作，而我们对此视而不见。</p><p id="1dfb42d6-c689-805b-ac60-e863944cfa1f" class="">尤瓦尔·诺亚·赫拉利：完全正确。</p><p id="1dfb42d6-c689-8032-97ea-e574a00f39aa" class="">RICH ROLL：你常说清晰就是力量。我认为你的超能力是能够站在一万英尺的高度俯视人类和地球，识别出在这些宏观趋势中最重要的东西，帮助我们理解现在发生的事情。我想以一些关于你如何通过冥想以及你非常深刻的正念和信息剥夺实践来培养这种清晰的想法来结束这个话题，对吗？</p><h1 id="1dfb42d6-c689-801f-bd8d-f3b4f756a8c0" class=""><strong>信息饮食</strong></h1><p id="1dfb42d6-c689-80d4-9987-cd6ee78adf0e" class="">尤瓦尔·诺亚·赫拉利：信息禁食。是的，也许从信息禁食的想法开始。所以我认为今天每个人都需要进行信息节食。认为更多信息总是对我们有好处的想法就像认为更多食物总是对我们有好处一样。这不是真的。就像世界上充满了我们最好避免的垃圾食品一样，世界上也充满了我们最好避免的垃圾信息。这些信息被人为地充满了贪婪、仇恨和恐惧。</p><p id="1dfb42d6-c689-806a-ab70-efb2855dbcf8" class=""><strong>信息是思想的食粮。我们应该像注意摄入食物一样注意摄入思想。</strong> 但这不仅仅是限制摄入量的问题。还涉及到消化。还涉及到排毒。就像我们在生活中摄入了很多垃圾，无论我们是否喜欢，这些垃圾充斥着我们的思想。</p><p id="1dfb42d6-c689-80ad-af37-f7d7537a5d80" class="">我每天冥想两个小时，所以我可以告诉你，那里有很多垃圾，很多仇恨、恐惧和贪婪是我多年来积累的。重要的是要花时间简单地消化这些信息，并且也要排毒，放下我们心中的所有仇恨、愤怒、恐惧和贪婪。</p><h1 id="1dfb42d6-c689-8058-91b5-d9b5a505a609" class=""><strong>我的冥想之旅</strong></h1><p id="1dfb42d6-c689-807f-86a8-f1af0a910c3d" class="">我开始是在牛津攻读博士学位时，一位朋友建议我去参加一个冥想静修或内观冥想。一年间，他一直劝我去。我说，不，这有点像神秘的胡言乱语，我不想去。最终我去了，结果很惊人，因为这与我能想象的神秘主义最不相关，因为这是一个为期10天的静修。</p><p id="1dfb42d6-c689-8056-bd05-e64cbd42f4eb" class="">在静修的第一个晚上，老师戈恩卡给出的唯一指示，他没有让我去想象某个女神或做这个咒语，什么都没有。他只是说，现在真正发生的是什么？把注意力集中在你的鼻孔上，感受一下呼吸是进还是出。这是唯一的练习，就像对现实的纯粹观察。</p><p id="1dfb42d6-c689-805a-84f5-cfa9cece47a2" class="">让我惊讶的是我无法做到这一点。我会把注意力集中在鼻子上，试着感受，是进还是出？大约五秒钟后，一些想法、记忆或幻想会在脑海中浮现，并劫持我的注意力。在接下来的两三分钟里，我会沉浸在这个幻想或记忆中，直到我意识到，嘿，我实际上需要观察我的呼吸。然后我会再次回到呼吸上。</p><p id="1dfb42d6-c689-8024-af70-fcbf48e39651" class="">五秒钟，也许十秒钟，我就能做到。哦，现在它进来了，它进来了。哦，现在它出去了，它出去了。然后又有一些记忆会出现并劫持我。我首先意识到我对自己的思维几乎一无所知。我无法控制我的思维。我的思维就像一个工厂，不断产生幻想、错觉和妄想，这些东西在我和现实之间。</p><p id="1dfb42d6-c689-809c-b650-e4a1019561f4" class="">如果我无法观察到呼吸进出我的鼻孔，因为某种幻想出现了，那么我有什么希望能理解人工智能或理解中东的冲突，而不让某种心灵制造的幻觉或幻想介于我和现实之间。</p><p id="1dfb42d6-c689-8045-a8a6-ef7de713f0fd" class="">在过去的24年里，我每天都进行这样的练习，每天花两个小时专注于当下真正发生的事情。我闭上眼睛，试着专注，放下所有心灵制造的故事，感受呼吸的变化，感受身体的变化，感受当下的现实。</p><p id="1dfb42d6-c689-802d-982e-e7ee0750a88d" class="">我通常每年也会进行一次长时间的冥想静修，通常是30天到60天的冥想。因为你会意识到，心中有太多的杂音，仅仅是为了让它平静到可以认真开始冥想的程度，就需要连续三四天的冥想。杂音太多，所以长时间的静修能够让我们对现实进行非常深入的观察，而这在大多数生活中是无法做到的。我们大部分时间都与现实脱节。</p><p id="1dfb42d6-c689-8020-bc68-c5d94b26f035" class="">RICH ROLL：每天两个小时。这是一个承诺。即使在所有图书宣传的疯狂中。</p><p id="1dfb42d6-c689-80f7-93d3-ebe06f16c031" class="">尤瓦尔·诺亚·赫拉利：在我来这里之前，我通常早上做一次，下午或晚上做一次。</p><p id="1dfb42d6-c689-80ff-bd7b-c94b004afcac" class="">RICH ROLL：多么美好的说法。显然，你能够清晰地思考并如此清晰地写下这些想法，很大程度上是这种练习的结果。</p><h1 id="1dfb42d6-c689-80ad-bbe2-e502dd32bdc5" class=""><strong>因人而异的不同做法</strong></h1><p id="1dfb42d6-c689-801b-9b5f-e5fc9fb9589e" class="">尤瓦尔·诺亚·赫拉利：绝对是的。我的意思是，如果没有这种实践，我就无法写出这样的书，也无法应对各种宣传、所有的采访以及来自世界各地的正面和负面反馈的过山车。</p><p id="1dfb42d6-c689-8054-b03a-ce273f52cb50" class="">我想说一件重要的事情，这不一定适合每个人，因为我冥想，我有冥想的朋友等等。我的意思是，不同的事情对不同的人有效。有很多人我不会建议他们每天冥想2小时或去参加10天的冥想静修，因为他们是不同的。他们的身体，他们的思想对他们来说是不同的。</p><p id="1dfb42d6-c689-807a-9ab6-d5a564e9fe90" class="">也许去山里徒步旅行10天对他们来说会更好。也许每天花两个小时在音乐上，比如演奏、创作或去做心理治疗，会有更好的效果。人类在许多方面确实彼此不同。没有一种方法适合所有人。</p><p id="1dfb42d6-c689-80b2-8a39-f1942cd1acc2" class="">所以如果你从未尝试过冥想，绝对要试一试，并给它一个真正的机会。这不是说你去几个小时然后它不起作用。好吧，放弃吧。要给它一个真正的机会。但请记住，不同的心灵是不同的。所以找出真正适合你的方法。无论是什么，那才是重要的部分。无论是什么，都要投入其中。</p><p id="1dfb42d6-c689-804a-a53e-efc1d532f99f" class="">RICH ROLL：我必须让你回到你的生活中，但也许我们可以用一个简洁的想法来结束，就是你希望人们从这本书中得到什么。对于你试图传达的内容，什么是最重要和关键的。</p><h1 id="1dfb42d6-c689-808e-a81f-e3d99e4f712a" class=""><strong>真相的价值</strong></h1><p id="1dfb42d6-c689-8072-8e3a-f89922c2e5dc" class="">尤瓦尔·诺亚·赫拉利：信息不是真相。真相是一种昂贵、稀有且珍贵的东西。它是知识和智慧以及良性、有益社会的基础。你可以在没有真相的情况下建立可怕的社会。但如果你想建立一个良好的社会，并想建立一个良好的个人生活，你必须有一个坚实的真相基础。而这很困难，因为大多数信息不是真相。要投资于此。无论是什么，只要能让你与现实相连，让你与真相相连，都是值得实践的。</p><p id="1dfb42d6-c689-80cf-accc-f34835f0931a" class="">RICH ROLL：感谢您今天来到这里。我非常感谢您抽出时间分享您的智慧和经验。我认为《Nexus》，您最新的书，正如我在开头所说，是一本每个人都应该阅读的重要书。我们正进入一个非常有趣的时代，我们最好尽可能做好准备。我感谢您所做的工作。再次感谢您。</p><p id="1dfb42d6-c689-806d-a039-dd6ec7191494" class="">尤瓦尔·诺亚·赫拉利：谢谢。</p><p id="1dfb42d6-c689-8034-845a-f376191e8e43" class="">RICH ROLL：我只是触及了我创建的大纲的表面，所以希望您能回来，因为我还有一百万个问题。我可以和您谈上几个小时。</p><p id="1dfb42d6-c689-8030-9063-c08347d21297" class="">尤瓦尔·诺亚·赫拉利：下次我在洛杉矶时，我会很乐意。</p><p id="1dfb42d6-c689-80d3-b044-feaf515b7868" class="">谢谢。感谢你。干杯。</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
